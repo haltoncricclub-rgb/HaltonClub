@@ -43,40 +43,44 @@ def _patch_chrome_for_ci():
     implicit wait so a slow-loading tab doesn't immediately raise
     NoSuchElementException before the page has finished rendering.
 
-    This patches selenium.webdriver.Chrome for this process only, so any
-    Chrome session created afterwards (including by the cricheroes package)
-    picks up these settings automatically.
+    IMPORTANT: this patches the __init__ method directly on the
+    selenium.webdriver.chrome.webdriver.WebDriver class object itself,
+    rather than reassigning selenium.webdriver.Chrome. Reassigning the
+    module attribute only affects code that looks up Chrome fresh off the
+    module afterwards — it does NOT affect code (like the cricheroes
+    package) that already imported/bound a direct reference to the class.
+    Patching the class's own __init__ method affects every reference to
+    that exact class object, regardless of how it was imported.
     """
-    from selenium import webdriver as _wd
+    from selenium.webdriver.chrome.webdriver import WebDriver as ChromeWebDriver
 
-    if getattr(_wd.Chrome, "_halton_patched", False):
+    if getattr(ChromeWebDriver, "_halton_patched", False):
         return  # only patch once per process
 
-    _OriginalChrome = _wd.Chrome
+    _original_init = ChromeWebDriver.__init__
 
-    class _CIChrome(_OriginalChrome):
-        def __init__(self, *args, **kwargs):
-            options = kwargs.get("options")
-            if options is not None:
-                for arg in (
-                    "--no-sandbox",
-                    "--disable-dev-shm-usage",
-                    "--disable-gpu",
-                    "--headless=new",
-                    "--window-size=1920,1080",
-                ):
-                    try:
-                        options.add_argument(arg)
-                    except Exception:
-                        pass
-            super().__init__(*args, **kwargs)
-            try:
-                self.implicitly_wait(15)  # let slow-loading tabs appear before failing
-            except Exception:
-                pass
+    def _patched_init(self, *args, **kwargs):
+        options = kwargs.get("options")
+        if options is not None:
+            for arg in (
+                "--no-sandbox",
+                "--disable-dev-shm-usage",
+                "--disable-gpu",
+                "--headless=new",
+                "--window-size=1920,1080",
+            ):
+                try:
+                    options.add_argument(arg)
+                except Exception:
+                    pass
+        _original_init(self, *args, **kwargs)
+        try:
+            self.implicitly_wait(15)  # let slow-loading tabs appear before failing
+        except Exception:
+            pass
 
-    _CIChrome._halton_patched = True
-    _wd.Chrome = _CIChrome
+    ChromeWebDriver.__init__ = _patched_init
+    ChromeWebDriver._halton_patched = True
 
 
 def load_config():
