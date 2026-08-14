@@ -1,0 +1,2 @@
+cricheroes==1.0.10
+selenium>=4.6
