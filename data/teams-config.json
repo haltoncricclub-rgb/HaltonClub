@@ -1,0 +1,15 @@
+{
+  "_instructions": "Set each team's 'group' to 'club' or 'academy'. Teams left as 'unassigned' are scraped but not shown on the website. Do not rename the 'id' or 'slug' fields — they must match CricHeroes exactly.",
+  "teams": [
+    { "id": "13709207", "slug": "HCC- Arctic titans", "name": "HCC Arctic Titans", "group": "club" },
+    { "id": "13236595", "slug": "HCC Maple Mavericks", "name": "HCC Maple Mavericks", "group": "club" },
+    { "id": "13224502", "slug": "HCC Northern Eagles", "name": "HCC Northern Eagles", "group": "club" },
+    { "id": "9885480",  "slug": "HCC Northern Raptors", "name": "HCC Northern Raptors", "group": "club" },
+    { "id": "7683382",  "slug": "HCC Northern Strikers", "name": "HCC Northern Strikers", "group": "club" },
+    { "id": "10849233", "slug": "HCC- Northern Knights", "name": "HCC Northern Knights", "group": "club" },
+    { "id": "13970315", "slug": "HCC Northstar Rangers", "name": "HCC Northstar Rangers", "group": "club" },
+    { "id": "6721101",  "slug": "HCC Icefield Jets", "name": "HCC Icefield Jets", "group": "club" },
+    { "id": "13488218", "slug": "HCC Northern Falcons", "name": "HCC Northern Falcons", "group": "club" },
+    { "id": "6740722",  "slug": "HCC All Stars", "name": "HCC All Stars", "group": "club" }
+  ]
+}
