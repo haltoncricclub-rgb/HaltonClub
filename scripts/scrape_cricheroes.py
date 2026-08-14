@@ -31,6 +31,52 @@ MAX_FIXTURES_PER_TEAM = 8
 MAX_LEADERBOARD_ENTRIES = 10
 MAX_RETRIES = 2
 RETRY_DELAY_SECONDS = 5
+DELAY_BETWEEN_TEAMS_SECONDS = 3
+
+
+def _patch_chrome_for_ci():
+    """
+    The `cricheroes` package creates its own Chrome session internally with
+    no way for us to pass options in. GitHub Actions runners need
+    --no-sandbox and --disable-dev-shm-usage or the Chrome renderer process
+    can crash on startup (SessionNotCreatedException). We also add an
+    implicit wait so a slow-loading tab doesn't immediately raise
+    NoSuchElementException before the page has finished rendering.
+
+    This patches selenium.webdriver.Chrome for this process only, so any
+    Chrome session created afterwards (including by the cricheroes package)
+    picks up these settings automatically.
+    """
+    from selenium import webdriver as _wd
+
+    if getattr(_wd.Chrome, "_halton_patched", False):
+        return  # only patch once per process
+
+    _OriginalChrome = _wd.Chrome
+
+    class _CIChrome(_OriginalChrome):
+        def __init__(self, *args, **kwargs):
+            options = kwargs.get("options")
+            if options is not None:
+                for arg in (
+                    "--no-sandbox",
+                    "--disable-dev-shm-usage",
+                    "--disable-gpu",
+                    "--headless=new",
+                    "--window-size=1920,1080",
+                ):
+                    try:
+                        options.add_argument(arg)
+                    except Exception:
+                        pass
+            super().__init__(*args, **kwargs)
+            try:
+                self.implicitly_wait(15)  # let slow-loading tabs appear before failing
+            except Exception:
+                pass
+
+    _CIChrome._halton_patched = True
+    _wd.Chrome = _CIChrome
 
 
 def load_config():
@@ -88,6 +134,8 @@ def scrape_team(team_id: str, slug: str):
 
 
 def main():
+    _patch_chrome_for_ci()
+
     teams = load_config()
     result = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -142,10 +190,11 @@ def main():
                 "leaderboard": existing.get("leaderboard", {"batting": [], "bowling": [], "fielding": []}),
             }
 
+        time.sleep(DELAY_BETWEEN_TEAMS_SECONDS)  # ease resource pressure on the CI runner
+
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_PATH, "w") as f:
         json.dump(result, f, indent=2)
-
     print(f"\nWrote {OUTPUT_PATH}")
     if not any_success:
         print("WARNING: every team failed to scrape this run.", file=sys.stderr)
