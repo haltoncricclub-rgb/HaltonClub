@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-15T11:40:59.010806+00:00",
+  "generated_at": "2026-08-16T11:43:10.076958+00:00",
   "teams": {
     "13709207": {
       "name": "HCC Arctic Titans",
       "group": "club",
       "ok": false,
-      "error": "NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"matchesTab\"]\"}\n  (Session info: chrome=151.0.7922.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n#0 0x55f12768182a <unknown>\n#1 0x55f126ff4fc9 <unknown>\n#2 0x55f12704a8a2 <unknown>\n#3 0x55f12704aaf1 <unknown>\n#4 0x55f127095fb4 <unknown>\n#5 0x55f1270931a3 <unknown>\n#6 0x55f12703dd32 <unknown>\n#7 0x55f12703ebb1 <unknown>\n#8 0x55f127646bb0 <unknown>\n#9 0x55f12764522a <unknown>\n#10 0x55f12762fc55 <unknown>\n#11 0x55f127645eea <unknown>\n#12 0x55f127617b50 <unknown>\n#13 0x55f12766d208 <unknown>\n#14 0x55f12766d3a5 <unknown>\n#15 0x55f1276803de <unknown>\n#16 0x7efe5669cb84 <unknown>\n#17 0x7efe56729d6c <unknown>\n",
+      "error": "NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"matchesTab\"]\"}\n  (Session info: chrome=151.0.7922.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n#0 0x55bcf079482a <unknown>\n#1 0x55bcf0107fc9 <unknown>\n#2 0x55bcf015d8a2 <unknown>\n#3 0x55bcf015daf1 <unknown>\n#4 0x55bcf01a8fb4 <unknown>\n#5 0x55bcf01a61a3 <unknown>\n#6 0x55bcf0150d32 <unknown>\n#7 0x55bcf0151bb1 <unknown>\n#8 0x55bcf0759bb0 <unknown>\n#9 0x55bcf075822a <unknown>\n#10 0x55bcf0742c55 <unknown>\n#11 0x55bcf0758eea <unknown>\n#12 0x55bcf072ab50 <unknown>\n#13 0x55bcf0780208 <unknown>\n#14 0x55bcf07803a5 <unknown>\n#15 0x55bcf07933de <unknown>\n#16 0x7fec67e9cb84 <unknown>\n#17 0x7fec67f29d6c <unknown>\n",
       "matches": [],
       "stats": [],
       "leaderboard": {
@@ -18,7 +18,7 @@
       "name": "HCC Maple Mavericks",
       "group": "club",
       "ok": false,
-      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x560611aef82a <unknown>\n#1 0x560611462fc9 <unknown>\n#2 0x5606114a83c9 <unknown>\n#3 0x5606114a3597 <unknown>\n#4 0x56061149d4de <unknown>\n#5 0x5606114ed3be <unknown>\n#6 0x5606114ecaac <unknown>\n#7 0x5606114abd32 <unknown>\n#8 0x5606114acbb1 <unknown>\n#9 0x560611ab4bb0 <unknown>\n#10 0x560611ab322a <unknown>\n#11 0x560611a9dc55 <unknown>\n#12 0x560611ab3eea <unknown>\n#13 0x560611a85b50 <unknown>\n#14 0x560611adb208 <unknown>\n#15 0x560611adb3a5 <unknown>\n#16 0x560611aee3de <unknown>\n#17 0x7f9171c9cb84 <unknown>\n#18 0x7f9171d29d6c <unknown>\n",
+      "error": "NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"matchesTab\"]\"}\n  (Session info: chrome=151.0.7922.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n#0 0x560a0381d82a <unknown>\n#1 0x560a03190fc9 <unknown>\n#2 0x560a031e68a2 <unknown>\n#3 0x560a031e6af1 <unknown>\n#4 0x560a03231fb4 <unknown>\n#5 0x560a0322f1a3 <unknown>\n#6 0x560a031d9d32 <unknown>\n#7 0x560a031dabb1 <unknown>\n#8 0x560a037e2bb0 <unknown>\n#9 0x560a037e122a <unknown>\n#10 0x560a037cbc55 <unknown>\n#11 0x560a037e1eea <unknown>\n#12 0x560a037b3b50 <unknown>\n#13 0x560a03809208 <unknown>\n#14 0x560a038093a5 <unknown>\n#15 0x560a0381c3de <unknown>\n#16 0x7f3964a9cb84 <unknown>\n#17 0x7f3964b29d6c <unknown>\n",
       "matches": [],
       "stats": [],
       "leaderboard": {
@@ -31,7 +31,7 @@
       "name": "HCC Northern Eagles",
       "group": "club",
       "ok": false,
-      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x559dcf6ed82a <unknown>\n#1 0x559dcf060fc9 <unknown>\n#2 0x559dcf0a63c9 <unknown>\n#3 0x559dcf0a1597 <unknown>\n#4 0x559dcf09b4de <unknown>\n#5 0x559dcf0eb3be <unknown>\n#6 0x559dcf0eaaac <unknown>\n#7 0x559dcf0a9d32 <unknown>\n#8 0x559dcf0aabb1 <unknown>\n#9 0x559dcf6b2bb0 <unknown>\n#10 0x559dcf6b122a <unknown>\n#11 0x559dcf69bc55 <unknown>\n#12 0x559dcf6b1eea <unknown>\n#13 0x559dcf683b50 <unknown>\n#14 0x559dcf6d9208 <unknown>\n#15 0x559dcf6d93a5 <unknown>\n#16 0x559dcf6ec3de <unknown>\n#17 0x7f1ac4a9cb84 <unknown>\n#18 0x7f1ac4b29d6c <unknown>\n",
+      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x5599fef2482a <unknown>\n#1 0x5599fe897fc9 <unknown>\n#2 0x5599fe8dd3c9 <unknown>\n#3 0x5599fe8d8597 <unknown>\n#4 0x5599fe8d24de <unknown>\n#5 0x5599fe9223be <unknown>\n#6 0x5599fe921aac <unknown>\n#7 0x5599fe8e0d32 <unknown>\n#8 0x5599fe8e1bb1 <unknown>\n#9 0x5599feee9bb0 <unknown>\n#10 0x5599feee822a <unknown>\n#11 0x5599feed2c55 <unknown>\n#12 0x5599feee8eea <unknown>\n#13 0x5599feebab50 <unknown>\n#14 0x5599fef10208 <unknown>\n#15 0x5599fef103a5 <unknown>\n#16 0x5599fef233de <unknown>\n#17 0x7f1b2389cb84 <unknown>\n#18 0x7f1b23929d6c <unknown>\n",
       "matches": [],
       "stats": [],
       "leaderboard": {
@@ -44,7 +44,7 @@
       "name": "HCC Northern Raptors",
       "group": "club",
       "ok": false,
-      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x558ccf30a82a <unknown>\n#1 0x558ccec7dfc9 <unknown>\n#2 0x558ccecc33c9 <unknown>\n#3 0x558ccecbe597 <unknown>\n#4 0x558ccecb84de <unknown>\n#5 0x558cced083be <unknown>\n#6 0x558cced07aac <unknown>\n#7 0x558ccecc6d32 <unknown>\n#8 0x558ccecc7bb1 <unknown>\n#9 0x558ccf2cfbb0 <unknown>\n#10 0x558ccf2ce22a <unknown>\n#11 0x558ccf2b8c55 <unknown>\n#12 0x558ccf2ceeea <unknown>\n#13 0x558ccf2a0b50 <unknown>\n#14 0x558ccf2f6208 <unknown>\n#15 0x558ccf2f63a5 <unknown>\n#16 0x558ccf3093de <unknown>\n#17 0x7fa3be69cb84 <unknown>\n#18 0x7fa3be729d6c <unknown>\n",
+      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x5571e626782a <unknown>\n#1 0x5571e5bdafc9 <unknown>\n#2 0x5571e5c203c9 <unknown>\n#3 0x5571e5c1b597 <unknown>\n#4 0x5571e5c154de <unknown>\n#5 0x5571e5c653be <unknown>\n#6 0x5571e5c64aac <unknown>\n#7 0x5571e5c23d32 <unknown>\n#8 0x5571e5c24bb1 <unknown>\n#9 0x5571e622cbb0 <unknown>\n#10 0x5571e622b22a <unknown>\n#11 0x5571e6215c55 <unknown>\n#12 0x5571e622beea <unknown>\n#13 0x5571e61fdb50 <unknown>\n#14 0x5571e6253208 <unknown>\n#15 0x5571e62533a5 <unknown>\n#16 0x5571e62663de <unknown>\n#17 0x7f3250c9cb84 <unknown>\n#18 0x7f3250d29d6c <unknown>\n",
       "matches": [],
       "stats": [],
       "leaderboard": {
@@ -57,7 +57,7 @@
       "name": "HCC Northern Strikers",
       "group": "club",
       "ok": false,
-      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x56010513d82a <unknown>\n#1 0x560104ab0fc9 <unknown>\n#2 0x560104af63c9 <unknown>\n#3 0x560104af1597 <unknown>\n#4 0x560104aeb4de <unknown>\n#5 0x560104b3b3be <unknown>\n#6 0x560104b3aaac <unknown>\n#7 0x560104af9d32 <unknown>\n#8 0x560104afabb1 <unknown>\n#9 0x560105102bb0 <unknown>\n#10 0x56010510122a <unknown>\n#11 0x5601050ebc55 <unknown>\n#12 0x560105101eea <unknown>\n#13 0x5601050d3b50 <unknown>\n#14 0x560105129208 <unknown>\n#15 0x5601051293a5 <unknown>\n#16 0x56010513c3de <unknown>\n#17 0x7f0ebfe9cb84 <unknown>\n#18 0x7f0ebff29d6c <unknown>\n",
+      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x55f96365e82a <unknown>\n#1 0x55f962fd1fc9 <unknown>\n#2 0x55f9630173c9 <unknown>\n#3 0x55f963012597 <unknown>\n#4 0x55f96300c4de <unknown>\n#5 0x55f96305c3be <unknown>\n#6 0x55f96305baac <unknown>\n#7 0x55f96301ad32 <unknown>\n#8 0x55f96301bbb1 <unknown>\n#9 0x55f963623bb0 <unknown>\n#10 0x55f96362222a <unknown>\n#11 0x55f96360cc55 <unknown>\n#12 0x55f963622eea <unknown>\n#13 0x55f9635f4b50 <unknown>\n#14 0x55f96364a208 <unknown>\n#15 0x55f96364a3a5 <unknown>\n#16 0x55f96365d3de <unknown>\n#17 0x7fcdf7c9cb84 <unknown>\n#18 0x7fcdf7d29d6c <unknown>\n",
       "matches": [],
       "stats": [],
       "leaderboard": {
@@ -70,7 +70,7 @@
       "name": "HCC Northern Knights",
       "group": "club",
       "ok": false,
-      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x56185c75b82a <unknown>\n#1 0x56185c0cefc9 <unknown>\n#2 0x56185c1143c9 <unknown>\n#3 0x56185c10f597 <unknown>\n#4 0x56185c1094de <unknown>\n#5 0x56185c1593be <unknown>\n#6 0x56185c158aac <unknown>\n#7 0x56185c117d32 <unknown>\n#8 0x56185c118bb1 <unknown>\n#9 0x56185c720bb0 <unknown>\n#10 0x56185c71f22a <unknown>\n#11 0x56185c709c55 <unknown>\n#12 0x56185c71feea <unknown>\n#13 0x56185c6f1b50 <unknown>\n#14 0x56185c747208 <unknown>\n#15 0x56185c7473a5 <unknown>\n#16 0x56185c75a3de <unknown>\n#17 0x7f799889cb84 <unknown>\n#18 0x7f7998929d6c <unknown>\n",
+      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x5632f65b182a <unknown>\n#1 0x5632f5f24fc9 <unknown>\n#2 0x5632f5f6a3c9 <unknown>\n#3 0x5632f5f65597 <unknown>\n#4 0x5632f5f5f4de <unknown>\n#5 0x5632f5faf3be <unknown>\n#6 0x5632f5faeaac <unknown>\n#7 0x5632f5f6dd32 <unknown>\n#8 0x5632f5f6ebb1 <unknown>\n#9 0x5632f6576bb0 <unknown>\n#10 0x5632f657522a <unknown>\n#11 0x5632f655fc55 <unknown>\n#12 0x5632f6575eea <unknown>\n#13 0x5632f6547b50 <unknown>\n#14 0x5632f659d208 <unknown>\n#15 0x5632f659d3a5 <unknown>\n#16 0x5632f65b03de <unknown>\n#17 0x7fb0c6a9cb84 <unknown>\n#18 0x7fb0c6b29d6c <unknown>\n",
       "matches": [],
       "stats": [],
       "leaderboard": {
@@ -83,7 +83,7 @@
       "name": "HCC Northstar Rangers",
       "group": "club",
       "ok": false,
-      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x55b069f4282a <unknown>\n#1 0x55b0698b5fc9 <unknown>\n#2 0x55b0698fb3c9 <unknown>\n#3 0x55b0698f6597 <unknown>\n#4 0x55b0698f04de <unknown>\n#5 0x55b0699403be <unknown>\n#6 0x55b06993faac <unknown>\n#7 0x55b0698fed32 <unknown>\n#8 0x55b0698ffbb1 <unknown>\n#9 0x55b069f07bb0 <unknown>\n#10 0x55b069f0622a <unknown>\n#11 0x55b069ef0c55 <unknown>\n#12 0x55b069f06eea <unknown>\n#13 0x55b069ed8b50 <unknown>\n#14 0x55b069f2e208 <unknown>\n#15 0x55b069f2e3a5 <unknown>\n#16 0x55b069f413de <unknown>\n#17 0x7f529b69cb84 <unknown>\n#18 0x7f529b729d6c <unknown>\n",
+      "error": "NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"matchesTab\"]\"}\n  (Session info: chrome=151.0.7922.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n#0 0x55f3e8a4882a <unknown>\n#1 0x55f3e83bbfc9 <unknown>\n#2 0x55f3e84118a2 <unknown>\n#3 0x55f3e8411af1 <unknown>\n#4 0x55f3e845cfb4 <unknown>\n#5 0x55f3e845a1a3 <unknown>\n#6 0x55f3e8404d32 <unknown>\n#7 0x55f3e8405bb1 <unknown>\n#8 0x55f3e8a0dbb0 <unknown>\n#9 0x55f3e8a0c22a <unknown>\n#10 0x55f3e89f6c55 <unknown>\n#11 0x55f3e8a0ceea <unknown>\n#12 0x55f3e89deb50 <unknown>\n#13 0x55f3e8a34208 <unknown>\n#14 0x55f3e8a343a5 <unknown>\n#15 0x55f3e8a473de <unknown>\n#16 0x7fd6cec9cb84 <unknown>\n#17 0x7fd6ced29d6c <unknown>\n",
       "matches": [],
       "stats": [],
       "leaderboard": {
@@ -96,7 +96,7 @@
       "name": "HCC Icefield Jets",
       "group": "club",
       "ok": false,
-      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x560c7837982a <unknown>\n#1 0x560c77cecfc9 <unknown>\n#2 0x560c77d323c9 <unknown>\n#3 0x560c77d2d597 <unknown>\n#4 0x560c77d274de <unknown>\n#5 0x560c77d773be <unknown>\n#6 0x560c77d76aac <unknown>\n#7 0x560c77d35d32 <unknown>\n#8 0x560c77d36bb1 <unknown>\n#9 0x560c7833ebb0 <unknown>\n#10 0x560c7833d22a <unknown>\n#11 0x560c78327c55 <unknown>\n#12 0x560c7833deea <unknown>\n#13 0x560c7830fb50 <unknown>\n#14 0x560c78365208 <unknown>\n#15 0x560c783653a5 <unknown>\n#16 0x560c783783de <unknown>\n#17 0x7f385989cb84 <unknown>\n#18 0x7f3859929d6c <unknown>\n",
+      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x557ffc19782a <unknown>\n#1 0x557ffbb0afc9 <unknown>\n#2 0x557ffbb503c9 <unknown>\n#3 0x557ffbb4b597 <unknown>\n#4 0x557ffbb454de <unknown>\n#5 0x557ffbb953be <unknown>\n#6 0x557ffbb94aac <unknown>\n#7 0x557ffbb53d32 <unknown>\n#8 0x557ffbb54bb1 <unknown>\n#9 0x557ffc15cbb0 <unknown>\n#10 0x557ffc15b22a <unknown>\n#11 0x557ffc145c55 <unknown>\n#12 0x557ffc15beea <unknown>\n#13 0x557ffc12db50 <unknown>\n#14 0x557ffc183208 <unknown>\n#15 0x557ffc1833a5 <unknown>\n#16 0x557ffc1963de <unknown>\n#17 0x7fb67529cb84 <unknown>\n#18 0x7fb675329d6c <unknown>\n",
       "matches": [],
       "stats": [],
       "leaderboard": {
@@ -109,7 +109,7 @@
       "name": "HCC Northern Falcons",
       "group": "club",
       "ok": false,
-      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x55f60f57f82a <unknown>\n#1 0x55f60eef2fc9 <unknown>\n#2 0x55f60ef383c9 <unknown>\n#3 0x55f60ef33597 <unknown>\n#4 0x55f60ef2d4de <unknown>\n#5 0x55f60ef7d3be <unknown>\n#6 0x55f60ef7caac <unknown>\n#7 0x55f60ef3bd32 <unknown>\n#8 0x55f60ef3cbb1 <unknown>\n#9 0x55f60f544bb0 <unknown>\n#10 0x55f60f54322a <unknown>\n#11 0x55f60f52dc55 <unknown>\n#12 0x55f60f543eea <unknown>\n#13 0x55f60f515b50 <unknown>\n#14 0x55f60f56b208 <unknown>\n#15 0x55f60f56b3a5 <unknown>\n#16 0x55f60f57e3de <unknown>\n#17 0x7f3310a9cb84 <unknown>\n#18 0x7f3310b29d6c <unknown>\n",
+      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x558b889eb82a <unknown>\n#1 0x558b8835efc9 <unknown>\n#2 0x558b883a43c9 <unknown>\n#3 0x558b8839f597 <unknown>\n#4 0x558b883994de <unknown>\n#5 0x558b883e93be <unknown>\n#6 0x558b883e8aac <unknown>\n#7 0x558b883a7d32 <unknown>\n#8 0x558b883a8bb1 <unknown>\n#9 0x558b889b0bb0 <unknown>\n#10 0x558b889af22a <unknown>\n#11 0x558b88999c55 <unknown>\n#12 0x558b889afeea <unknown>\n#13 0x558b88981b50 <unknown>\n#14 0x558b889d7208 <unknown>\n#15 0x558b889d73a5 <unknown>\n#16 0x558b889ea3de <unknown>\n#17 0x7fe2e9a9cb84 <unknown>\n#18 0x7fe2e9b29d6c <unknown>\n",
       "matches": [],
       "stats": [],
       "leaderboard": {
@@ -122,7 +122,7 @@
       "name": "HCC All Stars",
       "group": "club",
       "ok": false,
-      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x559eefc1782a <unknown>\n#1 0x559eef58afc9 <unknown>\n#2 0x559eef5d03c9 <unknown>\n#3 0x559eef5cb597 <unknown>\n#4 0x559eef5c54de <unknown>\n#5 0x559eef6153be <unknown>\n#6 0x559eef614aac <unknown>\n#7 0x559eef5d3d32 <unknown>\n#8 0x559eef5d4bb1 <unknown>\n#9 0x559eefbdcbb0 <unknown>\n#10 0x559eefbdb22a <unknown>\n#11 0x559eefbc5c55 <unknown>\n#12 0x559eefbdbeea <unknown>\n#13 0x559eefbadb50 <unknown>\n#14 0x559eefc03208 <unknown>\n#15 0x559eefc033a5 <unknown>\n#16 0x559eefc163de <unknown>\n#17 0x7f6dbfe9cb84 <unknown>\n#18 0x7f6dbff29d6c <unknown>\n",
+      "error": "SessionNotCreatedException: Message: session not created\nfrom disconnected: unable to connect to renderer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x559aef65882a <unknown>\n#1 0x559aeefcbfc9 <unknown>\n#2 0x559aef0113c9 <unknown>\n#3 0x559aef00c597 <unknown>\n#4 0x559aef0064de <unknown>\n#5 0x559aef0563be <unknown>\n#6 0x559aef055aac <unknown>\n#7 0x559aef014d32 <unknown>\n#8 0x559aef015bb1 <unknown>\n#9 0x559aef61dbb0 <unknown>\n#10 0x559aef61c22a <unknown>\n#11 0x559aef606c55 <unknown>\n#12 0x559aef61ceea <unknown>\n#13 0x559aef5eeb50 <unknown>\n#14 0x559aef644208 <unknown>\n#15 0x559aef6443a5 <unknown>\n#16 0x559aef6573de <unknown>\n#17 0x7f04aee9cb84 <unknown>\n#18 0x7f04aef29d6c <unknown>\n",
       "matches": [],
       "stats": [],
       "leaderboard": {
