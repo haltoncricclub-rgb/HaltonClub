@@ -1,0 +1,23 @@
+{
+  "_instructions": "CricClubs team pages for both Club (adult) and Academy (youth). Add entries below the same way for any team — 'key' just needs to be unique, 'group' should be 'club' or 'academy'.",
+  "teams": [
+    {
+      "key": "u11_tdca",
+      "name": "Halton Cricket Academy U11 (TDCA)",
+      "group": "academy",
+      "url": "https://www.cricclubs.com/TDCA/viewTeam.do?teamId=4496&clubId=1809"
+    },
+    {
+      "key": "u13_canada_unity_cup",
+      "name": "Halton Cricket Academy U13 (Canada Unity Cup)",
+      "group": "academy",
+      "url": "https://cricclubs.com/CanadaUnityCup/viewTeam.do?teamId=192&league=17&clubId=1114851"
+    },
+    {
+      "key": "mcpl_adult",
+      "name": "Halton Cricket Club (Mississauga Cricket Premier League)",
+      "group": "club",
+      "url": "https://cricclubs.com/MississaugaCricketPremierLeague/viewTeam.do?teamId=627&league=103&clubId=10622"
+    }
+  ]
+}

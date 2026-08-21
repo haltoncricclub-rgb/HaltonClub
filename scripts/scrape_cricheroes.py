@@ -37,11 +37,21 @@ DELAY_BETWEEN_TEAMS_SECONDS = 3
 def _patch_chrome_for_ci():
     """
     The `cricheroes` package creates its own Chrome session internally with
-    no way for us to pass options in. GitHub Actions runners need
-    --no-sandbox and --disable-dev-shm-usage or the Chrome renderer process
-    can crash on startup (SessionNotCreatedException). We also add an
-    implicit wait so a slow-loading tab doesn't immediately raise
-    NoSuchElementException before the page has finished rendering.
+    no way for us to pass options in. This patches it to:
+
+    1. Add --no-sandbox / --disable-dev-shm-usage so Chrome doesn't crash on
+       startup in constrained CI environments (SessionNotCreatedException).
+    2. Hide the automation signals that Cloudflare's bot-check specifically
+       looks for. CricHeroes puts every visitor through a Cloudflare
+       "Performing security verification" interstitial before showing the
+       real page (confirmed by screenshot). A normal browser clears this
+       automatically after a few seconds; Selenium's default Chrome session
+       exposes itself as automated (e.g. navigator.webdriver = true) and
+       gets stuck failing that check forever — which is why the script was
+       finding a blank/challenge page with no "matchesTab" element on it,
+       identically every time, regardless of which machine/IP it ran from.
+    3. Wait long enough, after the automation signals are hidden, for
+       Cloudflare's challenge to actually clear before the page is used.
 
     IMPORTANT: this patches the __init__ method directly on the
     selenium.webdriver.chrome.webdriver.WebDriver class object itself,
@@ -68,14 +78,44 @@ def _patch_chrome_for_ci():
                 "--disable-gpu",
                 "--headless=new",
                 "--window-size=1920,1080",
+                # Anti-automation-fingerprint flags (Cloudflare bot-check evasion):
+                "--disable-blink-features=AutomationControlled",
             ):
                 try:
                     options.add_argument(arg)
                 except Exception:
                     pass
+            # These two experimental options remove further "this is an
+            # automated browser" tells that Cloudflare and similar services
+            # check for.
+            try:
+                options.add_experimental_option("excludeSwitches", ["enable-automation"])
+                options.add_experimental_option("useAutomationExtension", False)
+            except Exception:
+                pass
+
         _original_init(self, *args, **kwargs)
+
+        # Hide navigator.webdriver, the single most common automation
+        # tell — this must run before any real page loads, so we do it
+        # immediately after the session starts.
         try:
-            self.implicitly_wait(15)  # let slow-loading tabs appear before failing
+            self.execute_cdp_cmd(
+                "Page.addScriptToEvaluateOnNewDocument",
+                {
+                    "source": """
+                        Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+                        window.chrome = { runtime: {} };
+                        Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});
+                        Object.defineProperty(navigator, 'languages', {get: () => ['en-US', 'en']});
+                    """
+                },
+            )
+        except Exception:
+            pass
+
+        try:
+            self.implicitly_wait(25)  # let a slow-loading tab (or a clearing Cloudflare check) appear before failing
         except Exception:
             pass
 

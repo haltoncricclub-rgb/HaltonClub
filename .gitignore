@@ -1,5 +1,6 @@
 # Never commit locally-saved login sessions — your repo is public.
 data/.cricheroes-session-cookies.json
+data/.cricclubs-session-cookies.json
 
 # Python cache
 __pycache__/

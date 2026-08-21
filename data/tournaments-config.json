@@ -1,0 +1,11 @@
+{
+  "_instructions": "One entry per league/tournament your club plays in. Find each by clicking the league name (not the match) from a team's Matches page on CricHeroes. Copy the tournament id and slug from the URL, e.g. https://cricheroes.com/tournament/2151617/2026-hammer-t15-blast/leaderboard -> id: 2151617, slug: 2026-hammer-t15-blast",
+  "tournaments": [
+    { "id": "2151617", "slug": "2026-hammer-t15-blast", "name": "2026 HAMMER T15 BLAST" },
+    { "id": "2037363", "slug": "mountain-premiere-league", "name": "Mountain Premiere League" },
+    { "id": "2021140", "slug": "2026-premier-division", "name": "2026 PREMIER DIVISION" },
+    { "id": "2021179", "slug": "2026-hdcl-t25-premier-win-sports-division", "name": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION" },
+    { "id": "2024251", "slug": "hammer-t20", "name": "Hammer T20" },
+    { "id": "2110316", "slug": "mountain-premier-league-weekdays", "name": "Mountain Premier League (Weekdays)" }
+  ]
+}
