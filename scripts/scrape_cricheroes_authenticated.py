@@ -54,9 +54,15 @@ OUTPUT_PATH = ROOT / "data" / "cricheroes-data.json"
 COOKIES_PATH = ROOT / "data" / ".cricheroes-session-cookies.json"  # LOCAL ONLY — see .gitignore
 
 LOGIN_URL = "https://cricheroes.com/"
-MAX_MATCHES_PER_TEAM = 8
+MAX_MATCHES_PER_TEAM = 60  # generous safety cap, not a real per-team limit — a full season shouldn't hit this
 MAX_LEADERBOARD_ENTRIES = 10
 PAGE_LOAD_PAUSE_SECONDS = 4  # let the page finish rendering after navigation
+
+# CricHeroes' Batting/Bowling/Fielding tabs have a season/year filter that
+# defaults to something other than the current season (confirmed: it was
+# silently including a previous season's stats for at least one team,
+# quietly inflating that team's numbers). Update this every year.
+CURRENT_SEASON_YEAR = "2026"
 
 
 def load_config():
@@ -527,6 +533,162 @@ def click_leaderboard_tab(driver, tab_label: str) -> bool:
     return False
 
 
+def select_current_season(driver, year_text=CURRENT_SEASON_YEAR):
+    """
+    Sets the year filter on the leaderboard page to the current season.
+    Without this, CricHeroes silently shows stats mixed across every year
+    the team has ever played (confirmed real-world impact: one team's
+    numbers were inflated by a previous season's stats).
+
+    Confirmed real UI flow (via screenshot of the live page):
+        1. A filter icon (top-right of the tab bar) opens a "Filter" modal
+        2. That modal has its own tabs: Overs / Ball Type / Match Type /
+           Year / Tournaments / Tournament Category
+        3. The Year tab shows a checkbox per year (2026, 2025, 2024, ...)
+        4. Checking a year and clicking "Apply" applies the filter
+
+    This is deliberately staged and VERIFIED at each step — an earlier
+    version of this function searched the whole page for anything
+    containing "2026" and ended up clicking the wrong element, which
+    caused a blank-page failure. This version only proceeds past opening
+    the filter if the actual "Filter" modal heading is confirmed on
+    screen, and stops cleanly (rather than guessing further) if any step
+    doesn't find what it expects.
+
+    Returns (success: bool, options_seen: list[str]) — options_seen is
+    logged either way so a run's output shows exactly what years were
+    actually on offer, letting us verify (or fix) this on the next run
+    rather than silently trusting it worked.
+    """
+    from selenium.webdriver.common.by import By
+
+    def find_visible(xpath):
+        for el in driver.find_elements(By.XPATH, xpath):
+            if el.is_displayed():
+                return el
+        return None
+
+    def click(el):
+        try:
+            el.click()
+        except Exception:
+            driver.execute_script("arguments[0].click();", el)
+
+    # Step 1: open the filter modal via its icon. Confirmed via inspecting
+    # the real page: it's an <img alt="filter icon" ...> — a stable,
+    # semantic attribute rather than an auto-generated CSS-module class
+    # name, so this should be reliable. Kept as a list (with the icon
+    # match first) in case CricHeroes changes this, plus the same
+    # verification step regardless — only trust a click if the actual
+    # "Filter" modal heading appears afterward.
+    candidate_xpaths = [
+        "//img[@alt='filter icon']",
+        "//*[contains(translate(@class,'FILTER','filter'),'filter')]",
+        "//*[contains(translate(@aria-label,'FILTER','filter'),'filter')]",
+        "//*[contains(translate(@title,'FILTER','filter'),'filter')]",
+    ]
+    opened = False
+    for xp in candidate_xpaths:
+        el = find_visible(xp)
+        if el:
+            click(el)
+            time.sleep(1)
+            if find_visible("//*[normalize-space(text())='Filter']"):
+                opened = True
+                break
+    if not opened:
+        return False, []
+
+    # Step 2: switch to the Year tab within the modal.
+    year_tab = find_visible("//*[normalize-space(text())='YEAR' or normalize-space(text())='Year']")
+    if year_tab:
+        click(year_tab)
+        time.sleep(1)
+
+    # Collect the years actually on offer, for diagnostics either way.
+    lines = extract_text_blocks(driver.page_source)
+    options_seen = [ln for ln in lines if re.match(r"^(19|20)\d{2}$", ln)]
+
+    # Step 3: check the target year — but only click it if it isn't
+    # already checked. This matters because we call this function again
+    # after switching tabs (BAT -> BOWL -> FIELD) in case the filter
+    # resets between them. If it DOESN'T reset and is still checked from
+    # before, a plain click would toggle it back OFF right before we read
+    # that tab's data — silently reverting to unfiltered/all-time stats.
+    # That's a real, confirmed-plausible explanation for inflated numbers
+    # appearing on later tabs (Fielding) after Batting looked correct.
+    from selenium.webdriver.common.by import By as _By
+
+    target = find_visible(f"//*[normalize-space(text())='{year_text}']")
+    if not target:
+        return False, options_seen
+
+    already_checked = False
+    try:
+        # Look for a real checkbox input near this year's label/row —
+        # try a few reasonable DOM relationships since we don't know the
+        # exact nesting.
+        checkbox_xpaths = [
+            f"//*[normalize-space(text())='{year_text}']/preceding-sibling::input[@type='checkbox'][1]",
+            f"//*[normalize-space(text())='{year_text}']/following-sibling::input[@type='checkbox'][1]",
+            f"//*[normalize-space(text())='{year_text}']/ancestor::*[self::div or self::label][1]//input[@type='checkbox']",
+        ]
+        for xp in checkbox_xpaths:
+            boxes = driver.find_elements(_By.XPATH, xp)
+            if boxes:
+                already_checked = boxes[0].is_selected()
+                break
+    except Exception:
+        pass
+
+    if not already_checked:
+        click(target)
+        time.sleep(0.5)
+        print(f"    (year filter: '{year_text}' was not yet checked, clicked it)")
+    else:
+        print(f"    (year filter: '{year_text}' was already checked, skipped re-clicking)")
+
+    # Step 4: click Apply.
+    apply_btn = find_visible("//*[normalize-space(text())='Apply']")
+    if not apply_btn:
+        return False, options_seen
+    click(apply_btn)
+    time.sleep(2)
+
+    return True, options_seen
+
+
+def click_load_more_repeatedly(driver, max_clicks=15):
+    """
+    CricHeroes' Matches tab only renders a handful of matches by default,
+    with a "Load More" control to reveal the rest. Without this, we were
+    silently missing real matches (confirmed: a team with 12 real matches
+    only showed 8). Clicks it repeatedly until it's gone, stops appearing,
+    or the safety cap is hit — whichever comes first.
+    """
+    from selenium.webdriver.common.by import By
+
+    clicks = 0
+    while clicks < max_clicks:
+        found = False
+        for xp in ["//*[normalize-space(text())='Load More']", "//*[normalize-space(text())='LOAD MORE']"]:
+            for el in driver.find_elements(By.XPATH, xp):
+                if el.is_displayed():
+                    try:
+                        el.click()
+                    except Exception:
+                        driver.execute_script("arguments[0].click();", el)
+                    time.sleep(2)
+                    clicks += 1
+                    found = True
+                    break
+            if found:
+                break
+        if not found:
+            break
+    return clicks
+
+
 def scrape_team(driver, team: dict):
     team_id = team["id"]
     slug = team["slug"].strip().replace(" ", "-")
@@ -544,9 +706,21 @@ def scrape_team(driver, team: dict):
     driver.get(matches_url)
     time.sleep(PAGE_LOAD_PAUSE_SECONDS)
 
+    matches_season_ok, matches_season_options = select_current_season(driver)
+    if matches_season_ok:
+        print(f"  applied {CURRENT_SEASON_YEAR} filter on Matches tab (saw options: {matches_season_options})")
+    else:
+        print(f"  WARNING: could not apply {CURRENT_SEASON_YEAR} filter on Matches tab"
+              f" — match list may include other seasons! (saw options: {matches_season_options})")
+
+    load_more_clicks = click_load_more_repeatedly(driver)
+    if load_more_clicks:
+        print(f"  clicked 'Load More' {load_more_clicks} time(s) to reveal additional matches")
+
     lines = extract_text_blocks(driver.page_source)
     matches_detailed = parse_matches_from_lines(lines)
     result["matches_detailed"] = matches_detailed
+    result["matches_season_filter_applied"] = matches_season_ok
 
     leaderboard_url = f"{base_url}/leaderboard"
     print(f"  visiting {leaderboard_url}")
@@ -555,6 +729,15 @@ def scrape_team(driver, team: dict):
         driver.get(leaderboard_url)
         time.sleep(PAGE_LOAD_PAUSE_SECONDS)
 
+        season_ok, season_options = select_current_season(driver)
+        result["season_filter_applied"] = season_ok
+        result["season_filter_options_seen"] = season_options
+        if season_ok:
+            print(f"  applied {CURRENT_SEASON_YEAR} season filter (saw options: {season_options})")
+        else:
+            print(f"  WARNING: could not find/select a {CURRENT_SEASON_YEAR} season filter"
+                  f" — stats may include other seasons! (saw options: {season_options})")
+
         # BAT tab is the default view — capture it first.
         lb_lines = extract_text_blocks(driver.page_source)
         batting = parse_batting_leaderboard(lb_lines)
@@ -562,6 +745,7 @@ def scrape_team(driver, team: dict):
 
         if click_leaderboard_tab(driver, "BOWL"):
             time.sleep(2)
+            select_current_season(driver)  # re-apply in case switching tabs reset the filter
             bowl_lines = extract_text_blocks(driver.page_source)
             bowling = parse_bowling_leaderboard(bowl_lines)
             result["leaderboard_detailed"]["bowling"] = bowling
@@ -570,6 +754,7 @@ def scrape_team(driver, team: dict):
 
         if click_leaderboard_tab(driver, "FIELD"):
             time.sleep(2)
+            select_current_season(driver)
             field_lines = extract_text_blocks(driver.page_source)
             fielding = parse_fielding_leaderboard(field_lines)
             result["leaderboard_detailed"]["fielding"] = fielding

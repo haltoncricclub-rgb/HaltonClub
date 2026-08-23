@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T17:29:01.827110+00:00",
+  "generated_at": "2026-08-23T17:44:11.784477+00:00",
   "mode": "authenticated-manual",
   "teams": {
     "13709207": {
@@ -2184,101 +2184,24 @@
         ],
         "fielding": [
           {
-            "player": "Jaspreet Singh",
-            "matches": "28",
-            "dismissals": "20",
-            "catches": "12",
-            "run_outs": "1",
-            "catch_and_bowled": "0",
-            "caught_behind": "7",
-            "stumpings": "0",
-            "assisted_run_outs": "1"
-          },
-          {
             "player": "Gurbhej Singh",
-            "matches": "28",
-            "dismissals": "19",
-            "catches": "15",
-            "run_outs": "2",
-            "catch_and_bowled": "2",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "3"
-          },
-          {
-            "player": "Nirav Laheri",
-            "matches": "21",
-            "dismissals": "15",
-            "catches": "13",
-            "run_outs": "2",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Neel Patel",
-            "matches": "18",
-            "dismissals": "11",
-            "catches": "4",
-            "run_outs": "2",
-            "catch_and_bowled": "1",
-            "caught_behind": "4",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Akhlaq Waris",
             "matches": "8",
             "dismissals": "9",
             "catches": "6",
-            "run_outs": "0",
-            "catch_and_bowled": "3",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Sarthak Khosla",
-            "matches": "9",
-            "dismissals": "9",
-            "catches": "7",
             "run_outs": "1",
-            "catch_and_bowled": "1",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "1"
-          },
-          {
-            "player": "Nikunj Dobariya",
-            "matches": "17",
-            "dismissals": "9",
-            "catches": "8",
-            "run_outs": "0",
             "catch_and_bowled": "2",
             "caught_behind": "0",
             "stumpings": "0",
-            "assisted_run_outs": "0"
+            "assisted_run_outs": "2"
           },
           {
-            "player": "Gursewak Pandher",
+            "player": "Neel Patel",
             "matches": "6",
-            "dismissals": "8",
-            "catches": "8",
-            "run_outs": "0",
+            "dismissals": "6",
+            "catches": "1",
+            "run_outs": "1",
             "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Sagarkumar Patel",
-            "matches": "6",
-            "dismissals": "7",
-            "catches": "4",
-            "run_outs": "0",
-            "catch_and_bowled": "0",
-            "caught_behind": "3",
+            "caught_behind": "4",
             "stumpings": "0",
             "assisted_run_outs": "0"
           },
@@ -2290,6 +2213,83 @@
             "run_outs": "0",
             "catch_and_bowled": "0",
             "caught_behind": "1",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Gursewak Pandher",
+            "matches": "5",
+            "dismissals": "5",
+            "catches": "5",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Naveen Panghal",
+            "matches": "5",
+            "dismissals": "5",
+            "catches": "2",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "3",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Harsh Singh",
+            "matches": "1",
+            "dismissals": "3",
+            "catches": "2",
+            "run_outs": "0",
+            "catch_and_bowled": "1",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Dhaval Bhatt",
+            "matches": "6",
+            "dismissals": "3",
+            "catches": "3",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Jaspreet Singh",
+            "matches": "8",
+            "dismissals": "3",
+            "catches": "2",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Nirav Laheri",
+            "matches": "8",
+            "dismissals": "3",
+            "catches": "2",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Sukhdeep",
+            "matches": "1",
+            "dismissals": "2",
+            "catches": "2",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
             "stumpings": "0",
             "assisted_run_outs": "0"
           }
@@ -2402,54 +2402,54 @@
         ],
         "fielding": [
           {
-            "player": "Jaspreet Singh",
-            "team": "HCC Northern Raptors",
-            "stat": "12 catches, 20 dismissals"
-          },
-          {
             "player": "Gurbhej Singh",
-            "team": "HCC Northern Raptors",
-            "stat": "15 catches, 19 dismissals"
-          },
-          {
-            "player": "Nirav Laheri",
-            "team": "HCC Northern Raptors",
-            "stat": "13 catches, 15 dismissals"
-          },
-          {
-            "player": "Neel Patel",
-            "team": "HCC Northern Raptors",
-            "stat": "4 catches, 11 dismissals"
-          },
-          {
-            "player": "Akhlaq Waris",
             "team": "HCC Northern Raptors",
             "stat": "6 catches, 9 dismissals"
           },
           {
-            "player": "Sarthak Khosla",
+            "player": "Neel Patel",
             "team": "HCC Northern Raptors",
-            "stat": "7 catches, 9 dismissals"
-          },
-          {
-            "player": "Nikunj Dobariya",
-            "team": "HCC Northern Raptors",
-            "stat": "8 catches, 9 dismissals"
-          },
-          {
-            "player": "Gursewak Pandher",
-            "team": "HCC Northern Raptors",
-            "stat": "8 catches, 8 dismissals"
-          },
-          {
-            "player": "Sagarkumar Patel",
-            "team": "HCC Northern Raptors",
-            "stat": "4 catches, 7 dismissals"
+            "stat": "1 catches, 6 dismissals"
           },
           {
             "player": "Saurabh Jha",
             "team": "HCC Northern Raptors",
             "stat": "5 catches, 6 dismissals"
+          },
+          {
+            "player": "Gursewak Pandher",
+            "team": "HCC Northern Raptors",
+            "stat": "5 catches, 5 dismissals"
+          },
+          {
+            "player": "Naveen Panghal",
+            "team": "HCC Northern Raptors",
+            "stat": "2 catches, 5 dismissals"
+          },
+          {
+            "player": "Harsh Singh",
+            "team": "HCC Northern Raptors",
+            "stat": "2 catches, 3 dismissals"
+          },
+          {
+            "player": "Dhaval Bhatt",
+            "team": "HCC Northern Raptors",
+            "stat": "3 catches, 3 dismissals"
+          },
+          {
+            "player": "Jaspreet Singh",
+            "team": "HCC Northern Raptors",
+            "stat": "2 catches, 3 dismissals"
+          },
+          {
+            "player": "Nirav Laheri",
+            "team": "HCC Northern Raptors",
+            "stat": "2 catches, 3 dismissals"
+          },
+          {
+            "player": "Sukhdeep",
+            "team": "HCC Northern Raptors",
+            "stat": "2 catches, 2 dismissals"
           }
         ]
       },
@@ -2920,17 +2920,6 @@
         ],
         "fielding": [
           {
-            "player": "Harpreet Singh",
-            "matches": "13",
-            "dismissals": "15",
-            "catches": "1",
-            "run_outs": "3",
-            "catch_and_bowled": "0",
-            "caught_behind": "10",
-            "stumpings": "1",
-            "assisted_run_outs": "0"
-          },
-          {
             "player": "Smeet Purohit",
             "matches": "9",
             "dismissals": "13",
@@ -2940,28 +2929,6 @@
             "caught_behind": "8",
             "stumpings": "0",
             "assisted_run_outs": "1"
-          },
-          {
-            "player": "Kaushal Thakkar",
-            "matches": "6",
-            "dismissals": "9",
-            "catches": "0",
-            "run_outs": "1",
-            "catch_and_bowled": "0",
-            "caught_behind": "3",
-            "stumpings": "5",
-            "assisted_run_outs": "1"
-          },
-          {
-            "player": "Sarthak Khosla",
-            "matches": "7",
-            "dismissals": "9",
-            "catches": "2",
-            "run_outs": "5",
-            "catch_and_bowled": "2",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "2"
           },
           {
             "player": "Saurabh Goyal",
@@ -2975,44 +2942,11 @@
             "assisted_run_outs": "1"
           },
           {
-            "player": "Shubham Sharma",
-            "matches": "10",
-            "dismissals": "7",
-            "catches": "5",
-            "run_outs": "1",
-            "catch_and_bowled": "1",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Rahul Chugh",
-            "matches": "26",
-            "dismissals": "6",
-            "catches": "5",
-            "run_outs": "1",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
             "player": "Dave SHARMA",
             "matches": "3",
             "dismissals": "5",
             "catches": "4",
             "run_outs": "1",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Venu Reddy",
-            "matches": "5",
-            "dismissals": "5",
-            "catches": "5",
-            "run_outs": "0",
             "catch_and_bowled": "0",
             "caught_behind": "0",
             "stumpings": "0",
@@ -3027,6 +2961,72 @@
             "catch_and_bowled": "0",
             "caught_behind": "0",
             "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Pradip Maheshvari",
+            "matches": "4",
+            "dismissals": "4",
+            "catches": "4",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Shubham Gorsi",
+            "matches": "10",
+            "dismissals": "4",
+            "catches": "4",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Karan Wasal",
+            "matches": "3",
+            "dismissals": "3",
+            "catches": "3",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "1"
+          },
+          {
+            "player": "Puneet",
+            "matches": "9",
+            "dismissals": "3",
+            "catches": "0",
+            "run_outs": "1",
+            "catch_and_bowled": "2",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Rahul Chugh",
+            "matches": "13",
+            "dismissals": "3",
+            "catches": "2",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Kaushal Thakkar",
+            "matches": "1",
+            "dismissals": "2",
+            "catches": "0",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "1",
+            "stumpings": "1",
             "assisted_run_outs": "0"
           }
         ]
@@ -3138,24 +3138,9 @@
         ],
         "fielding": [
           {
-            "player": "Harpreet Singh",
-            "team": "HCC Northern Strikers",
-            "stat": "1 catches, 15 dismissals"
-          },
-          {
             "player": "Smeet Purohit",
             "team": "HCC Northern Strikers",
             "stat": "3 catches, 13 dismissals"
-          },
-          {
-            "player": "Kaushal Thakkar",
-            "team": "HCC Northern Strikers",
-            "stat": "0 catches, 9 dismissals"
-          },
-          {
-            "player": "Sarthak Khosla",
-            "team": "HCC Northern Strikers",
-            "stat": "2 catches, 9 dismissals"
           },
           {
             "player": "Saurabh Goyal",
@@ -3163,29 +3148,44 @@
             "stat": "8 catches, 8 dismissals"
           },
           {
-            "player": "Shubham Sharma",
-            "team": "HCC Northern Strikers",
-            "stat": "5 catches, 7 dismissals"
-          },
-          {
-            "player": "Rahul Chugh",
-            "team": "HCC Northern Strikers",
-            "stat": "5 catches, 6 dismissals"
-          },
-          {
             "player": "Dave SHARMA",
             "team": "HCC Northern Strikers",
             "stat": "4 catches, 5 dismissals"
           },
           {
-            "player": "Venu Reddy",
-            "team": "HCC Northern Strikers",
-            "stat": "5 catches, 5 dismissals"
-          },
-          {
             "player": "Dharmveer Gill",
             "team": "HCC Northern Strikers",
             "stat": "4 catches, 5 dismissals"
+          },
+          {
+            "player": "Pradip Maheshvari",
+            "team": "HCC Northern Strikers",
+            "stat": "4 catches, 4 dismissals"
+          },
+          {
+            "player": "Shubham Gorsi",
+            "team": "HCC Northern Strikers",
+            "stat": "4 catches, 4 dismissals"
+          },
+          {
+            "player": "Karan Wasal",
+            "team": "HCC Northern Strikers",
+            "stat": "3 catches, 3 dismissals"
+          },
+          {
+            "player": "Puneet",
+            "team": "HCC Northern Strikers",
+            "stat": "0 catches, 3 dismissals"
+          },
+          {
+            "player": "Rahul Chugh",
+            "team": "HCC Northern Strikers",
+            "stat": "2 catches, 3 dismissals"
+          },
+          {
+            "player": "Kaushal Thakkar",
+            "team": "HCC Northern Strikers",
+            "stat": "0 catches, 2 dismissals"
           }
         ]
       },
@@ -5110,65 +5110,21 @@
         ],
         "fielding": [
           {
-            "player": "Jaspreet Singh",
-            "matches": "14",
-            "dismissals": "17",
-            "catches": "4",
-            "run_outs": "1",
-            "catch_and_bowled": "0",
-            "caught_behind": "9",
-            "stumpings": "3",
-            "assisted_run_outs": "1"
-          },
-          {
-            "player": "Shubham Sharma",
-            "matches": "21",
-            "dismissals": "13",
-            "catches": "2",
-            "run_outs": "2",
-            "catch_and_bowled": "0",
-            "caught_behind": "9",
-            "stumpings": "0",
-            "assisted_run_outs": "1"
-          },
-          {
-            "player": "nitin",
-            "matches": "9",
-            "dismissals": "10",
-            "catches": "1",
-            "run_outs": "2",
-            "catch_and_bowled": "0",
-            "caught_behind": "7",
-            "stumpings": "0",
-            "assisted_run_outs": "2"
-          },
-          {
-            "player": "Mandeep Singh",
-            "matches": "13",
-            "dismissals": "9",
-            "catches": "7",
+            "player": "Sunny Patel",
+            "matches": "7",
+            "dismissals": "5",
+            "catches": "3",
             "run_outs": "1",
             "catch_and_bowled": "1",
             "caught_behind": "0",
             "stumpings": "0",
-            "assisted_run_outs": "0"
+            "assisted_run_outs": "1"
           },
           {
-            "player": "Gurbhej Singh",
-            "matches": "14",
-            "dismissals": "9",
-            "catches": "5",
-            "run_outs": "1",
-            "catch_and_bowled": "3",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Pawan Gill",
-            "matches": "14",
-            "dismissals": "9",
-            "catches": "9",
+            "player": "Yasin Shaikh",
+            "matches": "8",
+            "dismissals": "4",
+            "catches": "4",
             "run_outs": "0",
             "catch_and_bowled": "0",
             "caught_behind": "0",
@@ -5176,44 +5132,88 @@
             "assisted_run_outs": "0"
           },
           {
-            "player": "Rubalpreet Singh Gill",
-            "matches": "16",
-            "dismissals": "9",
-            "catches": "7",
+            "player": "Harpreet Singh",
+            "matches": "9",
+            "dismissals": "4",
+            "catches": "0",
             "run_outs": "1",
-            "catch_and_bowled": "1",
-            "caught_behind": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "3",
             "stumpings": "0",
-            "assisted_run_outs": "0"
+            "assisted_run_outs": "1"
           },
           {
-            "player": "Rammi Bhathal",
-            "matches": "13",
-            "dismissals": "7",
-            "catches": "5",
+            "player": "Sagarkumar Patel",
+            "matches": "9",
+            "dismissals": "4",
+            "catches": "2",
             "run_outs": "1",
-            "catch_and_bowled": "1",
+            "catch_and_bowled": "0",
             "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
+            "stumpings": "1",
+            "assisted_run_outs": "1"
           },
           {
             "player": "Gaurav Thakur",
-            "matches": "24",
-            "dismissals": "7",
-            "catches": "4",
+            "matches": "10",
+            "dismissals": "4",
+            "catches": "3",
             "run_outs": "1",
-            "catch_and_bowled": "2",
+            "catch_and_bowled": "0",
             "caught_behind": "0",
             "stumpings": "0",
             "assisted_run_outs": "0"
           },
           {
-            "player": "Amrinder Chahal",
-            "matches": "27",
-            "dismissals": "7",
-            "catches": "5",
-            "run_outs": "2",
+            "player": "Nakul Datta",
+            "matches": "10",
+            "dismissals": "4",
+            "catches": "3",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "1"
+          },
+          {
+            "player": "Deepanshu Kuchroo",
+            "matches": "8",
+            "dismissals": "3",
+            "catches": "2",
+            "run_outs": "0",
+            "catch_and_bowled": "1",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Venu Reddy",
+            "matches": "9",
+            "dismissals": "3",
+            "catches": "2",
+            "run_outs": "0",
+            "catch_and_bowled": "1",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Nitin Talwar",
+            "matches": "10",
+            "dismissals": "3",
+            "catches": "3",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Dhaval Bhatt",
+            "matches": "1",
+            "dismissals": "2",
+            "catches": "2",
+            "run_outs": "0",
             "catch_and_bowled": "0",
             "caught_behind": "0",
             "stumpings": "0",
@@ -5328,54 +5328,54 @@
         ],
         "fielding": [
           {
-            "player": "Jaspreet Singh",
+            "player": "Sunny Patel",
             "team": "HCC Icefield Jets",
-            "stat": "4 catches, 17 dismissals"
+            "stat": "3 catches, 5 dismissals"
           },
           {
-            "player": "Shubham Sharma",
+            "player": "Yasin Shaikh",
             "team": "HCC Icefield Jets",
-            "stat": "2 catches, 13 dismissals"
+            "stat": "4 catches, 4 dismissals"
           },
           {
-            "player": "nitin",
+            "player": "Harpreet Singh",
             "team": "HCC Icefield Jets",
-            "stat": "1 catches, 10 dismissals"
+            "stat": "0 catches, 4 dismissals"
           },
           {
-            "player": "Mandeep Singh",
+            "player": "Sagarkumar Patel",
             "team": "HCC Icefield Jets",
-            "stat": "7 catches, 9 dismissals"
-          },
-          {
-            "player": "Gurbhej Singh",
-            "team": "HCC Icefield Jets",
-            "stat": "5 catches, 9 dismissals"
-          },
-          {
-            "player": "Pawan Gill",
-            "team": "HCC Icefield Jets",
-            "stat": "9 catches, 9 dismissals"
-          },
-          {
-            "player": "Rubalpreet Singh Gill",
-            "team": "HCC Icefield Jets",
-            "stat": "7 catches, 9 dismissals"
-          },
-          {
-            "player": "Rammi Bhathal",
-            "team": "HCC Icefield Jets",
-            "stat": "5 catches, 7 dismissals"
+            "stat": "2 catches, 4 dismissals"
           },
           {
             "player": "Gaurav Thakur",
             "team": "HCC Icefield Jets",
-            "stat": "4 catches, 7 dismissals"
+            "stat": "3 catches, 4 dismissals"
           },
           {
-            "player": "Amrinder Chahal",
+            "player": "Nakul Datta",
             "team": "HCC Icefield Jets",
-            "stat": "5 catches, 7 dismissals"
+            "stat": "3 catches, 4 dismissals"
+          },
+          {
+            "player": "Deepanshu Kuchroo",
+            "team": "HCC Icefield Jets",
+            "stat": "2 catches, 3 dismissals"
+          },
+          {
+            "player": "Venu Reddy",
+            "team": "HCC Icefield Jets",
+            "stat": "2 catches, 3 dismissals"
+          },
+          {
+            "player": "Nitin Talwar",
+            "team": "HCC Icefield Jets",
+            "stat": "3 catches, 3 dismissals"
+          },
+          {
+            "player": "Dhaval Bhatt",
+            "team": "HCC Icefield Jets",
+            "stat": "2 catches, 2 dismissals"
           }
         ]
       },
@@ -6582,114 +6582,114 @@
         ],
         "fielding": [
           {
-            "player": "Jaspreet Singh",
-            "matches": "46",
-            "dismissals": "29",
-            "catches": "15",
-            "run_outs": "2",
-            "catch_and_bowled": "1",
-            "caught_behind": "11",
-            "stumpings": "0",
-            "assisted_run_outs": "3"
-          },
-          {
             "player": "Gurbhej Singh",
-            "matches": "51",
-            "dismissals": "27",
-            "catches": "22",
-            "run_outs": "3",
-            "catch_and_bowled": "2",
+            "matches": "13",
+            "dismissals": "9",
+            "catches": "7",
+            "run_outs": "2",
+            "catch_and_bowled": "0",
             "caught_behind": "0",
             "stumpings": "0",
-            "assisted_run_outs": "6"
+            "assisted_run_outs": "0"
           },
           {
             "player": "Neel Patel",
-            "matches": "27",
-            "dismissals": "21",
-            "catches": "8",
-            "run_outs": "4",
+            "matches": "9",
+            "dismissals": "6",
+            "catches": "0",
+            "run_outs": "1",
             "catch_and_bowled": "0",
             "caught_behind": "5",
-            "stumpings": "4",
+            "stumpings": "0",
+            "assisted_run_outs": "1"
+          },
+          {
+            "player": "Jaspreet Singh",
+            "matches": "11",
+            "dismissals": "5",
+            "catches": "3",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "1",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Nakul Datta",
+            "matches": "6",
+            "dismissals": "4",
+            "catches": "0",
+            "run_outs": "0",
+            "catch_and_bowled": "1",
+            "caught_behind": "1",
+            "stumpings": "2",
             "assisted_run_outs": "1"
           },
           {
             "player": "Nirav Laheri",
-            "matches": "25",
-            "dismissals": "14",
-            "catches": "10",
-            "run_outs": "3",
-            "catch_and_bowled": "1",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Abhilash Kumar",
-            "matches": "34",
-            "dismissals": "13",
-            "catches": "11",
-            "run_outs": "1",
-            "catch_and_bowled": "1",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Nikunj Dobariya",
-            "matches": "20",
-            "dismissals": "11",
-            "catches": "11",
-            "run_outs": "0",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "3"
-          },
-          {
-            "player": "Shubham Sharma",
-            "matches": "22",
-            "dismissals": "11",
-            "catches": "5",
-            "run_outs": "2",
-            "catch_and_bowled": "0",
-            "caught_behind": "4",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Gaurav Thakur",
-            "matches": "22",
-            "dismissals": "7",
-            "catches": "5",
-            "run_outs": "2",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Yuvraj Singh",
-            "matches": "19",
-            "dismissals": "6",
-            "catches": "5",
-            "run_outs": "0",
-            "catch_and_bowled": "1",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "HS Bhullar",
             "matches": "6",
-            "dismissals": "5",
-            "catches": "5",
+            "dismissals": "4",
+            "catches": "4",
             "run_outs": "0",
             "catch_and_bowled": "0",
             "caught_behind": "0",
             "stumpings": "0",
             "assisted_run_outs": "0"
+          },
+          {
+            "player": "Shubham Rai",
+            "matches": "7",
+            "dismissals": "4",
+            "catches": "4",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Gursewak Pandher",
+            "matches": "9",
+            "dismissals": "4",
+            "catches": "4",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "HARDEEP MANDER",
+            "matches": "13",
+            "dismissals": "4",
+            "catches": "3",
+            "run_outs": "0",
+            "catch_and_bowled": "1",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Anmol Dang",
+            "matches": "3",
+            "dismissals": "3",
+            "catches": "1",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "2",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Pawan Gill",
+            "matches": "8",
+            "dismissals": "3",
+            "catches": "3",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "1"
           }
         ]
       },
@@ -6800,54 +6800,54 @@
         ],
         "fielding": [
           {
-            "player": "Jaspreet Singh",
-            "team": "HCC All Stars",
-            "stat": "15 catches, 29 dismissals"
-          },
-          {
             "player": "Gurbhej Singh",
             "team": "HCC All Stars",
-            "stat": "22 catches, 27 dismissals"
+            "stat": "7 catches, 9 dismissals"
           },
           {
             "player": "Neel Patel",
             "team": "HCC All Stars",
-            "stat": "8 catches, 21 dismissals"
+            "stat": "0 catches, 6 dismissals"
+          },
+          {
+            "player": "Jaspreet Singh",
+            "team": "HCC All Stars",
+            "stat": "3 catches, 5 dismissals"
+          },
+          {
+            "player": "Nakul Datta",
+            "team": "HCC All Stars",
+            "stat": "0 catches, 4 dismissals"
           },
           {
             "player": "Nirav Laheri",
             "team": "HCC All Stars",
-            "stat": "10 catches, 14 dismissals"
+            "stat": "4 catches, 4 dismissals"
           },
           {
-            "player": "Abhilash Kumar",
+            "player": "Shubham Rai",
             "team": "HCC All Stars",
-            "stat": "11 catches, 13 dismissals"
+            "stat": "4 catches, 4 dismissals"
           },
           {
-            "player": "Nikunj Dobariya",
+            "player": "Gursewak Pandher",
             "team": "HCC All Stars",
-            "stat": "11 catches, 11 dismissals"
+            "stat": "4 catches, 4 dismissals"
           },
           {
-            "player": "Shubham Sharma",
+            "player": "HARDEEP MANDER",
             "team": "HCC All Stars",
-            "stat": "5 catches, 11 dismissals"
+            "stat": "3 catches, 4 dismissals"
           },
           {
-            "player": "Gaurav Thakur",
+            "player": "Anmol Dang",
             "team": "HCC All Stars",
-            "stat": "5 catches, 7 dismissals"
+            "stat": "1 catches, 3 dismissals"
           },
           {
-            "player": "Yuvraj Singh",
+            "player": "Pawan Gill",
             "team": "HCC All Stars",
-            "stat": "5 catches, 6 dismissals"
-          },
-          {
-            "player": "HS Bhullar",
-            "team": "HCC All Stars",
-            "stat": "5 catches, 5 dismissals"
+            "stat": "3 catches, 3 dismissals"
           }
         ]
       },
