@@ -1,0 +1,4 @@
+{
+  "_instructions": "List any case where two different real people happen to share the exact same name across different teams. Each entry says: for this player name, THIS specific team's stats belong to a different person and should NOT be merged with their other teams. The site will show that team's entry as its own separate row (labeled 'Name (Team)') instead of combining it in. (No known collisions right now — the Jaspreet Singh / Icefield Jets issue turned out to be a scraper bug, not a same-name collision, and was fixed at the source instead.)",
+  "splits": []
+}
