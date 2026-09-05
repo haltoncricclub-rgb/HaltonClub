@@ -805,6 +805,24 @@ def main():
             print(f"\nScraping {t['name']} ({t['id']})...")
             try:
                 data = scrape_team(driver, t)
+                is_suspiciously_empty = (
+                    len(data.get("matches", [])) == 0
+                    and len(data.get("leaderboard", {}).get("batting", [])) == 0
+                )
+
+                if is_suspiciously_empty:
+                    # This "succeeded" (no exception) but returned nothing —
+                    # confirmed real-world cause: a stale/degraded reused
+                    # login session serving broken pages for every team,
+                    # not a genuine "this team has no data" case. Treat it
+                    # the same as a real failure so it can't silently wipe
+                    # out good data with zeros.
+                    print(f"  WARNING: scrape 'succeeded' but returned 0 matches and 0 batting "
+                          f"entries — this usually means the session is stale, not that there's "
+                          f"genuinely no data. Treating as a failure for {t['name']}.")
+                    raise RuntimeError("suspiciously empty result (0 matches, 0 batting entries) "
+                                        "— likely a stale session rather than real data")
+
                 result["teams"][t["id"]] = {
                     "name": t["name"],
                     "group": t.get("group", "unassigned"),
