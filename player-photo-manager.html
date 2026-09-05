@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Player Photo Manager &mdash; Halton Cricket (Admin)</title>
+<meta name="robots" content="noindex, nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A0A0C; --bg-1:#111114; --bg-2:#17171B;
+    --line:rgba(245,242,234,0.10); --line-strong:rgba(245,242,234,0.18);
+    --cream:#F5F2EA; --muted:#9C9A93;
+    --orange:#E8792A; --orange-bright:#F4A340; --blue:#3FA9E0;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:'Inter',sans-serif; background:var(--bg); color:var(--cream);
+    line-height:1.5; padding:32px 20px 80px;
+  }
+  .wrap{max-width:720px; margin:0 auto;}
+  h1{font-family:'Fraunces',serif; font-size:1.7rem; margin:0 0 6px;}
+  .subtitle{color:var(--muted); font-size:0.92rem; margin-bottom:8px;}
+  .admin-badge{
+    display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:0.68rem;
+    letter-spacing:0.08em; text-transform:uppercase; color:var(--orange-bright);
+    border:1px solid var(--orange); padding:4px 10px; border-radius:2px; margin-bottom:20px;
+  }
+  .card{background:var(--bg-1); border:1px solid var(--line-strong); padding:24px; margin-bottom:20px;}
+  label{display:block; font-family:'IBM Plex Mono',monospace; font-size:0.7rem; letter-spacing:0.08em;
+    text-transform:uppercase; color:var(--muted); margin-bottom:8px;}
+  select, input[type="text"]{
+    width:100%; padding:11px 12px; background:var(--bg); border:1px solid var(--line-strong);
+    color:var(--cream); font-family:'Inter',sans-serif; font-size:0.95rem; border-radius:2px;
+  }
+  select:focus, input:focus{outline:2px solid var(--blue); outline-offset:1px;}
+  .field{margin-bottom:16px;}
+
+  .player-suggestions{
+    position:absolute; left:0; right:0; top:100%; z-index:20;
+    background:var(--bg-2); border:1px solid var(--line-strong); border-top:none;
+    max-height:260px; overflow-y:auto; display:none; border-radius:0 0 4px 4px;
+  }
+  .player-suggestions.open{display:block;}
+  .player-suggestion{
+    padding:12px 14px; cursor:pointer; font-size:0.92rem;
+    border-bottom:1px solid var(--line);
+  }
+  .player-suggestion:last-child{border-bottom:none;}
+  .player-suggestion:hover, .player-suggestion.active{background:var(--bg);}
+  .player-suggestion-empty{padding:12px 14px; color:var(--muted); font-size:0.88rem;}
+  .file-drop{
+    border:2px dashed var(--line-strong); border-radius:4px; padding:28px; text-align:center;
+    cursor:pointer; transition:border-color 0.15s ease;
+  }
+  .file-drop:hover, .file-drop.drag{border-color:var(--orange);}
+  .file-drop input{display:none;}
+  .file-drop-label{color:var(--muted); font-size:0.9rem;}
+  .preview-row{display:flex; align-items:center; gap:18px; margin-top:18px;}
+  .preview-img{
+    width:96px; height:96px; border-radius:50%; object-fit:cover;
+    border:2px solid var(--orange); background:var(--bg-2); display:none;
+  }
+  .preview-meta{font-family:'IBM Plex Mono',monospace; font-size:0.8rem; color:var(--muted);}
+  .btn{
+    display:inline-block; padding:12px 24px; font-weight:600; font-size:0.9rem;
+    border:none; border-radius:2px; cursor:pointer; font-family:'Inter',sans-serif;
+  }
+  .btn-primary{background:var(--orange); color:#0A1D40;}
+  .btn-primary:hover{background:var(--orange-bright);}
+  .btn-primary:disabled{background:var(--bg-2); color:var(--muted); cursor:not-allowed;}
+  .btn-ghost{background:none; border:1px solid var(--line-strong); color:var(--cream);}
+  .btn-ghost:hover{border-color:var(--cream);}
+  .step-num{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:22px; height:22px; border-radius:50%; background:var(--orange); color:#0A1D40;
+    font-family:'IBM Plex Mono',monospace; font-size:0.75rem; font-weight:600; margin-right:8px;
+  }
+  .step-title{font-family:'Fraunces',serif; font-size:1.1rem; font-weight:600; margin-bottom:14px;}
+  .queue-list{list-style:none; margin:0; padding:0;}
+  .queue-item{
+    display:flex; align-items:center; gap:12px; padding:10px 0; border-top:1px solid var(--line);
+    font-size:0.88rem;
+  }
+  .queue-item:first-child{border-top:none;}
+  .queue-item img{width:36px; height:36px; border-radius:50%; object-fit:cover;}
+  .queue-item .name{font-weight:600;}
+  .queue-item .file{color:var(--muted); font-family:'IBM Plex Mono',monospace; font-size:0.78rem;}
+  .json-box{
+    background:var(--bg); border:1px solid var(--line-strong); padding:14px;
+    font-family:'IBM Plex Mono',monospace; font-size:0.8rem; color:var(--blue);
+    white-space:pre-wrap; word-break:break-all; max-height:240px; overflow-y:auto; border-radius:2px;
+  }
+  .note{font-size:0.85rem; color:var(--muted); margin-top:10px; line-height:1.6;}
+  .instructions{font-size:0.9rem; color:var(--muted); margin-bottom:0;}
+  .instructions li{margin-bottom:6px;}
+  .status{font-size:0.85rem; margin-top:10px; min-height:20px;}
+  .status.ok{color:#7CD98A;}
+  .status.err{color:#E8792A;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="admin-badge">Admin Only &mdash; Not Linked From Public Site</span>
+  <h1>Player Photo Manager</h1>
+  <p class="subtitle">Pick a player, choose their photo, and this tool prepares everything in the exact format your site needs.</p>
+
+  <div class="card">
+    <div class="step-title"><span class="step-num">1</span>Select a player</div>
+    <div class="field" style="position:relative;">
+      <label for="player-search">Search &amp; select</label>
+      <input type="text" id="player-search" placeholder="Type to search... (loading player list)" autocomplete="off">
+      <div id="player-suggestions" class="player-suggestions"></div>
+    </div>
+    <div class="status" id="load-status">Loading players from your live CricHeroes &amp; CricClubs data&hellip;</div>
+  </div>
+
+  <div class="card">
+    <div class="step-title"><span class="step-num">2</span>Choose their photo</div>
+    <div class="file-drop" id="file-drop">
+      <input type="file" id="file-input" accept="image/*">
+      <div class="file-drop-label" id="file-drop-label">Click to choose an image, or drag one here</div>
+    </div>
+    <div class="preview-row">
+      <img class="preview-img" id="preview-img" alt="">
+      <div class="preview-meta" id="preview-meta"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="step-title"><span class="step-num">3</span>Add to this batch</div>
+    <button class="btn btn-primary" id="add-btn" disabled>Add This Photo to Batch</button>
+    <p class="note">Photos are automatically resized to a neat square (400&times;400) so file sizes stay small and every photo looks consistent &mdash; nothing is uploaded anywhere yet, this just prepares it.</p>
+  </div>
+
+  <div class="card">
+    <div class="step-title">One-time setup: connect to GitHub</div>
+    <p class="note" style="margin-top:0;">This lets the tool save photos straight to your site — no downloading files or visiting GitHub yourself. You only need to do this once; your phone will remember it.</p>
+    <div class="field">
+      <label for="gh-token">GitHub Access Token</label>
+      <input type="password" id="gh-token" placeholder="Paste your token here" autocomplete="off">
+    </div>
+    <button class="btn btn-ghost" id="save-token-btn">Save on This Phone</button>
+    <button class="btn btn-ghost" id="clear-token-btn" style="margin-left:8px;">Remove Saved Token</button>
+    <div class="status" id="token-status"></div>
+    <details style="margin-top:16px;">
+      <summary style="cursor:pointer; color:var(--muted); font-size:0.85rem;">How do I get a token? (one-time, ~2 minutes)</summary>
+      <ol class="instructions" style="margin-top:12px;">
+        <li>On your phone or computer, go to <code>github.com/settings/personal-access-tokens/new</code> (you'll need to be logged into the <strong>haltoncricclub-rgb</strong> account)</li>
+        <li><strong>Token name:</strong> anything, e.g. "Photo Uploader"</li>
+        <li><strong>Expiration:</strong> pick whatever you're comfortable with (e.g. 1 year — you can always make a new one later)</li>
+        <li><strong>Repository access:</strong> choose "Only select repositories" &rarr; pick <strong>HaltonClub</strong></li>
+        <li><strong>Permissions</strong> &rarr; <strong>Repository permissions</strong> &rarr; find "Contents" &rarr; set to <strong>Read and write</strong> (leave everything else as "No access")</li>
+        <li>Scroll down, click <strong>Generate token</strong></li>
+        <li>Copy the token (starts with <code>github_pat_</code>) and paste it above</li>
+      </ol>
+      <p class="note">This token can <em>only</em> read/write files in this one repo — nothing else on your GitHub account, even if your phone were lost.</p>
+    </details>
+  </div>
+
+  <div class="card" id="upload-mode-card" style="display:none;">
+    <div class="step-title">Upload mode</div>
+    <label style="display:flex; align-items:center; gap:10px; cursor:pointer;">
+      <input type="checkbox" id="direct-upload-toggle" style="width:auto;">
+      <span style="text-transform:none; font-family:'Inter',sans-serif; font-size:0.92rem; letter-spacing:normal; color:var(--cream);">Upload directly to GitHub (recommended on phone)</span>
+    </label>
+    <p class="note">Off = download files and add them yourself later (good on a computer). On = each photo goes live as soon as you add it &mdash; no extra steps.</p>
+  </div>
+
+  <div class="card" id="queue-card" style="display:none;">
+    <div class="step-title">Batch ready (<span id="queue-count">0</span>)</div>
+    <ul class="queue-list" id="queue-list"></ul>
+  </div>
+
+  <div class="card" id="download-card" style="display:none;">
+    <div class="step-title"><span class="step-num">4</span>Download everything</div>
+    <button class="btn btn-primary" id="download-all-btn">Download All Photos</button>
+    <p class="note">This downloads each photo as a separate file, already named correctly (e.g. <code>manbir-singh.jpg</code>).</p>
+  </div>
+
+  <div class="card" id="json-card" style="display:none;">
+    <div class="step-title"><span class="step-num">5</span>Copy this into <code>data/player-photos.json</code></div>
+    <div class="json-box" id="json-output"></div>
+    <button class="btn btn-ghost" id="copy-json-btn" style="margin-top:12px;">Copy JSON</button>
+    <p class="note" id="copy-status"></p>
+  </div>
+
+  <div class="card">
+    <div class="step-title">How to finish</div>
+    <p class="note" style="margin-top:0;"><strong>With direct upload ON</strong> (recommended on phone): nothing else to do &mdash; each photo you add is already live on the site. Give it a minute or two, then check the site.</p>
+    <p class="note"><strong>With direct upload OFF</strong> (or no token saved):</p>
+    <ol class="instructions">
+      <li>Download all the photos (step 4 above)</li>
+      <li>In your GitHub repo, go to the <code>data</code> folder &mdash; if there's no <code>photos</code> folder yet, create one the same way you create any new file (type <code>photos/</code> at the start of a new filename and GitHub creates the folder)</li>
+      <li>Upload all the downloaded photo files into <code>data/photos/</code></li>
+      <li>Open <code>data/player-photos.json</code> in your repo (create it if it doesn't exist yet, starting from <code>{}</code>) and merge in the JSON from step 5 above</li>
+      <li>Commit and push, same as always</li>
+    </ol>
+  </div>
+</div>
+
+<script>
+  const CRICHEROES_DATA_URL = 'https://raw.githubusercontent.com/haltoncricclub-rgb/HaltonClub/main/data/cricheroes-data.json';
+  const CRICCLUBS_DATA_URL = 'https://raw.githubusercontent.com/haltoncricclub-rgb/HaltonClub/main/data/cricclubs-data.json';
+
+  function normName(s){
+    return (s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+  }
+  function slugName(s){
+    return (s || '').toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+
+  const playerMap = new Map(); // normName -> display name
+
+  function addPlayer(name){
+    if (!name) return;
+    const key = normName(name);
+    if (key && !playerMap.has(key)) playerMap.set(key, name);
+  }
+
+  async function loadPlayers(){
+    const statusEl = document.getElementById('load-status');
+    try {
+      const [chRes, ccRes] = await Promise.all([
+        fetch(CRICHEROES_DATA_URL, { cache: 'no-store' }).catch(() => null),
+        fetch(CRICCLUBS_DATA_URL, { cache: 'no-store' }).catch(() => null),
+      ]);
+
+      if (chRes && chRes.ok){
+        const data = await chRes.json();
+        Object.values(data.teams || {}).forEach(team => {
+          if (!team.ok) return;
+          ['batting', 'bowling', 'fielding'].forEach(cat => {
+            (team.leaderboard_detailed?.[cat] || []).forEach(e => addPlayer(e.player));
+          });
+        });
+      }
+
+      if (ccRes && ccRes.ok){
+        const data = await ccRes.json();
+        Object.values(data.teams || {}).forEach(team => {
+          if (!team.ok) return;
+          ['batting', 'bowling', 'fielding'].forEach(cat => {
+            (team[cat] || []).forEach(e => addPlayer(e.player));
+          });
+        });
+      }
+
+      document.getElementById('player-search').placeholder = `Type to search... (${playerMap.size} players loaded)`;
+      statusEl.textContent = `Loaded ${playerMap.size} players from your live data.`;
+      statusEl.className = 'status ok';
+    } catch (err) {
+      statusEl.textContent = 'Could not load player list automatically — you can still type any name manually below.';
+      statusEl.className = 'status err';
+    }
+  }
+  loadPlayers();
+
+  // ---------- GitHub token setup ----------
+  const GH_OWNER = 'haltoncricclub-rgb';
+  const GH_REPO = 'HaltonClub';
+  const GH_BRANCH = 'main';
+  const TOKEN_STORAGE_KEY = 'halton_gh_token';
+
+  function getSavedToken(){
+    return localStorage.getItem(TOKEN_STORAGE_KEY) || '';
+  }
+
+  function refreshTokenUi(){
+    const token = getSavedToken();
+    const statusEl = document.getElementById('token-status');
+    const uploadCard = document.getElementById('upload-mode-card');
+    const toggle = document.getElementById('direct-upload-toggle');
+    if (token){
+      statusEl.textContent = 'A token is saved on this phone. Direct upload is available.';
+      statusEl.className = 'status ok';
+      uploadCard.style.display = '';
+      toggle.checked = true;
+    } else {
+      statusEl.textContent = 'No token saved yet — you can still use download mode below without one.';
+      statusEl.className = '';
+      uploadCard.style.display = 'none';
+      toggle.checked = false;
+    }
+  }
+  refreshTokenUi();
+
+  document.getElementById('save-token-btn').addEventListener('click', () => {
+    const val = document.getElementById('gh-token').value.trim();
+    if (!val){ alert('Paste your token first.'); return; }
+    localStorage.setItem(TOKEN_STORAGE_KEY, val);
+    document.getElementById('gh-token').value = '';
+    refreshTokenUi();
+  });
+
+  document.getElementById('clear-token-btn').addEventListener('click', () => {
+    localStorage.removeItem(TOKEN_STORAGE_KEY);
+    refreshTokenUi();
+  });
+
+  // ---------- GitHub Contents API helpers ----------
+  async function ghGetFile(path){
+    const token = getSavedToken();
+    const res = await fetch(
+      `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${path}?ref=${GH_BRANCH}`,
+      { headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' } }
+    );
+    if (res.status === 404) return null; // file doesn't exist yet — that's fine
+    if (!res.ok) throw new Error(`GitHub error reading ${path}: ${res.status}`);
+    return res.json(); // { content (base64, may have newlines), sha, ... }
+  }
+
+  async function ghPutFile(path, base64Content, message, existingSha){
+    const token = getSavedToken();
+    const body = { message, content: base64Content, branch: GH_BRANCH };
+    if (existingSha) body.sha = existingSha;
+    const res = await fetch(
+      `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${path}`,
+      {
+        method: 'PUT',
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: 'application/vnd.github+json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(body),
+      }
+    );
+    if (!res.ok){
+      const errText = await res.text().catch(() => '');
+      throw new Error(`GitHub error saving ${path}: ${res.status} ${errText}`);
+    }
+    return res.json();
+  }
+
+  async function uploadPhotoDirectly(item){
+    // 1. Upload the photo itself.
+    const base64Photo = item.dataUrl.split(',')[1]; // strip "data:image/jpeg;base64," prefix
+    const photoPath = `data/photos/${item.filename}`;
+    const existingPhoto = await ghGetFile(photoPath);
+    await ghPutFile(
+      photoPath, base64Photo,
+      `Add/update photo for ${item.playerName}`,
+      existingPhoto ? existingPhoto.sha : null
+    );
+
+    // 2. Merge into data/player-photos.json (create it if it doesn't exist yet).
+    const jsonPath = 'data/player-photos.json';
+    const existingJson = await ghGetFile(jsonPath);
+    let mapping = {};
+    let sha = null;
+    if (existingJson){
+      sha = existingJson.sha;
+      try {
+        mapping = JSON.parse(atob(existingJson.content.replace(/\n/g, '')));
+      } catch { mapping = {}; }
+    }
+    mapping[normName(item.playerName)] = item.filename;
+    const newContentB64 = btoa(JSON.stringify(mapping, null, 2));
+    await ghPutFile(jsonPath, newContentB64, `Add photo mapping for ${item.playerName}`, sha);
+  }
+
+  let currentFile = null; // { name, blob, dataUrl }
+  const batch = []; // { playerName, filename, blob, dataUrl }
+
+
+  const fileInput = document.getElementById('file-input');
+  const fileDrop = document.getElementById('file-drop');
+  const previewImg = document.getElementById('preview-img');
+  const previewMeta = document.getElementById('preview-meta');
+  const addBtn = document.getElementById('add-btn');
+  const playerSearch = document.getElementById('player-search');
+  const suggestionsBox = document.getElementById('player-suggestions');
+
+  function showSuggestions(query){
+    const q = query.trim().toLowerCase();
+    if (!q){ suggestionsBox.classList.remove('open'); suggestionsBox.innerHTML = ''; return; }
+
+    const matches = Array.from(playerMap.values())
+      .filter(name => name.toLowerCase().includes(q))
+      .sort((a, b) => a.localeCompare(b))
+      .slice(0, 30); // plenty for a phone screen, avoids a huge scroll list
+
+    if (!matches.length){
+      suggestionsBox.innerHTML = '<div class="player-suggestion-empty">No match — you can still use this exact typed name.</div>';
+    } else {
+      suggestionsBox.innerHTML = matches
+        .map(name => `<div class="player-suggestion" data-name="${name.replace(/"/g, '&quot;')}">${name}</div>`)
+        .join('');
+    }
+    suggestionsBox.classList.add('open');
+  }
+
+  playerSearch.addEventListener('input', () => {
+    showSuggestions(playerSearch.value);
+    addBtn.disabled = !(playerSearch.value.trim() && currentFile);
+  });
+
+  playerSearch.addEventListener('focus', () => {
+    if (playerSearch.value.trim()) showSuggestions(playerSearch.value);
+  });
+
+  suggestionsBox.addEventListener('click', (evt) => {
+    const item = evt.target.closest('.player-suggestion');
+    if (!item || !item.dataset.name) return;
+    playerSearch.value = item.dataset.name;
+    suggestionsBox.classList.remove('open');
+    addBtn.disabled = !(playerSearch.value.trim() && currentFile);
+  });
+
+  // Close the dropdown when tapping/clicking anywhere outside it.
+  document.addEventListener('click', (evt) => {
+    if (evt.target !== playerSearch && !suggestionsBox.contains(evt.target)){
+      suggestionsBox.classList.remove('open');
+    }
+  });
+
+  fileDrop.addEventListener('click', () => fileInput.click());
+  fileDrop.addEventListener('dragover', (e) => { e.preventDefault(); fileDrop.classList.add('drag'); });
+  fileDrop.addEventListener('dragleave', () => fileDrop.classList.remove('drag'));
+  fileDrop.addEventListener('drop', (e) => {
+    e.preventDefault();
+    fileDrop.classList.remove('drag');
+    if (e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]);
+  });
+  fileInput.addEventListener('change', () => {
+    if (fileInput.files.length) handleFile(fileInput.files[0]);
+  });
+
+  function handleFile(file){
+    if (!file.type.startsWith('image/')) {
+      alert('Please choose an image file.');
+      return;
+    }
+    const img = new Image();
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      img.onload = () => {
+        // Crop to a centered square, then resize to 400x400.
+        const size = Math.min(img.width, img.height);
+        const sx = (img.width - size) / 2;
+        const sy = (img.height - size) / 2;
+        const canvas = document.createElement('canvas');
+        canvas.width = 400; canvas.height = 400;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, sx, sy, size, size, 0, 0, 400, 400);
+        canvas.toBlob((blob) => {
+          currentFile = { blob, dataUrl: canvas.toDataURL('image/jpeg', 0.87) };
+          previewImg.src = currentFile.dataUrl;
+          previewImg.style.display = 'block';
+          previewMeta.textContent = `${file.name} \u2192 resized to 400\u00d7400`;
+          addBtn.disabled = !playerSearch.value.trim();
+        }, 'image/jpeg', 0.87);
+      };
+      img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  }
+
+  document.getElementById('add-btn').addEventListener('click', async () => {
+    const name = playerSearch.value.trim();
+    if (!name || !currentFile) return;
+    const filename = `${slugName(name)}.jpg`;
+    const item = { playerName: name, filename, blob: currentFile.blob, dataUrl: currentFile.dataUrl };
+
+    const directMode = document.getElementById('direct-upload-toggle').checked && getSavedToken();
+
+    if (directMode){
+      addBtn.disabled = true;
+      addBtn.textContent = 'Uploading\u2026';
+      try {
+        await uploadPhotoDirectly(item);
+        item.uploaded = true;
+        batch.push(item);
+        renderQueue();
+        renderJson();
+      } catch (err) {
+        alert('Upload failed: ' + err.message + '\n\nCheck your token is still valid and has "Contents: Read and write" access.');
+      } finally {
+        addBtn.textContent = 'Add This Photo to Batch';
+      }
+    } else {
+      batch.push(item);
+      renderQueue();
+      renderJson();
+    }
+
+    // reset for next photo
+    currentFile = null;
+    playerSearch.value = '';
+    previewImg.style.display = 'none';
+    previewMeta.textContent = '';
+    fileInput.value = '';
+    addBtn.disabled = true;
+  });
+
+  function renderQueue(){
+    const card = document.getElementById('queue-card');
+    const list = document.getElementById('queue-list');
+    const downloadCard = document.getElementById('download-card');
+    const anyUploaded = batch.some(item => item.uploaded);
+    const anyNotUploaded = batch.some(item => !item.uploaded);
+    document.getElementById('queue-count').textContent = batch.length;
+    if (!batch.length){
+      card.style.display = 'none';
+      downloadCard.style.display = 'none';
+      return;
+    }
+    card.style.display = '';
+    downloadCard.style.display = anyNotUploaded ? '' : 'none'; // nothing to download if everything already went live
+    list.innerHTML = batch.map((item, i) => `
+      <li class="queue-item">
+        <img src="${item.dataUrl}" alt="">
+        <span class="name">${item.playerName}${item.uploaded ? ' <span style="color:#7CD98A; font-size:0.75em;">&#10003; live</span>' : ''}</span>
+        <span class="file">${item.filename}</span>
+        ${item.uploaded ? '' : `<button class="btn btn-ghost" style="margin-left:auto; padding:4px 10px; font-size:0.78rem;" data-remove="${i}">Remove</button>`}
+      </li>
+    `).join('');
+    list.querySelectorAll('[data-remove]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        batch.splice(Number(btn.dataset.remove), 1);
+        renderQueue();
+        renderJson();
+      });
+    });
+  }
+
+  function renderJson(){
+    const card = document.getElementById('json-card');
+    const notUploaded = batch.filter(item => !item.uploaded);
+    if (!notUploaded.length){ card.style.display = 'none'; return; }
+    card.style.display = '';
+    const obj = {};
+    notUploaded.forEach(item => { obj[normName(item.playerName)] = item.filename; });
+    document.getElementById('json-output').textContent = JSON.stringify(obj, null, 2);
+  }
+
+  document.getElementById('download-all-btn').addEventListener('click', () => {
+    batch.filter(item => !item.uploaded).forEach((item, i) => {
+      setTimeout(() => {
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(item.blob);
+        a.download = item.filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      }, i * 300); // stagger so the browser doesn't block multiple downloads
+    });
+  });
+
+  document.getElementById('copy-json-btn').addEventListener('click', async () => {
+    const text = document.getElementById('json-output').textContent;
+    const statusEl = document.getElementById('copy-status');
+    try {
+      await navigator.clipboard.writeText(text);
+      statusEl.textContent = 'Copied to clipboard.';
+      statusEl.className = 'status ok';
+    } catch {
+      statusEl.textContent = 'Could not copy automatically — select the text above and copy manually.';
+      statusEl.className = 'status err';
+    }
+  });
+</script>
+</body>
+</html>
