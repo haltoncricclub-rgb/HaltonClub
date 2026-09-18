@@ -376,7 +376,7 @@
             <tr><td class="day">SAT, MAY 23</td><td>Halton CC vs. Visiting Club</td><td>MOUNTAIN LEAGUE</td><td>Home Ground</td></tr>
           </tbody>
         </table>
-        <p class="fixture-note" id="club-fixtures-note">Sample fixtures shown &mdash; swap in your actual schedule before publishing.</p>
+        <p class="fixture-note" id="club-fixtures-note">Placeholder schedule below &mdash; live fixtures load automatically once synced from CricHeroes/CricClubs.</p>
       </div>
     </div>
   </section>
@@ -389,7 +389,7 @@
         <p>Tell us about your experience and we'll follow up about trials and registration.</p>
       </div>
       <div class="join-grid reveal">
-        <form>
+        <form id="club-join-form">
           <div class="field"><label for="c-name">Full Name</label><input type="text" id="c-name" placeholder="Jordan Smith" required></div>
           <div class="field"><label for="c-email">Email</label><input type="email" id="c-email" placeholder="you@example.com" required></div>
           <div class="field">
@@ -402,6 +402,7 @@
           </div>
           <div class="field"><label for="c-message">Message</label><textarea id="c-message" placeholder="Playing role, availability, or any questions..."></textarea></div>
           <button type="submit" class="submit-btn">Send Inquiry</button>
+          <p class="form-status" id="club-join-status" style="margin-top:12px; font-size:0.88rem; color:var(--muted);"></p>
         </form>
         <div class="contact-card">
           <h3>Halton Cricket Club</h3>
@@ -424,6 +425,7 @@
 </div>
 
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="/assets/site.js"></script>
 
 <div class="player-modal-overlay" id="player-modal-overlay">

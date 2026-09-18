@@ -333,7 +333,7 @@
             <tr><td class="day">SAT, MAY 09</td><td>Intra-Academy Match Day</td><td>All Groups</td><td>Central Park, Burlington</td></tr>
           </tbody>
         </table>
-        <p class="fixture-note" id="academy-fixtures-note">Sample fixtures shown &mdash; swap in your actual schedule before publishing.</p>
+        <p class="fixture-note" id="academy-fixtures-note">Placeholder schedule below &mdash; live fixtures load automatically once synced from CricClubs.</p>
       </div>
     </div>
   </section>
@@ -346,7 +346,7 @@
         <p>Tell us a bit about your player and we'll follow up about enrollment and session times.</p>
       </div>
       <div class="join-grid reveal">
-        <form>
+        <form id="academy-join-form">
           <div class="field"><label for="a-name">Parent Name</label><input type="text" id="a-name" placeholder="Jordan Smith" required></div>
           <div class="field"><label for="a-email">Parent Email</label><input type="email" id="a-email" placeholder="you@example.com" required></div>
           <div class="field"><label for="a-player-name">Player Name</label><input type="text" id="a-player-name" placeholder="Player's full name" required></div>
@@ -360,6 +360,7 @@
           </div>
           <div class="field"><label for="a-message">Message</label><textarea id="a-message" placeholder="Experience level, or any questions..."></textarea></div>
           <button type="submit" class="submit-btn">Send Inquiry</button>
+          <p class="form-status" id="academy-join-status" style="margin-top:12px; font-size:0.88rem; color:var(--muted);"></p>
         </form>
         <div class="contact-card">
           <h3>Halton Cricket Academy</h3>
@@ -383,6 +384,7 @@
 </div>
 
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="/assets/site.js"></script>
 
 <div class="player-modal-overlay" id="player-modal-overlay">
