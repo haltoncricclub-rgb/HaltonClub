@@ -645,12 +645,12 @@
       const clubOk = renderFixtureRows('club-fixtures-tbody', clubMatches.slice(0, 8));
       setNote('club-fixtures-note', clubOk
         ? `Live data from CricHeroes & CricClubs${updated ? ' · updated ' + updated : ''}`
-        : 'No live data yet for Club teams — showing sample fixtures.');
+        : 'No live fixtures synced yet for Club teams — placeholder schedule shown.');
 
       const academyOk = renderFixtureRows('academy-fixtures-tbody', academyMatches.slice(0, 8));
       setNote('academy-fixtures-note', academyOk
         ? `Live data from CricClubs${updated ? ' · updated ' + updated : ''}`
-        : 'No live data yet for Academy teams — showing sample fixtures.');
+        : 'No live fixtures synced yet for Academy teams — placeholder schedule shown.');
 
       renderMatchDaySpotlight('club', clubMatches);
       renderMatchDaySpotlight('academy', academyMatches);
@@ -799,3 +799,85 @@
   }
 
   loadCricHeroesData();
+
+  // ================= Join/inquiry forms -> email via EmailJS =================
+  // Sends form submissions straight to your inbox without any server —
+  // EmailJS relays them through the Gmail account you connect when you set
+  // up the EmailJS account (see setup steps you were given separately).
+  //
+  // TODO: after creating your EmailJS account, replace these three values:
+  const EMAILJS_PUBLIC_KEY = '0NoYCtwjXpW1c-0aQ';
+  const EMAILJS_SERVICE_ID = 'service_0gvutpc';
+  const EMAILJS_TEMPLATE_ID = 'template_60hvc19';
+
+  function val(id){
+    const el = document.getElementById(id);
+    return el ? el.value.trim() : '';
+  }
+
+  function setupJoinForm(formId, statusId, formType, buildMessage){
+    const form = document.getElementById(formId);
+    if (!form || typeof emailjs === 'undefined') return;
+
+    form.addEventListener('submit', (evt) => {
+      evt.preventDefault();
+      const btn = form.querySelector('.submit-btn');
+      const status = document.getElementById(statusId);
+
+      const params = {
+        form_type: formType,
+        name: buildMessage.name(),
+        email: buildMessage.email(),
+        message: buildMessage.message(),
+      };
+
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+      if (status) { status.textContent = ''; status.style.color = 'var(--muted)'; }
+
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params, { publicKey: EMAILJS_PUBLIC_KEY })
+        .then(() => {
+          if (btn) btn.textContent = 'Sent ✓';
+          if (status) {
+            status.textContent = 'Thanks — we got your message and will follow up by email soon.';
+            status.style.color = 'var(--cream)';
+          }
+          form.reset();
+        })
+        .catch((err) => {
+          console.error('EmailJS send failed', err);
+          if (btn) { btn.disabled = false; btn.textContent = 'Send Inquiry'; }
+          if (status) {
+            status.textContent = 'Something went wrong sending this — please email us directly at haltoncricclub@gmail.com.';
+            status.style.color = '#E8792A';
+          }
+        });
+    });
+  }
+
+  setupJoinForm('club-join-form', 'club-join-status', 'Club Membership Inquiry', {
+    name: () => val('c-name'),
+    email: () => val('c-email'),
+    message: () => {
+      const level = document.getElementById('c-level');
+      return [
+        `Experience level: ${level ? level.value : ''}`,
+        '',
+        val('c-message') || '(no additional message)',
+      ].join('\n');
+    },
+  });
+
+  setupJoinForm('academy-join-form', 'academy-join-status', 'Academy Enrollment Inquiry', {
+    name: () => val('a-name'),
+    email: () => val('a-email'),
+    message: () => {
+      const plan = document.getElementById('a-plan');
+      return [
+        `Player name: ${val('a-player-name')}`,
+        `Player date of birth: ${val('a-dob')}`,
+        `Preferred plan: ${plan ? plan.value : ''}`,
+        '',
+        val('a-message') || '(no additional message)',
+      ].join('\n');
+    },
+  });
