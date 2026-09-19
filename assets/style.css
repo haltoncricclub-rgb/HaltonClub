@@ -515,6 +515,15 @@
   @media (max-width:600px){
     .league-logo{width:72px; height:72px;}
   }
+  .league-logo-banner{
+    margin-top:8px;
+    background:#000;
+    border:1px solid var(--line-strong);
+    border-radius:10px;
+    padding:14px;
+    overflow:hidden;
+  }
+  .league-logo-banner img{width:100%; height:auto; display:block; border-radius:4px;}
 
   /* ---------- INFO STRIP (ground / training / pathway) ---------- */
   .info-strip{background:var(--bg-1);}
