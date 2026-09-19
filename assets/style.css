@@ -493,6 +493,21 @@
   .coach h4{font-family:'Fraunces', serif; font-size:1.08rem; font-weight:600; margin-bottom:8px;}
   .coach p{color:var(--muted); font-size:0.86rem;}
 
+  .coach-featured{
+    display:flex; gap:36px; align-items:flex-start;
+    background:var(--bg-1); border:1px solid var(--line-strong); border-radius:12px;
+    padding:30px; margin-bottom:1px;
+  }
+  .coach-featured-photo{width:220px; flex-shrink:0; border-radius:10px; overflow:hidden; background:#000;}
+  .coach-featured-photo img{width:100%; height:auto; display:block;}
+  .coach-featured-body .role{font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--academy-blue); margin-bottom:10px;}
+  .coach-featured-body h4{font-family:'Fraunces', serif; font-size:1.7rem; font-weight:600; margin-bottom:14px;}
+  .coach-featured-body p{color:var(--muted); font-size:0.96rem; line-height:1.7;}
+  @media (max-width:700px){
+    .coach-featured{flex-direction:column; align-items:center; text-align:center;}
+    .coach-featured-photo{width:200px;}
+  }
+
   /* ---------- LEAGUES ---------- */
   .league-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:8px;}
   .league-pill{
