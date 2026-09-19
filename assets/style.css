@@ -488,6 +488,9 @@
   .coach-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
   @media (max-width:900px){.coach-grid{grid-template-columns:repeat(2,1fr);}}
   @media (max-width:560px){.coach-grid{grid-template-columns:1fr;}}
+  .coach-grid-3{grid-template-columns:repeat(3,1fr);}
+  @media (max-width:900px){.coach-grid-3{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.coach-grid-3{grid-template-columns:1fr;}}
   .coach{background:var(--bg); padding:26px 24px;}
   .coach .role{font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--academy-blue); margin-bottom:10px;}
   .coach h4{font-family:'Fraunces', serif; font-size:1.08rem; font-weight:600; margin-bottom:8px;}
@@ -503,6 +506,7 @@
   .coach-featured-body .role{font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--academy-blue); margin-bottom:10px;}
   .coach-featured-body h4{font-family:'Fraunces', serif; font-size:1.7rem; font-weight:600; margin-bottom:14px;}
   .coach-featured-body p{color:var(--muted); font-size:0.96rem; line-height:1.7;}
+  .coach-featured-body p + p{margin-top:12px;}
   @media (max-width:700px){
     .coach-featured{flex-direction:column; align-items:center; text-align:center;}
     .coach-featured-photo{width:200px;}
