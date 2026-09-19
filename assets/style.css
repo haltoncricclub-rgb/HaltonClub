@@ -501,6 +501,20 @@
     border:1px solid var(--academy-red); color:var(--cream);
     background:rgba(214,32,39,0.08);
   }
+  .league-logo-row{display:flex; flex-wrap:wrap; gap:14px; margin-top:8px;}
+  .league-logo{
+    width:88px; height:88px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    background:#fff;
+    border:1px solid var(--line-strong);
+    border-radius:8px;
+    padding:10px;
+    overflow:hidden;
+  }
+  .league-logo img{width:100%; height:100%; object-fit:contain; display:block;}
+  @media (max-width:600px){
+    .league-logo{width:72px; height:72px;}
+  }
 
   /* ---------- INFO STRIP (ground / training / pathway) ---------- */
   .info-strip{background:var(--bg-1);}
@@ -536,6 +550,7 @@
   .news-card-img{width:100%; height:190px; object-fit:cover; display:block;}
   .news-card-body{padding:22px 22px 24px; display:flex; flex-direction:column; gap:12px;}
   .news-card .date{font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--club-orange-bright);}
+  .view-academy .news-card .date{color:var(--academy-blue);}
   .news-card h4{font-family:'Fraunces', serif; font-size:1.1rem; font-weight:600;}
   .news-card p{color:var(--muted); font-size:0.88rem;}
   .news-full{color:var(--muted); font-size:0.88rem; display:flex; flex-direction:column; gap:10px;}
