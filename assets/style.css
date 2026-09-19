@@ -515,15 +515,29 @@
   @media (max-width:600px){
     .league-logo{width:72px; height:72px;}
   }
-  .league-logo-banner{
-    margin-top:8px;
-    background:#000;
-    border:1px solid var(--line-strong);
-    border-radius:10px;
-    padding:14px;
-    overflow:hidden;
+  .league-logo-grid{display:flex; flex-wrap:wrap; gap:18px; margin-top:8px;}
+  .league-logo-tile{
+    width:150px; flex-shrink:0;
+    display:flex; flex-direction:column; align-items:center;
   }
-  .league-logo-banner img{width:100%; height:auto; display:block; border-radius:4px;}
+  .league-logo-tile img{
+    width:150px; height:150px;
+    background:var(--bg-1);
+    border:1px solid var(--line-strong);
+    border-radius:12px;
+    padding:18px;
+    object-fit:contain;
+    display:block;
+  }
+  .league-logo-label{
+    margin-top:12px;
+    font-family:'IBM Plex Mono', monospace; font-size:0.78rem; font-weight:600;
+    letter-spacing:0.06em; color:var(--cream); text-align:center;
+  }
+  @media (max-width:600px){
+    .league-logo-tile{width:104px;}
+    .league-logo-tile img{width:104px; height:104px; padding:12px;}
+  }
 
   /* ---------- INFO STRIP (ground / training / pathway) ---------- */
   .info-strip{background:var(--bg-1);}
