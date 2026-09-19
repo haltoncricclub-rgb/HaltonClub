@@ -534,6 +534,10 @@
     font-family:'IBM Plex Mono', monospace; font-size:0.78rem; font-weight:600;
     letter-spacing:0.06em; color:var(--cream); text-align:center;
   }
+  .info-block .league-logo-grid{gap:12px;}
+  .info-block .league-logo-tile{width:92px;}
+  .info-block .league-logo-tile img{width:92px; height:92px; padding:12px;}
+  .info-block .league-logo-label{font-size:0.68rem; margin-top:8px;}
   @media (max-width:600px){
     .league-logo-tile{width:104px;}
     .league-logo-tile img{width:104px; height:104px; padding:12px;}
