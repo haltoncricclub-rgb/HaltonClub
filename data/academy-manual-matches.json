@@ -1,0 +1,49 @@
+{
+  "note": "Manually maintained one-off academy matches that fall outside the regular scraped CricHeroes/CricClubs team pages (e.g. tournament matches for a league the scraper doesn't track). This file is never touched by the scraper — edit it by hand and commit/push like any other data file.",
+  "generated_at": "2026-09-25T00:00:00+00:00",
+  "teams": {
+    "hdcl_2026": {
+      "ok": true,
+      "page_type": "team_page",
+      "group": "academy",
+      "name": "Halton Cricket Academy U11 (HDCL)",
+      "matches": [
+        {
+          "date": "3 Aug 2026",
+          "team_a": "Halton Cricket Academy",
+          "team_b": "Niagara Cricket Academy",
+          "competition": "HDCL Tournament",
+          "result": "Niagara Cricket Academy won by 18 runs"
+        }
+      ],
+      "batting": [
+        { "player": "Manbir Singh", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "runs": "7", "average": "7.00", "strike_rate": "116.67", "highest_score": "7", "not_outs": "0", "fours": "1", "sixes": "0", "hundreds": "0" },
+        { "player": "Samar Multani", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "runs": "44", "average": "44.00", "strike_rate": "84.62", "highest_score": "44*", "not_outs": "1", "fours": "2", "sixes": "0", "hundreds": "0" },
+        { "player": "Jai Singh", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "runs": "1", "average": "1.00", "strike_rate": "33.33", "highest_score": "1", "not_outs": "0", "fours": "0", "sixes": "0", "hundreds": "0" },
+        { "player": "Yugveer Chugh", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "runs": "2", "average": "2.00", "strike_rate": "100.00", "highest_score": "2", "not_outs": "0", "fours": "0", "sixes": "0", "hundreds": "0" },
+        { "player": "Atharv Bansal", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "runs": "12", "average": "12.00", "strike_rate": "171.43", "highest_score": "12", "not_outs": "0", "fours": "2", "sixes": "0", "hundreds": "0" },
+        { "player": "Nitisha Chakarvarty", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "runs": "3", "average": "3.00", "strike_rate": "100.00", "highest_score": "3", "not_outs": "0", "fours": "0", "sixes": "0", "hundreds": "0" },
+        { "player": "Yuvraj Sharma", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "runs": "1", "average": "1.00", "strike_rate": "100.00", "highest_score": "1", "not_outs": "0", "fours": "0", "sixes": "0", "hundreds": "0" },
+        { "player": "Viraaj Kaushik", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "runs": "22", "average": "22.00", "strike_rate": "68.75", "highest_score": "22", "not_outs": "0", "fours": "1", "sixes": "0", "hundreds": "0" },
+        { "player": "Hridansh Mittal", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "runs": "4", "average": "4.00", "strike_rate": "133.33", "highest_score": "4", "not_outs": "0", "fours": "0", "sixes": "0", "hundreds": "0" },
+        { "player": "Eka Vivek", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "runs": "9", "average": "9.00", "strike_rate": "150.00", "highest_score": "9*", "not_outs": "1", "fours": "0", "sixes": "0", "hundreds": "0" },
+        { "player": "Yuvaan Shrivastava", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "runs": "6", "average": "6.00", "strike_rate": "120.00", "highest_score": "6", "not_outs": "0", "fours": "0", "sixes": "0", "hundreds": "0" }
+      ],
+      "bowling": [
+        { "player": "Manbir Singh", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "wickets": "1", "economy": "4.5", "average": "9.00", "maidens": "1", "best": "1-9", "strike_rate": "12.0" },
+        { "player": "Atharv Bansal", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "wickets": "1", "economy": "8.5", "average": "17.00", "maidens": "0", "best": "1-17", "strike_rate": "12.0" },
+        { "player": "Nitisha Chakarvarty", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "wickets": "1", "economy": "3.0", "average": "6.00", "maidens": "0", "best": "1-6", "strike_rate": "12.0" },
+        { "player": "Yuvaan Shrivastava", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "wickets": "1", "economy": "5.3", "average": "16.00", "maidens": "0", "best": "1-16", "strike_rate": "18.0" },
+        { "player": "Hridansh Mittal", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "wickets": "0", "economy": "6.0", "average": "-", "maidens": "0", "best": "0-18", "strike_rate": "-" },
+        { "player": "Viraaj Kaushik", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "wickets": "1", "economy": "5.5", "average": "11.00", "maidens": "0", "best": "1-11", "strike_rate": "12.0" },
+        { "player": "Yuvraj Sharma", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "wickets": "1", "economy": "9.0", "average": "18.00", "maidens": "0", "best": "1-18", "strike_rate": "12.0" },
+        { "player": "Samar Multani", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "wickets": "1", "economy": "10.5", "average": "21.00", "maidens": "0", "best": "1-21", "strike_rate": "12.0" },
+        { "player": "Eka Vivek", "team": "Halton Cricket Academy U11 (HDCL)", "innings": "1", "wickets": "1", "economy": "6.5", "average": "13.00", "maidens": "0", "best": "1-13", "strike_rate": "12.0" }
+      ],
+      "fielding": [
+        { "player": "Nitisha Chakarvarty", "team": "Halton Cricket Academy U11 (HDCL)", "matches": "1", "total": "2", "catches": "1", "run_outs": "1", "catch_and_bowled": "0", "caught_behind": "0", "stumpings": "0", "assisted_run_outs": "0" },
+        { "player": "Yugveer Chugh", "team": "Halton Cricket Academy U11 (HDCL)", "matches": "1", "total": "2", "catches": "1", "run_outs": "1", "catch_and_bowled": "0", "caught_behind": "0", "stumpings": "0", "assisted_run_outs": "0" }
+      ]
+    }
+  }
+}
