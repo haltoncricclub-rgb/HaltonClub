@@ -63,9 +63,9 @@
         </div>
       </div>
       <nav class="links" id="navLinksClub">
+        <a href="#club-leaderboard">Leaderboard</a>
         <a href="#club-about">About</a>
         <a href="#club-team">Management</a>
-        <a href="#club-leaderboard">Leaderboard</a>
         <a href="#club-fixtures">Fixtures</a>
         <a class="link-btn switch-btn" href="/">&larr; Switch Program</a>
         <a href="#club-join" class="nav-cta">Join Us</a>
@@ -93,6 +93,84 @@
         <div class="score-cell"><div class="label">Summer Formats</div><div class="value">40 &middot; 25 &middot; 20 Overs</div></div>
         <div class="score-cell"><div class="label">Winter Formats</div><div class="value">T12 &middot; T15</div></div>
         <div class="score-cell"><div class="label">Training</div><div class="value">Hitzone, Burlington</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fixtures" id="club-leaderboard">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Leaderboards</span>
+        <h2>Top performers across the club.</h2>
+        <p id="club-leaderboard-note">Loading live stats from CricHeroes&hellip;</p>
+      </div>
+
+      <div class="top-performer-row">
+        <div class="top-performer-card reveal" id="club-top-batsman" style="display:none;">
+          <span class="top-performer-badge" id="club-top-batsman-badge">Season Top Batsman</span>
+          <div class="top-performer-body">
+            <span id="club-top-batsman-avatar"></span>
+            <div>
+              <div class="top-performer-name" id="club-top-batsman-name">&ndash;</div>
+              <div class="top-performer-stat" id="club-top-batsman-stat">&ndash;</div>
+            </div>
+          </div>
+        </div>
+        <div class="top-performer-card reveal" id="club-top-bowler" style="display:none;">
+          <span class="top-performer-badge" id="club-top-bowler-badge">Season Top Bowler</span>
+          <div class="top-performer-body">
+            <span id="club-top-bowler-avatar"></span>
+            <div>
+              <div class="top-performer-name" id="club-top-bowler-name">&ndash;</div>
+              <div class="top-performer-stat" id="club-top-bowler-stat">&ndash;</div>
+            </div>
+          </div>
+        </div>
+        <div class="top-performer-card reveal" id="club-top-fielder" style="display:none;">
+          <span class="top-performer-badge" id="club-top-fielder-badge">Season Top Fielder</span>
+          <div class="top-performer-body">
+            <span id="club-top-fielder-avatar"></span>
+            <div>
+              <div class="top-performer-name" id="club-top-fielder-name">&ndash;</div>
+              <div class="top-performer-stat" id="club-top-fielder-stat">&ndash;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="league-chip-row reveal" id="league-chip-row">
+        <button class="league-chip active" data-league="all">All Leagues</button>
+      </div>
+
+      <div class="season-record-row reveal" id="season-record-row">
+        <div class="record-card"><div class="record-num" id="record-played">&ndash;</div><div class="record-label">Played</div></div>
+        <div class="record-card"><div class="record-num" id="record-won">&ndash;</div><div class="record-label">Won</div></div>
+        <div class="record-card"><div class="record-num" id="record-lost">&ndash;</div><div class="record-label">Lost</div></div>
+        <div class="record-card"><div class="record-num" id="record-abandoned">&ndash;</div><div class="record-label">Abandoned</div></div>
+      </div>
+
+      <div class="leaderboard-grid reveal">
+        <div class="leaderboard-col">
+          <h4>Top Runs</h4>
+          <table class="fixture-table">
+            <thead><tr><th>Player</th><th class="lb-team-col">Team</th><th>Stat</th></tr></thead>
+            <tbody id="club-leaderboard-batting"><tr><td colspan="3" class="lb-empty">No data yet</td></tr></tbody>
+          </table>
+        </div>
+        <div class="leaderboard-col">
+          <h4>Top Wickets</h4>
+          <table class="fixture-table">
+            <thead><tr><th>Player</th><th class="lb-team-col">Team</th><th>Stat</th></tr></thead>
+            <tbody id="club-leaderboard-bowling"><tr><td colspan="3" class="lb-empty">No data yet</td></tr></tbody>
+          </table>
+        </div>
+        <div class="leaderboard-col">
+          <h4>Top Fielders</h4>
+          <table class="fixture-table">
+            <thead><tr><th>Player</th><th class="lb-team-col">Team</th><th>Stat</th></tr></thead>
+            <tbody id="club-leaderboard-fielding"><tr><td colspan="3" class="lb-empty">No data yet</td></tr></tbody>
+          </table>
+        </div>
       </div>
     </div>
   </section>
@@ -316,83 +394,6 @@
     </div>
   </section>
 
-  <section class="fixtures" id="club-leaderboard">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Leaderboards</span>
-        <h2>Top performers across the club.</h2>
-        <p id="club-leaderboard-note">Loading live stats from CricHeroes&hellip;</p>
-      </div>
-
-      <div class="top-performer-row">
-        <div class="top-performer-card reveal" id="club-top-batsman" style="display:none;">
-          <span class="top-performer-badge" id="club-top-batsman-badge">Season Top Batsman</span>
-          <div class="top-performer-body">
-            <span id="club-top-batsman-avatar"></span>
-            <div>
-              <div class="top-performer-name" id="club-top-batsman-name">&ndash;</div>
-              <div class="top-performer-stat" id="club-top-batsman-stat">&ndash;</div>
-            </div>
-          </div>
-        </div>
-        <div class="top-performer-card reveal" id="club-top-bowler" style="display:none;">
-          <span class="top-performer-badge" id="club-top-bowler-badge">Season Top Bowler</span>
-          <div class="top-performer-body">
-            <span id="club-top-bowler-avatar"></span>
-            <div>
-              <div class="top-performer-name" id="club-top-bowler-name">&ndash;</div>
-              <div class="top-performer-stat" id="club-top-bowler-stat">&ndash;</div>
-            </div>
-          </div>
-        </div>
-        <div class="top-performer-card reveal" id="club-top-fielder" style="display:none;">
-          <span class="top-performer-badge" id="club-top-fielder-badge">Season Top Fielder</span>
-          <div class="top-performer-body">
-            <span id="club-top-fielder-avatar"></span>
-            <div>
-              <div class="top-performer-name" id="club-top-fielder-name">&ndash;</div>
-              <div class="top-performer-stat" id="club-top-fielder-stat">&ndash;</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="league-chip-row reveal" id="league-chip-row">
-        <button class="league-chip active" data-league="all">All Leagues</button>
-      </div>
-
-      <div class="season-record-row reveal" id="season-record-row">
-        <div class="record-card"><div class="record-num" id="record-played">&ndash;</div><div class="record-label">Played</div></div>
-        <div class="record-card"><div class="record-num" id="record-won">&ndash;</div><div class="record-label">Won</div></div>
-        <div class="record-card"><div class="record-num" id="record-lost">&ndash;</div><div class="record-label">Lost</div></div>
-        <div class="record-card"><div class="record-num" id="record-abandoned">&ndash;</div><div class="record-label">Abandoned</div></div>
-      </div>
-
-      <div class="leaderboard-grid reveal">
-        <div class="leaderboard-col">
-          <h4>Top Runs</h4>
-          <table class="fixture-table">
-            <thead><tr><th>Player</th><th class="lb-team-col">Team</th><th>Stat</th></tr></thead>
-            <tbody id="club-leaderboard-batting"><tr><td colspan="3" class="lb-empty">No data yet</td></tr></tbody>
-          </table>
-        </div>
-        <div class="leaderboard-col">
-          <h4>Top Wickets</h4>
-          <table class="fixture-table">
-            <thead><tr><th>Player</th><th class="lb-team-col">Team</th><th>Stat</th></tr></thead>
-            <tbody id="club-leaderboard-bowling"><tr><td colspan="3" class="lb-empty">No data yet</td></tr></tbody>
-          </table>
-        </div>
-        <div class="leaderboard-col">
-          <h4>Top Fielders</h4>
-          <table class="fixture-table">
-            <thead><tr><th>Player</th><th class="lb-team-col">Team</th><th>Stat</th></tr></thead>
-            <tbody id="club-leaderboard-fielding"><tr><td colspan="3" class="lb-empty">No data yet</td></tr></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="fixtures" id="club-fixtures">
     <div class="wrap">
