@@ -27,6 +27,10 @@
   const CRICHEROES_DATA_URL = 'https://raw.githubusercontent.com/haltoncricclub-rgb/HaltonClub/main/data/cricheroes-data.json';
   const CRICHEROES_TOURNAMENTS_DATA_URL = 'https://raw.githubusercontent.com/haltoncricclub-rgb/HaltonClub/main/data/cricheroes-tournaments-data.json';
   const CRICCLUBS_DATA_URL = 'https://raw.githubusercontent.com/haltoncricclub-rgb/HaltonClub/main/data/cricclubs-data.json';
+  // Hand-maintained one-off matches (tournaments the scraper doesn't track,
+  // e.g. a single HDCL game) — this file is never written by the scraper,
+  // so anything added here survives every re-run.
+  const ACADEMY_MANUAL_MATCHES_URL = 'https://raw.githubusercontent.com/haltoncricclub-rgb/HaltonClub/main/data/academy-manual-matches.json';
   const PLAYER_PHOTOS_URL = 'https://raw.githubusercontent.com/haltoncricclub-rgb/HaltonClub/main/data/player-photos.json';
   const PLAYER_OVERRIDES_URL = 'https://raw.githubusercontent.com/haltoncricclub-rgb/HaltonClub/main/data/player-overrides.json';
   const PLAYER_PHOTOS_BASE = 'https://raw.githubusercontent.com/haltoncricclub-rgb/HaltonClub/main/data/photos/';
@@ -425,6 +429,18 @@
     }
   }
 
+  async function fetchAcademyManualMatches(){
+    // Optional data source — the site works fine without it.
+    try {
+      const res = await fetch(ACADEMY_MANUAL_MATCHES_URL, { cache: 'no-store' });
+      if (!res.ok) return null;
+      return await res.json();
+    } catch (err) {
+      console.warn('Manual academy match data unavailable.', err);
+      return null;
+    }
+  }
+
   async function loadPlayerPhotos(){
     // Optional — players without a submitted photo just show initials instead.
     try {
@@ -578,6 +594,7 @@
       const data = await res.json();
       const tournamentsByName = await fetchTournamentsByName();
       const cricclubsData = await fetchCricClubsData();
+      const manualAcademyData = await fetchAcademyManualMatches();
       await loadPlayerPhotos();
       await loadPlayerOverrides();
 
@@ -635,6 +652,29 @@
               leaderboard_detailed,
             });
           }
+        });
+      }
+
+      // Fold in hand-maintained one-off academy matches (same shape as the
+      // CricClubs team pages above) — e.g. a single tournament game the
+      // scraper doesn't track. Never overwritten by a scraper re-run.
+      if (manualAcademyData && manualAcademyData.teams) {
+        Object.values(manualAcademyData.teams).forEach(team => {
+          if (!team.ok || team.page_type !== 'team_page' || team.group !== 'academy') return;
+
+          const tagged = (team.matches || []).map(m => ({
+            ...normalizeCricClubsMatch(m), team: team.name,
+          }));
+          academyMatches.push(...tagged);
+
+          const fielding = (team.fielding || []).map(f => ({ ...f, dismissals: f.total }));
+          const leaderboard_detailed = { batting: team.batting || [], bowling: team.bowling || [], fielding };
+          const parenMatch = team.name.match(/\(([^)]+)\)\s*$/);
+          academyTeams.push({
+            name: team.name,
+            shortName: parenMatch ? parenMatch[1] : team.name,
+            leaderboard_detailed,
+          });
         });
       }
 
@@ -806,9 +846,9 @@
   // up the EmailJS account (see setup steps you were given separately).
   //
   // TODO: after creating your EmailJS account, replace these three values:
-  const EMAILJS_PUBLIC_KEY = '0NoYCtwjXpW1c-0aQ';
-  const EMAILJS_SERVICE_ID = 'service_0gvutpc';
-  const EMAILJS_TEMPLATE_ID = 'template_60hvc19';
+  const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+  const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
+  const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
 
   function val(id){
     const el = document.getElementById(id);

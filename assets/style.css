@@ -122,10 +122,10 @@
   .panel:active{transform:scale(0.99);}
   .panel-club{
     background:linear-gradient(165deg, var(--club-navy) 0%, var(--club-navy-deep) 100%);
-    border-right:1px solid var(--line);
   }
   .panel-academy{
     background:linear-gradient(165deg, #1A1113 0%, var(--bg-1) 100%);
+    border-right:1px solid var(--line);
   }
   .panel .crest-frame{width:104px; height:104px; border-radius:12px;}
   .panel-club .crest-frame{border-color:var(--club-orange);}
