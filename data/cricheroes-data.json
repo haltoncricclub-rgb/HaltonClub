@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T19:34:50.196365+00:00",
+  "generated_at": "2026-09-29T18:40:44.298118+00:00",
   "mode": "authenticated-manual",
   "teams": {
     "13709207": {
@@ -9,15 +9,15 @@
       "matches_detailed": [
         {
           "league": "Mountain Premier League",
-          "venue_line": "ice mohawk Park, Hamilton (Ontario), 06-Sep-26, 25 Ov.,",
+          "venue_line": "ice mohawk Park, Hamilton (Ontario), 12-Sep-26, 20 Ov.,",
           "round": "League Matches",
-          "status": "upcoming",
-          "team_a": "HCC- Arctic titans",
-          "score_a": null,
-          "team_b": "Sher-E-Punjab XI",
-          "score_b": null,
-          "scheduled_at": "Sun,06 Sep, 07:30 AM",
-          "result": null
+          "status": "past",
+          "team_a": "HCC Maple Mavericks",
+          "score_a": "(20.0)",
+          "team_b": "HCC- Arctic titans",
+          "score_b": "(20.0)",
+          "scheduled_at": null,
+          "result": "HCC Maple Mavericks won by 76 runs"
         },
         {
           "league": "Mountain Premier League",
@@ -45,15 +45,15 @@
         },
         {
           "league": "Mountain Premier League",
-          "venue_line": "ice mohawk Park, Hamilton (Ontario), 12-Sep-26, 25 Ov.,",
+          "venue_line": "ice mohawk Park, Hamilton (Ontario), 06-Sep-26, 25 Ov.,",
           "round": "League Matches",
-          "status": "upcoming",
-          "team_a": "HCC- Arctic titans",
-          "score_a": null,
-          "team_b": "HCC Maple Mavericks",
-          "score_b": null,
-          "scheduled_at": "Sat,12 Sep, 07:30 AM",
-          "result": null
+          "status": "past",
+          "team_a": "Sher-E-Punjab XI",
+          "score_a": "(25.0)",
+          "team_b": "HCC- Arctic titans",
+          "score_b": "(25.0)",
+          "scheduled_at": null,
+          "result": "Sher-E-Punjab XI won by 176 runs"
         },
         {
           "league": "Mountain Premier League",
@@ -106,10 +106,10 @@
       ],
       "matches": [
         {
-          "date": "06-Sep-26",
-          "opponent": "Sher-E-Punjab XI",
-          "result": "Scheduled: Sun,06 Sep, 07:30 AM",
-          "status": "upcoming"
+          "date": "12-Sep-26",
+          "opponent": "HCC- Arctic titans",
+          "result": "HCC Maple Mavericks won by 76 runs",
+          "status": "past"
         },
         {
           "date": "08-Aug-26",
@@ -124,10 +124,10 @@
           "status": "past"
         },
         {
-          "date": "12-Sep-26",
-          "opponent": "HCC Maple Mavericks",
-          "result": "Scheduled: Sat,12 Sep, 07:30 AM",
-          "status": "upcoming"
+          "date": "06-Sep-26",
+          "opponent": "Sher-E-Punjab XI",
+          "result": "Sher-E-Punjab XI won by 176 runs",
+          "status": "past"
         },
         {
           "date": "01-Aug-26",
@@ -158,22 +158,22 @@
         "batting": [
           {
             "player": "Rohit Maheshwari",
-            "innings": "5",
-            "runs": "123",
-            "average": "30.75",
-            "strike_rate": "79.87",
+            "innings": "7",
+            "runs": "158",
+            "average": "26.33",
+            "strike_rate": "86.34",
             "highest_score": "37",
             "not_outs": "1",
-            "fours": "5",
-            "sixes": "5",
+            "fours": "7",
+            "sixes": "8",
             "hundreds": "0"
           },
           {
             "player": "Shramit Goyal",
-            "innings": "5",
+            "innings": "6",
             "runs": "114",
-            "average": "22.80",
-            "strike_rate": "76.00",
+            "average": "19.00",
+            "strike_rate": "75.00",
             "highest_score": "53",
             "not_outs": "0",
             "fours": "8",
@@ -181,98 +181,98 @@
             "hundreds": "0"
           },
           {
-            "player": "Vishal tomar",
-            "innings": "4",
-            "runs": "53",
-            "average": "17.67",
-            "strike_rate": "72.60",
-            "highest_score": "36",
+            "player": "Pradip Maheshvari",
+            "innings": "6",
+            "runs": "82",
+            "average": "16.40",
+            "strike_rate": "71.93",
+            "highest_score": "30",
             "not_outs": "1",
             "fours": "4",
             "sixes": "2",
             "hundreds": "0"
           },
           {
-            "player": "Saravanan Kameswaran",
+            "player": "Vishal tomar",
             "innings": "5",
-            "runs": "39",
-            "average": "9.75",
-            "strike_rate": "54.17",
-            "highest_score": "11",
+            "runs": "74",
+            "average": "18.50",
+            "strike_rate": "84.09",
+            "highest_score": "36",
             "not_outs": "1",
-            "fours": "2",
-            "sixes": "1",
+            "fours": "5",
+            "sixes": "4",
             "hundreds": "0"
           },
           {
-            "player": "Pradip Maheshvari",
-            "innings": "4",
-            "runs": "31",
-            "average": "10.33",
-            "strike_rate": "64.58",
+            "player": "Saravanan Kameswaran",
+            "innings": "7",
+            "runs": "61",
+            "average": "10.17",
+            "strike_rate": "63.54",
             "highest_score": "20",
             "not_outs": "1",
-            "fours": "1",
-            "sixes": "1",
+            "fours": "3",
+            "sixes": "2",
+            "hundreds": "0"
+          },
+          {
+            "player": "Smeet Purohit",
+            "innings": "3",
+            "runs": "40",
+            "average": "40.00",
+            "strike_rate": "72.73",
+            "highest_score": "22",
+            "not_outs": "2",
+            "fours": "3",
+            "sixes": "0",
             "hundreds": "0"
           },
           {
             "player": "Chinmay Sahoo",
-            "innings": "3",
-            "runs": "22",
-            "average": "11.00",
-            "strike_rate": "46.81",
+            "innings": "5",
+            "runs": "30",
+            "average": "10.00",
+            "strike_rate": "42.86",
             "highest_score": "11",
-            "not_outs": "1",
+            "not_outs": "2",
             "fours": "1",
             "sixes": "0",
             "hundreds": "0"
           },
           {
             "player": "Pranjit Deka",
-            "innings": "4",
-            "runs": "20",
-            "average": "5.00",
+            "innings": "5",
+            "runs": "30",
+            "average": "6.00",
             "strike_rate": "62.50",
             "highest_score": "13",
             "not_outs": "0",
-            "fours": "1",
-            "sixes": "0",
-            "hundreds": "0"
-          },
-          {
-            "player": "Akul Akul",
-            "innings": "3",
-            "runs": "15",
-            "average": "5.00",
-            "strike_rate": "65.22",
-            "highest_score": "9",
-            "not_outs": "0",
-            "fours": "1",
-            "sixes": "0",
-            "hundreds": "0"
-          },
-          {
-            "player": "Aditya Shrivastava",
-            "innings": "4",
-            "runs": "15",
-            "average": "5.00",
-            "strike_rate": "60.00",
-            "highest_score": "10",
-            "not_outs": "1",
             "fours": "2",
             "sixes": "0",
             "hundreds": "0"
           },
           {
             "player": "Akshay Ghatge",
-            "innings": "3",
-            "runs": "14",
-            "average": "7.00",
-            "strike_rate": "66.67",
-            "highest_score": "10",
-            "not_outs": "1",
+            "innings": "4",
+            "runs": "26",
+            "average": "13.00",
+            "strike_rate": "60.47",
+            "highest_score": "12",
+            "not_outs": "2",
             "fours": "0",
+            "sixes": "0",
+            "hundreds": "0"
+          },
+          {
+            "player": "Aditya Shrivastava",
+            "innings": "6",
+            "runs": "26",
+            "average": "6.50",
+            "strike_rate": "45.61",
+            "highest_score": "10",
+            "not_outs": "2",
+            "fours": "2",
             "sixes": "0",
             "hundreds": "0"
           }
@@ -280,43 +280,63 @@
         "bowling": [
           {
             "player": "Akshay Ghatge",
-            "innings": "5",
-            "wickets": "9",
-            "economy": "6.76",
-            "average": "14.78",
+            "innings": "7",
+            "wickets": "10",
+            "economy": "6.63",
+            "average": "19",
             "maidens": "1",
             "best": "5",
-            "strike_rate": "13.11"
-          },
-          {
-            "player": "Chinmay Sahoo",
-            "innings": "3",
-            "wickets": "5",
-            "economy": "8.81",
-            "average": "9.4",
-            "maidens": "0",
-            "best": "4",
-            "strike_rate": "6.40"
+            "strike_rate": "17.20"
           },
           {
             "player": "Rohit Maheshwari",
-            "innings": "4",
-            "wickets": "4",
-            "economy": "7.64",
-            "average": "24.5",
+            "innings": "6",
+            "wickets": "9",
+            "economy": "7.28",
+            "average": "17.67",
             "maidens": "0",
-            "best": "2",
-            "strike_rate": "19.25"
+            "best": "4",
+            "strike_rate": "14.56"
           },
           {
             "player": "Akul Akul",
-            "innings": "4",
-            "wickets": "4",
-            "economy": "8.57",
-            "average": "15",
+            "innings": "5",
+            "wickets": "6",
+            "economy": "8.70",
+            "average": "14.5",
             "maidens": "0",
             "best": "2",
-            "strike_rate": "10.50"
+            "strike_rate": "10.00"
+          },
+          {
+            "player": "Chinmay Sahoo",
+            "innings": "5",
+            "wickets": "5",
+            "economy": "12.00",
+            "average": "20",
+            "maidens": "0",
+            "best": "4",
+            "strike_rate": "10.00"
+          },
+          {
+            "player": "Aditya Shrivastava",
+            "innings": "7",
+            "wickets": "4",
+            "economy": "9.94",
+            "average": "39.75",
+            "maidens": "0",
+            "best": "2",
+            "strike_rate": "24.00"
+          },
+          {
+            "player": "Pradip Maheshvari",
+            "innings": "6",
+            "wickets": "4",
+            "economy": "10.35",
+            "average": "59.5",
+            "maidens": "0",
+            "best": "1",
+            "strike_rate": "34.50"
           },
           {
             "player": "Harsh Singh",
@@ -327,26 +347,6 @@
             "maidens": "0",
             "best": "3",
             "strike_rate": "10.00"
-          },
-          {
-            "player": "Pradip Maheshvari",
-            "innings": "4",
-            "wickets": "3",
-            "economy": "9.07",
-            "average": "45.33",
-            "maidens": "0",
-            "best": "1",
-            "strike_rate": "30.00"
-          },
-          {
-            "player": "Aditya Shrivastava",
-            "innings": "5",
-            "wickets": "2",
-            "economy": "7.55",
-            "average": "41.5",
-            "maidens": "0",
-            "best": "1",
-            "strike_rate": "33.00"
           },
           {
             "player": "Vishal tomar",
@@ -370,41 +370,41 @@
           },
           {
             "player": "Deepak Malkani",
-            "innings": "3",
+            "innings": "4",
             "wickets": "1",
-            "economy": "10.25",
-            "average": "41",
+            "economy": "12.67",
+            "average": "76",
             "maidens": "0",
             "best": "1",
-            "strike_rate": "24.00"
+            "strike_rate": "36.00"
           }
         ],
         "fielding": [
           {
             "player": "Shramit Goyal",
-            "matches": "5",
-            "dismissals": "4",
+            "matches": "6",
+            "dismissals": "5",
             "catches": "0",
             "run_outs": "0",
             "catch_and_bowled": "0",
             "caught_behind": "3",
-            "stumpings": "1",
+            "stumpings": "2",
             "assisted_run_outs": "0"
           },
           {
-            "player": "Chinmay Sahoo",
-            "matches": "4",
+            "player": "Smeet Purohit",
+            "matches": "3",
             "dismissals": "3",
             "catches": "2",
             "run_outs": "0",
-            "catch_and_bowled": "1",
-            "caught_behind": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "1",
             "stumpings": "0",
             "assisted_run_outs": "0"
           },
           {
             "player": "Pranjit Deka",
-            "matches": "4",
+            "matches": "5",
             "dismissals": "3",
             "catches": "2",
             "run_outs": "0",
@@ -414,19 +414,52 @@
             "assisted_run_outs": "0"
           },
           {
-            "player": "Smeet Purohit",
-            "matches": "1",
-            "dismissals": "1",
+            "player": "Chinmay Sahoo",
+            "matches": "6",
+            "dismissals": "3",
+            "catches": "2",
+            "run_outs": "0",
+            "catch_and_bowled": "1",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Kanish Satawalekar",
+            "matches": "7",
+            "dismissals": "2",
             "catches": "1",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Saravanan Kameswaran",
+            "matches": "7",
+            "dismissals": "2",
+            "catches": "2",
             "run_outs": "0",
             "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Akshay Ghatge",
+            "matches": "8",
+            "dismissals": "2",
+            "catches": "0",
+            "run_outs": "1",
+            "catch_and_bowled": "1",
             "caught_behind": "0",
             "stumpings": "0",
             "assisted_run_outs": "0"
           },
           {
             "player": "Deepak Malkani",
-            "matches": "4",
+            "matches": "5",
             "dismissals": "1",
             "catches": "1",
             "run_outs": "0",
@@ -437,40 +470,7 @@
           },
           {
             "player": "Akul Akul",
-            "matches": "5",
-            "dismissals": "1",
-            "catches": "1",
-            "run_outs": "0",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Kanish Satawalekar",
-            "matches": "5",
-            "dismissals": "1",
-            "catches": "1",
-            "run_outs": "0",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Pradip Maheshvari",
-            "matches": "5",
-            "dismissals": "1",
-            "catches": "1",
-            "run_outs": "0",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Rohit Maheshwari",
-            "matches": "5",
+            "matches": "6",
             "dismissals": "1",
             "catches": "1",
             "run_outs": "0",
@@ -481,7 +481,7 @@
           },
           {
             "player": "Vishal tomar",
-            "matches": "5",
+            "matches": "6",
             "dismissals": "1",
             "catches": "1",
             "run_outs": "0",
@@ -497,89 +497,89 @@
           {
             "player": "Rohit Maheshwari",
             "team": "HCC Arctic Titans",
-            "stat": "123 runs (Avg 30.75, SR 79.87)"
+            "stat": "158 runs (Avg 26.33, SR 86.34)"
           },
           {
             "player": "Shramit Goyal",
             "team": "HCC Arctic Titans",
-            "stat": "114 runs (Avg 22.80, SR 76.00)"
-          },
-          {
-            "player": "Vishal tomar",
-            "team": "HCC Arctic Titans",
-            "stat": "53 runs (Avg 17.67, SR 72.60)"
-          },
-          {
-            "player": "Saravanan Kameswaran",
-            "team": "HCC Arctic Titans",
-            "stat": "39 runs (Avg 9.75, SR 54.17)"
+            "stat": "114 runs (Avg 19.00, SR 75.00)"
           },
           {
             "player": "Pradip Maheshvari",
             "team": "HCC Arctic Titans",
-            "stat": "31 runs (Avg 10.33, SR 64.58)"
+            "stat": "82 runs (Avg 16.40, SR 71.93)"
+          },
+          {
+            "player": "Vishal tomar",
+            "team": "HCC Arctic Titans",
+            "stat": "74 runs (Avg 18.50, SR 84.09)"
+          },
+          {
+            "player": "Saravanan Kameswaran",
+            "team": "HCC Arctic Titans",
+            "stat": "61 runs (Avg 10.17, SR 63.54)"
+          },
+          {
+            "player": "Smeet Purohit",
+            "team": "HCC Arctic Titans",
+            "stat": "40 runs (Avg 40.00, SR 72.73)"
           },
           {
             "player": "Chinmay Sahoo",
             "team": "HCC Arctic Titans",
-            "stat": "22 runs (Avg 11.00, SR 46.81)"
+            "stat": "30 runs (Avg 10.00, SR 42.86)"
           },
           {
             "player": "Pranjit Deka",
             "team": "HCC Arctic Titans",
-            "stat": "20 runs (Avg 5.00, SR 62.50)"
-          },
-          {
-            "player": "Akul Akul",
-            "team": "HCC Arctic Titans",
-            "stat": "15 runs (Avg 5.00, SR 65.22)"
-          },
-          {
-            "player": "Aditya Shrivastava",
-            "team": "HCC Arctic Titans",
-            "stat": "15 runs (Avg 5.00, SR 60.00)"
+            "stat": "30 runs (Avg 6.00, SR 62.50)"
           },
           {
             "player": "Akshay Ghatge",
             "team": "HCC Arctic Titans",
-            "stat": "14 runs (Avg 7.00, SR 66.67)"
+            "stat": "26 runs (Avg 13.00, SR 60.47)"
+          },
+          {
+            "player": "Aditya Shrivastava",
+            "team": "HCC Arctic Titans",
+            "stat": "26 runs (Avg 6.50, SR 45.61)"
           }
         ],
         "bowling": [
           {
             "player": "Akshay Ghatge",
             "team": "HCC Arctic Titans",
-            "stat": "9 wkts (Econ 6.76, Avg 14.78)"
-          },
-          {
-            "player": "Chinmay Sahoo",
-            "team": "HCC Arctic Titans",
-            "stat": "5 wkts (Econ 8.81, Avg 9.4)"
+            "stat": "10 wkts (Econ 6.63, Avg 19)"
           },
           {
             "player": "Rohit Maheshwari",
             "team": "HCC Arctic Titans",
-            "stat": "4 wkts (Econ 7.64, Avg 24.5)"
+            "stat": "9 wkts (Econ 7.28, Avg 17.67)"
           },
           {
             "player": "Akul Akul",
             "team": "HCC Arctic Titans",
-            "stat": "4 wkts (Econ 8.57, Avg 15)"
+            "stat": "6 wkts (Econ 8.70, Avg 14.5)"
+          },
+          {
+            "player": "Chinmay Sahoo",
+            "team": "HCC Arctic Titans",
+            "stat": "5 wkts (Econ 12.00, Avg 20)"
+          },
+          {
+            "player": "Aditya Shrivastava",
+            "team": "HCC Arctic Titans",
+            "stat": "4 wkts (Econ 9.94, Avg 39.75)"
+          },
+          {
+            "player": "Pradip Maheshvari",
+            "team": "HCC Arctic Titans",
+            "stat": "4 wkts (Econ 10.35, Avg 59.5)"
           },
           {
             "player": "Harsh Singh",
             "team": "HCC Arctic Titans",
             "stat": "3 wkts (Econ 7.40, Avg 12.33)"
-          },
-          {
-            "player": "Pradip Maheshvari",
-            "team": "HCC Arctic Titans",
-            "stat": "3 wkts (Econ 9.07, Avg 45.33)"
-          },
-          {
-            "player": "Aditya Shrivastava",
-            "team": "HCC Arctic Titans",
-            "stat": "2 wkts (Econ 7.55, Avg 41.5)"
           },
           {
             "player": "Vishal tomar",
@@ -594,17 +594,17 @@
           {
             "player": "Deepak Malkani",
             "team": "HCC Arctic Titans",
-            "stat": "1 wkts (Econ 10.25, Avg 41)"
+            "stat": "1 wkts (Econ 12.67, Avg 76)"
           }
         ],
         "fielding": [
           {
             "player": "Shramit Goyal",
             "team": "HCC Arctic Titans",
-            "stat": "0 catches, 4 dismissals"
+            "stat": "0 catches, 5 dismissals"
           },
           {
-            "player": "Chinmay Sahoo",
+            "player": "Smeet Purohit",
             "team": "HCC Arctic Titans",
             "stat": "2 catches, 3 dismissals"
           },
@@ -614,9 +614,24 @@
             "stat": "2 catches, 3 dismissals"
           },
           {
-            "player": "Smeet Purohit",
+            "player": "Chinmay Sahoo",
             "team": "HCC Arctic Titans",
-            "stat": "1 catches, 1 dismissals"
+            "stat": "2 catches, 3 dismissals"
+          },
+          {
+            "player": "Kanish Satawalekar",
+            "team": "HCC Arctic Titans",
+            "stat": "1 catches, 2 dismissals"
+          },
+          {
+            "player": "Saravanan Kameswaran",
+            "team": "HCC Arctic Titans",
+            "stat": "2 catches, 2 dismissals"
+          },
+          {
+            "player": "Akshay Ghatge",
+            "team": "HCC Arctic Titans",
+            "stat": "0 catches, 2 dismissals"
           },
           {
             "player": "Deepak Malkani",
@@ -629,28 +644,13 @@
             "stat": "1 catches, 1 dismissals"
           },
           {
-            "player": "Kanish Satawalekar",
-            "team": "HCC Arctic Titans",
-            "stat": "1 catches, 1 dismissals"
-          },
-          {
-            "player": "Pradip Maheshvari",
-            "team": "HCC Arctic Titans",
-            "stat": "1 catches, 1 dismissals"
-          },
-          {
-            "player": "Rohit Maheshwari",
-            "team": "HCC Arctic Titans",
-            "stat": "1 catches, 1 dismissals"
-          },
-          {
             "player": "Vishal tomar",
             "team": "HCC Arctic Titans",
             "stat": "1 catches, 1 dismissals"
           }
         ]
       },
-      "matches_season_filter_applied": true,
+      "matches_season_filter_applied": false,
       "season_filter_applied": true,
       "season_filter_options_seen": [
         "2026",
@@ -664,9 +664,7 @@
         "2018",
         "2017",
         "2016"
-      ],
-      "stale": true,
-      "stale_reason": "suspiciously empty result (0 matches, 0 batting entries) \u2014 likely a stale session rather than real data"
+      ]
     },
     "13236595": {
       "name": "HCC Maple Mavericks",
@@ -1395,128 +1393,7 @@
         }
       ],
       "leaderboard_detailed": {
-        "batting": [
-          {
-            "player": "Shubham Rai",
-            "innings": "1",
-            "runs": "46",
-            "average": "46.00",
-            "strike_rate": "164.29",
-            "highest_score": "46",
-            "not_outs": "0",
-            "fours": "5",
-            "sixes": "2",
-            "hundreds": "0"
-          },
-          {
-            "player": "Manvir Singh",
-            "innings": "1",
-            "runs": "32",
-            "average": "-",
-            "strike_rate": "96.97",
-            "highest_score": "32",
-            "not_outs": "1",
-            "fours": "2",
-            "sixes": "1",
-            "hundreds": "0"
-          },
-          {
-            "player": "Jaswinder Singh Rattanpal",
-            "innings": "1",
-            "runs": "14",
-            "average": "14.00",
-            "strike_rate": "200.00",
-            "highest_score": "14",
-            "not_outs": "0",
-            "fours": "3",
-            "sixes": "0",
-            "hundreds": "0"
-          },
-          {
-            "player": "Rubalpreet Singh Gill",
-            "innings": "1",
-            "runs": "14",
-            "average": "-",
-            "strike_rate": "107.69",
-            "highest_score": "14",
-            "not_outs": "1",
-            "fours": "1",
-            "sixes": "1",
-            "hundreds": "0"
-          },
-          {
-            "player": "Chanpreet Singh",
-            "innings": "1",
-            "runs": "9",
-            "average": "9.00",
-            "strike_rate": "75.00",
-            "highest_score": "9",
-            "not_outs": "0",
-            "fours": "1",
-            "sixes": "0",
-            "hundreds": "0"
-          },
-          {
-            "player": "Surinder Singh",
-            "innings": "1",
-            "runs": "4",
-            "average": "-",
-            "strike_rate": "50.00",
-            "highest_score": "4",
-            "not_outs": "1",
-            "fours": "0",
-            "sixes": "0",
-            "hundreds": "0"
-          },
-          {
-            "player": "Pawan Gill",
-            "innings": "1",
-            "runs": "4",
-            "average": "-",
-            "strike_rate": "50.00",
-            "highest_score": "4",
-            "not_outs": "1",
-            "fours": "0",
-            "sixes": "0",
-            "hundreds": "0"
-          },
-          {
-            "player": "Lavdeep Singh",
-            "innings": "1",
-            "runs": "3",
-            "average": "-",
-            "strike_rate": "100.00",
-            "highest_score": "3",
-            "not_outs": "1",
-            "fours": "0",
-            "sixes": "0",
-            "hundreds": "0"
-          },
-          {
-            "player": "Amrinder Chahal",
-            "innings": "1",
-            "runs": "2",
-            "average": "2.00",
-            "strike_rate": "28.57",
-            "highest_score": "2",
-            "not_outs": "0",
-            "fours": "0",
-            "sixes": "0",
-            "hundreds": "0"
-          },
-          {
-            "player": "Rammi Bhathal",
-            "innings": "1",
-            "runs": "1",
-            "average": "1.00",
-            "strike_rate": "33.33",
-            "highest_score": "1",
-            "not_outs": "0",
-            "fours": "0",
-            "sixes": "0",
-            "hundreds": "0"
-          }
-        ],
+        "batting": [],
         "bowling": [
           {
             "player": "Shammi Bhathal",
@@ -1617,58 +1494,7 @@
         ]
       },
       "leaderboard": {
-        "batting": [
-          {
-            "player": "Shubham Rai",
-            "team": "HCC Northern Eagles",
-            "stat": "46 runs (Avg 46.00, SR 164.29)"
-          },
-          {
-            "player": "Manvir Singh",
-            "team": "HCC Northern Eagles",
-            "stat": "32 runs (Avg -, SR 96.97)"
-          },
-          {
-            "player": "Jaswinder Singh Rattanpal",
-            "team": "HCC Northern Eagles",
-            "stat": "14 runs (Avg 14.00, SR 200.00)"
-          },
-          {
-            "player": "Rubalpreet Singh Gill",
-            "team": "HCC Northern Eagles",
-            "stat": "14 runs (Avg -, SR 107.69)"
-          },
-          {
-            "player": "Chanpreet Singh",
-            "team": "HCC Northern Eagles",
-            "stat": "9 runs (Avg 9.00, SR 75.00)"
-          },
-          {
-            "player": "Surinder Singh",
-            "team": "HCC Northern Eagles",
-            "stat": "4 runs (Avg -, SR 50.00)"
-          },
-          {
-            "player": "Pawan Gill",
-            "team": "HCC Northern Eagles",
-            "stat": "4 runs (Avg -, SR 50.00)"
-          },
-          {
-            "player": "Lavdeep Singh",
-            "team": "HCC Northern Eagles",
-            "stat": "3 runs (Avg -, SR 100.00)"
-          },
-          {
-            "player": "Amrinder Chahal",
-            "team": "HCC Northern Eagles",
-            "stat": "2 runs (Avg 2.00, SR 28.57)"
-          },
-          {
-            "player": "Rammi Bhathal",
-            "team": "HCC Northern Eagles",
-            "stat": "1 runs (Avg 1.00, SR 33.33)"
-          }
-        ],
+        "batting": [],
         "bowling": [
           {
             "player": "Shammi Bhathal",
@@ -1741,6 +1567,66 @@
       "ok": true,
       "matches_detailed": [
         {
+          "league": "2026 HDCL Ed Burn T20 Elite",
+          "venue_line": "NCC Ground - Stadium(HDCL), Niagara Falls (Ontario), 03-Oct-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "upcoming",
+          "team_a": "HCC Northern Raptors",
+          "score_a": null,
+          "team_b": "MPR Loonies (T20)",
+          "score_b": null,
+          "scheduled_at": "Sat,03 Oct, 03:30 PM",
+          "result": null
+        },
+        {
+          "league": "2026 HDCL Ed Burn T20 Elite",
+          "venue_line": "Confederation Park, Hamilton , Burlington (Ontario), 19-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "Cambridge Elite",
+          "score_a": "(20.0)",
+          "team_b": "HCC Northern Raptors",
+          "score_b": "(20.0)",
+          "scheduled_at": null,
+          "result": "Cambridge Elite won by 31 runs"
+        },
+        {
+          "league": "2026 PREMIER DIVISION",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 16-Aug-26, 40 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Northern Raptors",
+          "score_a": "(40.0)",
+          "team_b": "Hamilton Cricket club",
+          "score_b": "(22.1)",
+          "scheduled_at": null,
+          "result": "HCC Northern Raptors won by 169 runs"
+        },
+        {
+          "league": "2026 PREMIER DIVISION",
+          "venue_line": "Glenashton Park, Oakville (Ontario), 19-Jul-26, 40 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Northern Raptors",
+          "score_a": "(35.2)",
+          "team_b": "Oakville Falcons",
+          "score_b": "(40.0)",
+          "scheduled_at": null,
+          "result": "HCC Northern Raptors won by 44 runs"
+        },
+        {
+          "league": "2026 HDCL Ed Burn T20 Elite",
+          "venue_line": "Waterworks Park Brantford, Brantford, 04-Oct-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "upcoming",
+          "team_a": "Brantford Elite",
+          "score_a": null,
+          "team_b": "HCC Northern Raptors",
+          "score_b": null,
+          "scheduled_at": "Sun,04 Oct, 12:00 PM",
+          "result": null
+        },
+        {
           "league": "2026 PREMIER DIVISION",
           "venue_line": "Sixteen Mile Sports Complex, Oakville (Ontario), 30-Aug-26, 40 Ov.,",
           "round": "Semi Final",
@@ -1777,16 +1663,16 @@
           "result": "HCC Northern Raptors won by 36 runs"
         },
         {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "Jennie Florence Parker Sports Complex, Hamilton (Ontario), 21-Jun-26, 40 Ov.,",
+          "league": "2026 HDCL Ed Burn T20 Elite",
+          "venue_line": "NCC Ground - Stadium(HDCL), Niagara Falls (Ontario), 26-Sep-26, 20 Ov.,",
           "round": "League Matches",
           "status": "past",
           "team_a": "HCC Northern Raptors",
-          "score_a": "(27.2)",
-          "team_b": "Oakville Eagles",
-          "score_b": "(19.2)",
+          "score_a": "(20.0)",
+          "team_b": "Proteas Elite",
+          "score_b": "(20.0)",
           "scheduled_at": null,
-          "result": "HCC Northern Raptors won by 57 runs"
+          "result": "HCC Northern Raptors won by 5 runs"
         },
         {
           "league": "2026 PREMIER DIVISION",
@@ -1823,69 +1709,39 @@
           "score_b": "(25.0)",
           "scheduled_at": null,
           "result": "HCC Northern Raptors won by 8 wickets"
-        },
-        {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "Mohawk  Park, Hamilton (Ontario), 14-Jun-26, 40 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Raptors",
-          "score_a": null,
-          "team_b": "Hamilton Cricket club",
-          "score_b": null,
-          "scheduled_at": null,
-          "result": "Abandoned (abandoned due to rain )"
-        },
-        {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "Mohawk  Park, Hamilton (Ontario), 16-Aug-26, 40 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Raptors",
-          "score_a": "(40.0)",
-          "team_b": "Hamilton Cricket club",
-          "score_b": "(22.1)",
-          "scheduled_at": null,
-          "result": "HCC Northern Raptors won by 169 runs"
-        },
-        {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "Glenashton Park, Oakville (Ontario), 19-Jul-26, 40 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Raptors",
-          "score_a": "(35.2)",
-          "team_b": "Oakville Falcons",
-          "score_b": "(40.0)",
-          "scheduled_at": null,
-          "result": "HCC Northern Raptors won by 44 runs"
-        },
-        {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "Victoria Park, Cambridge (Ontario), 28-Jun-26, 40 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Raptors",
-          "score_a": "(40.0)",
-          "team_b": "Cambridge Premier",
-          "score_b": "(39.4)",
-          "scheduled_at": null,
-          "result": "HCC Northern Raptors won by 100 runs"
-        },
-        {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "NCC Ground - Stadium(HDCL), Niagara Falls (Ontario), 07-Jun-26, 40 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "Imperial Premier",
-          "score_a": "(24.0)",
-          "team_b": "HCC Northern Raptors",
-          "score_b": "(13.4)",
-          "scheduled_at": null,
-          "result": "HCC Northern Raptors won by 8 wickets"
         }
       ],
       "matches": [
+        {
+          "date": "03-Oct-26",
+          "opponent": "MPR Loonies (T20)",
+          "result": "Scheduled: Sat,03 Oct, 03:30 PM",
+          "status": "upcoming"
+        },
+        {
+          "date": "19-Sep-26",
+          "opponent": "Cambridge Elite",
+          "result": "Cambridge Elite won by 31 runs",
+          "status": "past"
+        },
+        {
+          "date": "16-Aug-26",
+          "opponent": "Hamilton Cricket club",
+          "result": "HCC Northern Raptors won by 169 runs",
+          "status": "past"
+        },
+        {
+          "date": "19-Jul-26",
+          "opponent": "Oakville Falcons",
+          "result": "HCC Northern Raptors won by 44 runs",
+          "status": "past"
+        },
+        {
+          "date": "04-Oct-26",
+          "opponent": "Brantford Elite",
+          "result": "Scheduled: Sun,04 Oct, 12:00 PM",
+          "status": "upcoming"
+        },
         {
           "date": "30-Aug-26",
           "opponent": "HCC Northern Falcons",
@@ -1905,9 +1761,9 @@
           "status": "past"
         },
         {
-          "date": "21-Jun-26",
-          "opponent": "Oakville Eagles",
-          "result": "HCC Northern Raptors won by 57 runs",
+          "date": "26-Sep-26",
+          "opponent": "Proteas Elite",
+          "result": "HCC Northern Raptors won by 5 runs",
           "status": "past"
         },
         {
@@ -1927,50 +1783,20 @@
           "opponent": "Proteas Premier",
           "result": "HCC Northern Raptors won by 8 wickets",
           "status": "past"
-        },
-        {
-          "date": "14-Jun-26",
-          "opponent": "Hamilton Cricket club",
-          "result": "Abandoned (abandoned due to rain )",
-          "status": "past"
-        },
-        {
-          "date": "16-Aug-26",
-          "opponent": "Hamilton Cricket club",
-          "result": "HCC Northern Raptors won by 169 runs",
-          "status": "past"
-        },
-        {
-          "date": "19-Jul-26",
-          "opponent": "Oakville Falcons",
-          "result": "HCC Northern Raptors won by 44 runs",
-          "status": "past"
-        },
-        {
-          "date": "28-Jun-26",
-          "opponent": "Cambridge Premier",
-          "result": "HCC Northern Raptors won by 100 runs",
-          "status": "past"
-        },
-        {
-          "date": "07-Jun-26",
-          "opponent": "Imperial Premier",
-          "result": "HCC Northern Raptors won by 8 wickets",
-          "status": "past"
         }
       ],
       "leaderboard_detailed": {
         "batting": [
           {
             "player": "Jaspreet Singh",
-            "innings": "9",
-            "runs": "326",
-            "average": "40.75",
-            "strike_rate": "133.06",
+            "innings": "11",
+            "runs": "372",
+            "average": "37.20",
+            "strike_rate": "130.99",
             "highest_score": "98",
             "not_outs": "1",
-            "fours": "28",
-            "sixes": "18",
+            "fours": "33",
+            "sixes": "20",
             "hundreds": "0"
           },
           {
@@ -1986,6 +1812,18 @@
             "hundreds": "1"
           },
           {
+            "player": "Abhilash Kumar",
+            "innings": "7",
+            "runs": "282",
+            "average": "47.00",
+            "strike_rate": "133.65",
+            "highest_score": "80",
+            "not_outs": "1",
+            "fours": "17",
+            "sixes": "18",
+            "hundreds": "0"
+          },
+          {
             "player": "Gursewak Pandher",
             "innings": "6",
             "runs": "271",
@@ -1998,14 +1836,26 @@
             "hundreds": "1"
           },
           {
+            "player": "Yash Patel",
+            "innings": "7",
+            "runs": "185",
+            "average": "26.43",
+            "strike_rate": "110.12",
+            "highest_score": "90",
+            "not_outs": "0",
+            "fours": "6",
+            "sixes": "16",
+            "hundreds": "0"
+          },
+          {
             "player": "Gurbhej Singh",
-            "innings": "8",
-            "runs": "159",
-            "average": "22.71",
-            "strike_rate": "88.83",
+            "innings": "10",
+            "runs": "163",
+            "average": "18.11",
+            "strike_rate": "89.56",
             "highest_score": "43",
             "not_outs": "1",
-            "fours": "11",
+            "fours": "12",
             "sixes": "7",
             "hundreds": "0"
           },
@@ -2022,30 +1872,6 @@
             "hundreds": "0"
           },
           {
-            "player": "Yash Patel",
-            "innings": "5",
-            "runs": "155",
-            "average": "31.00",
-            "strike_rate": "104.03",
-            "highest_score": "90",
-            "not_outs": "0",
-            "fours": "6",
-            "sixes": "13",
-            "hundreds": "0"
-          },
-          {
-            "player": "Abhilash Kumar",
-            "innings": "5",
-            "runs": "143",
-            "average": "28.60",
-            "strike_rate": "112.60",
-            "highest_score": "63",
-            "not_outs": "0",
-            "fours": "10",
-            "sixes": "7",
-            "hundreds": "0"
-          },
-          {
             "player": "Nirjhar Vermani",
             "innings": "4",
             "runs": "109",
@@ -2059,30 +1885,50 @@
           },
           {
             "player": "Nirav Laheri",
-            "innings": "6",
-            "runs": "63",
-            "average": "10.50",
-            "strike_rate": "53.39",
+            "innings": "8",
+            "runs": "74",
+            "average": "10.57",
+            "strike_rate": "57.81",
             "highest_score": "30",
-            "not_outs": "0",
+            "not_outs": "1",
             "fours": "1",
-            "sixes": "0",
+            "sixes": "1",
             "hundreds": "0"
           },
           {
-            "player": "Shubham Sharma",
-            "innings": "1",
-            "runs": "38",
-            "average": "38.00",
-            "strike_rate": "70.37",
-            "highest_score": "38",
-            "not_outs": "0",
-            "fours": "0",
-            "sixes": "2",
+            "player": "Nikunj Dobariya",
+            "innings": "5",
+            "runs": "54",
+            "average": "13.50",
+            "strike_rate": "68.35",
+            "highest_score": "20",
+            "not_outs": "1",
+            "fours": "4",
+            "sixes": "3",
             "hundreds": "0"
           }
         ],
         "bowling": [
+          {
+            "player": "Gurbhej Singh",
+            "innings": "10",
+            "wickets": "20",
+            "economy": "5.57",
+            "average": "15.65",
+            "maidens": "2",
+            "best": "3",
+            "strike_rate": "16.85"
+          },
+          {
+            "player": "HARDEEP MANDER",
+            "innings": "10",
+            "wickets": "19",
+            "economy": "5.41",
+            "average": "16.05",
+            "maidens": "3",
+            "best": "4",
+            "strike_rate": "17.79"
+          },
           {
             "player": "Rami Grewal",
             "innings": "8",
@@ -2092,26 +1938,6 @@
             "maidens": "3",
             "best": "5",
             "strike_rate": "16.00"
-          },
-          {
-            "player": "Gurbhej Singh",
-            "innings": "8",
-            "wickets": "17",
-            "economy": "4.74",
-            "average": "14",
-            "maidens": "2",
-            "best": "3",
-            "strike_rate": "17.71"
-          },
-          {
-            "player": "HARDEEP MANDER",
-            "innings": "8",
-            "wickets": "15",
-            "economy": "5.21",
-            "average": "16.8",
-            "maidens": "3",
-            "best": "4",
-            "strike_rate": "19.33"
           },
           {
             "player": "Gursewak Pandher",
@@ -2135,13 +1961,23 @@
           },
           {
             "player": "Nikunj Dobariya",
-            "innings": "5",
-            "wickets": "5",
-            "economy": "5.73",
-            "average": "25",
+            "innings": "7",
+            "wickets": "8",
+            "economy": "6.32",
+            "average": "22",
             "maidens": "2",
             "best": "3",
-            "strike_rate": "26.20"
+            "strike_rate": "20.88"
+          },
+          {
+            "player": "Robby Sharma",
+            "innings": "2",
+            "wickets": "6",
+            "economy": "5.81",
+            "average": "10.17",
+            "maidens": "0",
+            "best": "4",
+            "strike_rate": "10.50"
           },
           {
             "player": "Sukhpal Singh",
@@ -2164,16 +2000,6 @@
             "strike_rate": "7.50"
           },
           {
-            "player": "Robby Sharma",
-            "innings": "1",
-            "wickets": "4",
-            "economy": "4.92",
-            "average": "8",
-            "maidens": "0",
-            "best": "4",
-            "strike_rate": "9.75"
-          },
-          {
             "player": "Rami Grewal",
             "innings": "1",
             "wickets": "2",
@@ -2187,9 +2013,9 @@
         "fielding": [
           {
             "player": "Gurbhej Singh",
-            "matches": "9",
-            "dismissals": "9",
-            "catches": "6",
+            "matches": "11",
+            "dismissals": "10",
+            "catches": "7",
             "run_outs": "1",
             "catch_and_bowled": "2",
             "caught_behind": "0",
@@ -2204,6 +2030,17 @@
             "run_outs": "0",
             "catch_and_bowled": "0",
             "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Jaspreet Singh",
+            "matches": "11",
+            "dismissals": "8",
+            "catches": "3",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "4",
             "stumpings": "0",
             "assisted_run_outs": "0"
           },
@@ -2230,6 +2067,17 @@
             "assisted_run_outs": "0"
           },
           {
+            "player": "Nirav Laheri",
+            "matches": "11",
+            "dismissals": "6",
+            "catches": "3",
+            "run_outs": "3",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
             "player": "Naveen Panghal",
             "matches": "6",
             "dismissals": "5",
@@ -2237,17 +2085,6 @@
             "run_outs": "0",
             "catch_and_bowled": "0",
             "caught_behind": "3",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Jaspreet Singh",
-            "matches": "9",
-            "dismissals": "4",
-            "catches": "3",
-            "run_outs": "1",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
             "stumpings": "0",
             "assisted_run_outs": "0"
           },
@@ -2263,8 +2100,8 @@
             "assisted_run_outs": "0"
           },
           {
-            "player": "Dhaval Bhatt",
-            "matches": "6",
+            "player": "Sanam Singh",
+            "matches": "2",
             "dismissals": "3",
             "catches": "3",
             "run_outs": "0",
@@ -2274,21 +2111,10 @@
             "assisted_run_outs": "0"
           },
           {
-            "player": "Nirav Laheri",
-            "matches": "9",
+            "player": "Dhaval Bhatt",
+            "matches": "8",
             "dismissals": "3",
-            "catches": "2",
-            "run_outs": "1",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Sukhdeep",
-            "matches": "1",
-            "dismissals": "2",
-            "catches": "2",
+            "catches": "3",
             "run_outs": "0",
             "catch_and_bowled": "0",
             "caught_behind": "0",
@@ -2302,7 +2128,7 @@
           {
             "player": "Jaspreet Singh",
             "team": "HCC Northern Raptors",
-            "stat": "326 runs (Avg 40.75, SR 133.06)"
+            "stat": "372 runs (Avg 37.20, SR 130.99)"
           },
           {
             "player": "Saurabh Jha",
@@ -2310,29 +2136,29 @@
             "stat": "325 runs (Avg 54.17, SR 104.84)"
           },
           {
+            "player": "Abhilash Kumar",
+            "team": "HCC Northern Raptors",
+            "stat": "282 runs (Avg 47.00, SR 133.65)"
+          },
+          {
             "player": "Gursewak Pandher",
             "team": "HCC Northern Raptors",
             "stat": "271 runs (Avg 45.17, SR 130.29)"
           },
           {
+            "player": "Yash Patel",
+            "team": "HCC Northern Raptors",
+            "stat": "185 runs (Avg 26.43, SR 110.12)"
+          },
+          {
             "player": "Gurbhej Singh",
             "team": "HCC Northern Raptors",
-            "stat": "159 runs (Avg 22.71, SR 88.83)"
+            "stat": "163 runs (Avg 18.11, SR 89.56)"
           },
           {
             "player": "Naveen Panghal",
             "team": "HCC Northern Raptors",
             "stat": "156 runs (Avg 31.20, SR 89.66)"
-          },
-          {
-            "player": "Yash Patel",
-            "team": "HCC Northern Raptors",
-            "stat": "155 runs (Avg 31.00, SR 104.03)"
-          },
-          {
-            "player": "Abhilash Kumar",
-            "team": "HCC Northern Raptors",
-            "stat": "143 runs (Avg 28.60, SR 112.60)"
           },
           {
             "player": "Nirjhar Vermani",
@@ -2342,29 +2168,29 @@
           {
             "player": "Nirav Laheri",
             "team": "HCC Northern Raptors",
-            "stat": "63 runs (Avg 10.50, SR 53.39)"
+            "stat": "74 runs (Avg 10.57, SR 57.81)"
           },
           {
-            "player": "Shubham Sharma",
+            "player": "Nikunj Dobariya",
             "team": "HCC Northern Raptors",
-            "stat": "38 runs (Avg 38.00, SR 70.37)"
+            "stat": "54 runs (Avg 13.50, SR 68.35)"
           }
         ],
         "bowling": [
           {
-            "player": "Rami Grewal",
-            "team": "HCC Northern Raptors",
-            "stat": "18 wkts (Econ 4.83, Avg 12.89)"
-          },
-          {
             "player": "Gurbhej Singh",
             "team": "HCC Northern Raptors",
-            "stat": "17 wkts (Econ 4.74, Avg 14)"
+            "stat": "20 wkts (Econ 5.57, Avg 15.65)"
           },
           {
             "player": "HARDEEP MANDER",
             "team": "HCC Northern Raptors",
-            "stat": "15 wkts (Econ 5.21, Avg 16.8)"
+            "stat": "19 wkts (Econ 5.41, Avg 16.05)"
+          },
+          {
+            "player": "Rami Grewal",
+            "team": "HCC Northern Raptors",
+            "stat": "18 wkts (Econ 4.83, Avg 12.89)"
           },
           {
             "player": "Gursewak Pandher",
@@ -2379,7 +2205,12 @@
           {
             "player": "Nikunj Dobariya",
             "team": "HCC Northern Raptors",
-            "stat": "5 wkts (Econ 5.73, Avg 25)"
+            "stat": "8 wkts (Econ 6.32, Avg 22)"
+          },
+          {
+            "player": "Robby Sharma",
+            "team": "HCC Northern Raptors",
+            "stat": "6 wkts (Econ 5.81, Avg 10.17)"
           },
           {
             "player": "Sukhpal Singh",
@@ -2392,11 +2223,6 @@
             "stat": "4 wkts (Econ 4.80, Avg 6)"
           },
           {
-            "player": "Robby Sharma",
-            "team": "HCC Northern Raptors",
-            "stat": "4 wkts (Econ 4.92, Avg 8)"
-          },
-          {
             "player": "Rami Grewal",
             "team": "HCC Northern Raptors",
             "stat": "2 wkts (Econ 4.38, Avg 17.5)"
@@ -2406,12 +2232,17 @@
           {
             "player": "Gurbhej Singh",
             "team": "HCC Northern Raptors",
-            "stat": "6 catches, 9 dismissals"
+            "stat": "7 catches, 10 dismissals"
           },
           {
             "player": "Gursewak Pandher",
             "team": "HCC Northern Raptors",
             "stat": "8 catches, 8 dismissals"
+          },
+          {
+            "player": "Jaspreet Singh",
+            "team": "HCC Northern Raptors",
+            "stat": "3 catches, 8 dismissals"
           },
           {
             "player": "Neel Patel",
@@ -2424,14 +2255,14 @@
             "stat": "5 catches, 6 dismissals"
           },
           {
+            "player": "Nirav Laheri",
+            "team": "HCC Northern Raptors",
+            "stat": "3 catches, 6 dismissals"
+          },
+          {
             "player": "Naveen Panghal",
             "team": "HCC Northern Raptors",
             "stat": "2 catches, 5 dismissals"
-          },
-          {
-            "player": "Jaspreet Singh",
-            "team": "HCC Northern Raptors",
-            "stat": "3 catches, 4 dismissals"
           },
           {
             "player": "Harsh Singh",
@@ -2439,19 +2270,14 @@
             "stat": "2 catches, 3 dismissals"
           },
           {
-            "player": "Dhaval Bhatt",
+            "player": "Sanam Singh",
             "team": "HCC Northern Raptors",
             "stat": "3 catches, 3 dismissals"
           },
           {
-            "player": "Nirav Laheri",
+            "player": "Dhaval Bhatt",
             "team": "HCC Northern Raptors",
-            "stat": "2 catches, 3 dismissals"
-          },
-          {
-            "player": "Sukhdeep",
-            "team": "HCC Northern Raptors",
-            "stat": "2 catches, 2 dismissals"
+            "stat": "3 catches, 3 dismissals"
           }
         ]
       },
@@ -3950,6 +3776,102 @@
       "matches_detailed": [
         {
           "league": "MPL (TapleyTown)",
+          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 27-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Northstar Rangers",
+          "score_a": "(20.0)",
+          "team_b": "Halton Hercules",
+          "score_b": "(19.4)",
+          "scheduled_at": null,
+          "result": "Halton Hercules won by 3 wickets"
+        },
+        {
+          "league": "Mountain Premier League (Weekdays)",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 08-Sep-26, 15 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "BHCC",
+          "score_a": "(15.0)",
+          "team_b": "HCC Northstar Rangers",
+          "score_b": "(15.0)",
+          "scheduled_at": null,
+          "result": "BHCC won by 8 runs"
+        },
+        {
+          "league": "MPL (TapleyTown)",
+          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 29-Aug-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "Ingersoll ignites",
+          "score_a": "(19.2)",
+          "team_b": "HCC Northstar Rangers",
+          "score_b": "(10.1)",
+          "scheduled_at": null,
+          "result": "HCC Northstar Rangers won by 10 wickets"
+        },
+        {
+          "league": "Individual Match",
+          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 23-Aug-26, 10 Ov.,",
+          "round": null,
+          "status": "past",
+          "team_a": "HCC Northstar Rangers",
+          "score_a": "(10.0)",
+          "team_b": "HCC Northern Strikers",
+          "score_b": "(6.4)",
+          "scheduled_at": null,
+          "result": "HCC Northern Strikers won by 5 wickets"
+        },
+        {
+          "league": "MPL (TapleyTown)",
+          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 19-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Northstar Rangers",
+          "score_a": "(20.0)",
+          "team_b": "Gujarat Mavericks",
+          "score_b": "(20.0)",
+          "scheduled_at": null,
+          "result": "HCC Northstar Rangers won by 35 runs"
+        },
+        {
+          "league": "MPL (TapleyTown)",
+          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 07-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Northstar Rangers",
+          "score_a": "(20.0)",
+          "team_b": "Burlington Premier",
+          "score_b": "(15.5)",
+          "scheduled_at": null,
+          "result": "HCC Northstar Rangers won by 90 runs"
+        },
+        {
+          "league": "Mountain Premier League (Weekdays)",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 28-Aug-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "Chennaiyin Super Kings MPL",
+          "score_a": "(20.0)",
+          "team_b": "HCC Northstar Rangers",
+          "score_b": "(20.0)",
+          "scheduled_at": null,
+          "result": "Chennaiyin Super Kings MPL won by 1 runs"
+        },
+        {
+          "league": "Mountain Premier League (Weekdays)",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 19-Aug-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "Jazba Junoon Cricket Club - T10",
+          "score_a": "(20.0)",
+          "team_b": "HCC Northstar Rangers",
+          "score_b": "(15.3)",
+          "scheduled_at": null,
+          "result": "HCC Northstar Rangers won by 6 wickets"
+        },
+        {
+          "league": "MPL (TapleyTown)",
           "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 13-Sep-26, 20 Ov.,",
           "round": "League Matches",
           "status": "past",
@@ -3995,105 +3917,57 @@
           "score_b": "(18.4)",
           "scheduled_at": null,
           "result": "Jazba Junoon Cricket Club - T10 won by 6 wickets"
-        },
-        {
-          "league": "Mountain Premier League (Weekdays)",
-          "venue_line": "Mohawk  Park, Hamilton (Ontario), 08-Sep-26, 15 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "BHCC",
-          "score_a": "(15.0)",
-          "team_b": "HCC Northstar Rangers",
-          "score_b": "(15.0)",
-          "scheduled_at": null,
-          "result": "BHCC won by 8 runs"
-        },
-        {
-          "league": "MPL (TapleyTown)",
-          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 29-Aug-26, 20 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "Ingersoll ignites",
-          "score_a": "(19.2)",
-          "team_b": "HCC Northstar Rangers",
-          "score_b": "(10.1)",
-          "scheduled_at": null,
-          "result": "HCC Northstar Rangers won by 10 wickets"
-        },
-        {
-          "league": "Individual Match",
-          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 23-Aug-26, 10 Ov.,",
-          "round": null,
-          "status": "past",
-          "team_a": "HCC Northstar Rangers",
-          "score_a": "(10.0)",
-          "team_b": "HCC Northern Strikers",
-          "score_b": "(6.4)",
-          "scheduled_at": null,
-          "result": "HCC Northern Strikers won by 5 wickets"
-        },
-        {
-          "league": "Mountain Premier League (Weekdays)",
-          "venue_line": "Mohawk  Park, Hamilton (Ontario), 07-Aug-26, 20 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "Chennaiyin Super Kings MPL",
-          "score_a": "(20.0)",
-          "team_b": "HCC Northstar Rangers",
-          "score_b": "(19.5)",
-          "scheduled_at": null,
-          "result": "Chennaiyin Super Kings MPL won by 10 runs"
-        },
-        {
-          "league": "MPL (TapleyTown)",
-          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 07-Sep-26, 20 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northstar Rangers",
-          "score_a": "(20.0)",
-          "team_b": "Burlington Premier",
-          "score_b": "(15.5)",
-          "scheduled_at": null,
-          "result": "HCC Northstar Rangers won by 90 runs"
-        },
-        {
-          "league": "Mountain Premier League (Weekdays)",
-          "venue_line": "Mohawk  Park, Hamilton (Ontario), 28-Aug-26, 20 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "Chennaiyin Super Kings MPL",
-          "score_a": "(20.0)",
-          "team_b": "HCC Northstar Rangers",
-          "score_b": "(20.0)",
-          "scheduled_at": null,
-          "result": "Chennaiyin Super Kings MPL won by 1 runs"
-        },
-        {
-          "league": "Mountain Premier League (Weekdays)",
-          "venue_line": "Mohawk  Park, Hamilton (Ontario), 19-Aug-26, 20 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "Jazba Junoon Cricket Club - T10",
-          "score_a": "(20.0)",
-          "team_b": "HCC Northstar Rangers",
-          "score_b": "(15.3)",
-          "scheduled_at": null,
-          "result": "HCC Northstar Rangers won by 6 wickets"
-        },
-        {
-          "league": "Mountain Premier League (Weekdays)",
-          "venue_line": "Mohawk  Park, Hamilton (Ontario), 31-Jul-26, 20 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "SCCA Rising Star",
-          "score_a": "(20.0)",
-          "team_b": "HCC Northstar Rangers",
-          "score_b": "(20.0)",
-          "scheduled_at": null,
-          "result": "SCCA Rising Star won by 36 runs"
         }
       ],
       "matches": [
+        {
+          "date": "27-Sep-26",
+          "opponent": "Halton Hercules",
+          "result": "Halton Hercules won by 3 wickets",
+          "status": "past"
+        },
+        {
+          "date": "08-Sep-26",
+          "opponent": "HCC Northstar Rangers",
+          "result": "BHCC won by 8 runs",
+          "status": "past"
+        },
+        {
+          "date": "29-Aug-26",
+          "opponent": "Ingersoll ignites",
+          "result": "HCC Northstar Rangers won by 10 wickets",
+          "status": "past"
+        },
+        {
+          "date": "23-Aug-26",
+          "opponent": "HCC Northern Strikers",
+          "result": "HCC Northern Strikers won by 5 wickets",
+          "status": "past"
+        },
+        {
+          "date": "19-Sep-26",
+          "opponent": "Gujarat Mavericks",
+          "result": "HCC Northstar Rangers won by 35 runs",
+          "status": "past"
+        },
+        {
+          "date": "07-Sep-26",
+          "opponent": "Burlington Premier",
+          "result": "HCC Northstar Rangers won by 90 runs",
+          "status": "past"
+        },
+        {
+          "date": "28-Aug-26",
+          "opponent": "Chennaiyin Super Kings MPL",
+          "result": "Chennaiyin Super Kings MPL won by 1 runs",
+          "status": "past"
+        },
+        {
+          "date": "19-Aug-26",
+          "opponent": "Jazba Junoon Cricket Club - T10",
+          "result": "HCC Northstar Rangers won by 6 wickets",
+          "status": "past"
+        },
         {
           "date": "13-Sep-26",
           "opponent": "HCC Renegades",
@@ -4117,58 +3991,22 @@
           "opponent": "Jazba Junoon Cricket Club - T10",
           "result": "Jazba Junoon Cricket Club - T10 won by 6 wickets",
           "status": "past"
-        },
-        {
-          "date": "08-Sep-26",
-          "opponent": "HCC Northstar Rangers",
-          "result": "BHCC won by 8 runs",
-          "status": "past"
-        },
-        {
-          "date": "29-Aug-26",
-          "opponent": "Ingersoll ignites",
-          "result": "HCC Northstar Rangers won by 10 wickets",
-          "status": "past"
-        },
-        {
-          "date": "23-Aug-26",
-          "opponent": "HCC Northern Strikers",
-          "result": "HCC Northern Strikers won by 5 wickets",
-          "status": "past"
-        },
-        {
-          "date": "07-Aug-26",
-          "opponent": "Chennaiyin Super Kings MPL",
-          "result": "Chennaiyin Super Kings MPL won by 10 runs",
-          "status": "past"
-        },
-        {
-          "date": "07-Sep-26",
-          "opponent": "Burlington Premier",
-          "result": "HCC Northstar Rangers won by 90 runs",
-          "status": "past"
-        },
-        {
-          "date": "28-Aug-26",
-          "opponent": "Chennaiyin Super Kings MPL",
-          "result": "Chennaiyin Super Kings MPL won by 1 runs",
-          "status": "past"
-        },
-        {
-          "date": "19-Aug-26",
-          "opponent": "Jazba Junoon Cricket Club - T10",
-          "result": "HCC Northstar Rangers won by 6 wickets",
-          "status": "past"
-        },
-        {
-          "date": "31-Jul-26",
-          "opponent": "SCCA Rising Star",
-          "result": "SCCA Rising Star won by 36 runs",
-          "status": "past"
         }
       ],
       "leaderboard_detailed": {
         "batting": [
+          {
+            "player": "Shubham Rai",
+            "innings": "3",
+            "runs": "245",
+            "average": "245.00",
+            "strike_rate": "187.02",
+            "highest_score": "158",
+            "not_outs": "2",
+            "fours": "10",
+            "sixes": "26",
+            "hundreds": "1"
+          },
           {
             "player": "Nakul Datta",
             "innings": "7",
@@ -4182,27 +4020,27 @@
             "hundreds": "0"
           },
           {
-            "player": "Shubham Rai",
-            "innings": "2",
-            "runs": "210",
-            "average": "210.00",
-            "strike_rate": "192.66",
-            "highest_score": "158",
-            "not_outs": "1",
-            "fours": "10",
-            "sixes": "21",
-            "hundreds": "1"
+            "player": "Jaswinder Singh Rattanpal",
+            "innings": "13",
+            "runs": "236",
+            "average": "26.22",
+            "strike_rate": "127.57",
+            "highest_score": "57",
+            "not_outs": "4",
+            "fours": "18",
+            "sixes": "12",
+            "hundreds": "0"
           },
           {
-            "player": "Jaswinder Singh Rattanpal",
-            "innings": "11",
-            "runs": "179",
-            "average": "22.38",
-            "strike_rate": "122.60",
-            "highest_score": "46",
+            "player": "Pawan Gill",
+            "innings": "7",
+            "runs": "217",
+            "average": "54.25",
+            "strike_rate": "182.35",
+            "highest_score": "48",
             "not_outs": "3",
-            "fours": "12",
-            "sixes": "10",
+            "fours": "11",
+            "sixes": "19",
             "hundreds": "0"
           },
           {
@@ -4230,18 +4068,6 @@
             "hundreds": "0"
           },
           {
-            "player": "Pawan Gill",
-            "innings": "5",
-            "runs": "168",
-            "average": "84.00",
-            "strike_rate": "200.00",
-            "highest_score": "46",
-            "not_outs": "3",
-            "fours": "8",
-            "sixes": "16",
-            "hundreds": "0"
-          },
-          {
             "player": "Ashwini Kumar",
             "innings": "6",
             "runs": "161",
@@ -4255,37 +4081,37 @@
           },
           {
             "player": "Manvir Singh",
-            "innings": "11",
-            "runs": "120",
-            "average": "10.91",
-            "strike_rate": "112.15",
+            "innings": "13",
+            "runs": "142",
+            "average": "11.83",
+            "strike_rate": "110.08",
             "highest_score": "36",
-            "not_outs": "0",
-            "fours": "10",
-            "sixes": "6",
-            "hundreds": "0"
-          },
-          {
-            "player": "Rahul Chugh",
-            "innings": "10",
-            "runs": "100",
-            "average": "14.29",
-            "strike_rate": "108.70",
-            "highest_score": "27",
-            "not_outs": "3",
-            "fours": "7",
+            "not_outs": "1",
+            "fours": "12",
             "sixes": "7",
             "hundreds": "0"
           },
           {
+            "player": "Rahul Chugh",
+            "innings": "11",
+            "runs": "129",
+            "average": "16.13",
+            "strike_rate": "107.50",
+            "highest_score": "29",
+            "not_outs": "3",
+            "fours": "8",
+            "sixes": "8",
+            "hundreds": "0"
+          },
+          {
             "player": "Rubalpreet Singh Gill",
-            "innings": "3",
-            "runs": "90",
-            "average": "30.00",
-            "strike_rate": "118.42",
+            "innings": "4",
+            "runs": "106",
+            "average": "26.50",
+            "strike_rate": "112.77",
             "highest_score": "40",
             "not_outs": "0",
-            "fours": "6",
+            "fours": "7",
             "sixes": "5",
             "hundreds": "0"
           }
@@ -4293,13 +4119,13 @@
         "bowling": [
           {
             "player": "Jitender Kalra",
-            "innings": "13",
-            "wickets": "16",
-            "economy": "7.53",
-            "average": "16.94",
+            "innings": "14",
+            "wickets": "18",
+            "economy": "7.46",
+            "average": "16.17",
             "maidens": "1",
             "best": "3",
-            "strike_rate": "13.50"
+            "strike_rate": "13.00"
           },
           {
             "player": "Yadwinder Devgan",
@@ -4312,6 +4138,16 @@
             "strike_rate": "12.40"
           },
           {
+            "player": "Rahul Chugh",
+            "innings": "13",
+            "wickets": "10",
+            "economy": "8.38",
+            "average": "24.3",
+            "maidens": "0",
+            "best": "2",
+            "strike_rate": "17.40"
+          },
+          {
             "player": "Rohit Maheshwari",
             "innings": "5",
             "wickets": "9",
@@ -4322,14 +4158,14 @@
             "strike_rate": "12.00"
           },
           {
-            "player": "Rahul Chugh",
-            "innings": "12",
+            "player": "Surinder Singh",
+            "innings": "4",
             "wickets": "9",
-            "economy": "8.37",
-            "average": "25.11",
+            "economy": "7.30",
+            "average": "8.11",
             "maidens": "0",
-            "best": "2",
-            "strike_rate": "18.00"
+            "best": "3",
+            "strike_rate": "6.67"
           },
           {
             "player": "Venu Reddy",
@@ -4343,23 +4179,23 @@
           },
           {
             "player": "Pawan Gill",
-            "innings": "7",
-            "wickets": "6",
-            "economy": "5.80",
-            "average": "19",
+            "innings": "9",
+            "wickets": "7",
+            "economy": "5.72",
+            "average": "20.71",
             "maidens": "0",
             "best": "2",
-            "strike_rate": "19.67"
+            "strike_rate": "21.71"
           },
           {
-            "player": "Surinder Singh",
-            "innings": "3",
-            "wickets": "6",
-            "economy": "5.83",
-            "average": "5.83",
+            "player": "Pankaj Tripathi",
+            "innings": "10",
+            "wickets": "7",
+            "economy": "10.67",
+            "average": "27.43",
             "maidens": "0",
             "best": "3",
-            "strike_rate": "6.00"
+            "strike_rate": "15.43"
           },
           {
             "player": "Nakul Datta",
@@ -4372,32 +4208,22 @@
             "strike_rate": "27.60"
           },
           {
-            "player": "Anmol Dang",
-            "innings": "4",
-            "wickets": "4",
-            "economy": "7.03",
-            "average": "8.5",
+            "player": "Talvir",
+            "innings": "6",
+            "wickets": "5",
+            "economy": "6.33",
+            "average": "15.2",
             "maidens": "0",
             "best": "2",
-            "strike_rate": "7.25"
-          },
-          {
-            "player": "Jaswinder Singh Rattanpal",
-            "innings": "7",
-            "wickets": "4",
-            "economy": "9.30",
-            "average": "23.25",
-            "maidens": "0",
-            "best": "2",
-            "strike_rate": "15.00"
+            "strike_rate": "14.40"
           }
         ],
         "fielding": [
           {
             "player": "Jaswinder Singh Rattanpal",
-            "matches": "15",
-            "dismissals": "13",
-            "catches": "9",
+            "matches": "17",
+            "dismissals": "15",
+            "catches": "11",
             "run_outs": "4",
             "catch_and_bowled": "0",
             "caught_behind": "0",
@@ -4417,7 +4243,7 @@
           },
           {
             "player": "Anmol Dang",
-            "matches": "6",
+            "matches": "8",
             "dismissals": "8",
             "catches": "3",
             "run_outs": "1",
@@ -4425,6 +4251,17 @@
             "caught_behind": "2",
             "stumpings": "2",
             "assisted_run_outs": "0"
+          },
+          {
+            "player": "Manvir Singh",
+            "matches": "15",
+            "dismissals": "8",
+            "catches": "5",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "3",
+            "stumpings": "0",
+            "assisted_run_outs": "5"
           },
           {
             "player": "Venu Reddy",
@@ -4438,8 +4275,19 @@
             "assisted_run_outs": "0"
           },
           {
+            "player": "Rahul Chugh",
+            "matches": "13",
+            "dismissals": "7",
+            "catches": "6",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
             "player": "Surinder Singh",
-            "matches": "4",
+            "matches": "5",
             "dismissals": "6",
             "catches": "5",
             "run_outs": "0",
@@ -4460,26 +4308,15 @@
             "assisted_run_outs": "1"
           },
           {
-            "player": "Rahul Chugh",
-            "matches": "12",
-            "dismissals": "6",
-            "catches": "5",
-            "run_outs": "1",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Manvir Singh",
-            "matches": "13",
+            "player": "Pawan Gill",
+            "matches": "9",
             "dismissals": "5",
             "catches": "5",
             "run_outs": "0",
             "catch_and_bowled": "0",
             "caught_behind": "0",
             "stumpings": "0",
-            "assisted_run_outs": "5"
+            "assisted_run_outs": "0"
           },
           {
             "player": "Yadwinder Devgan",
@@ -4491,36 +4328,30 @@
             "caught_behind": "0",
             "stumpings": "0",
             "assisted_run_outs": "1"
-          },
-          {
-            "player": "Pawan Gill",
-            "matches": "7",
-            "dismissals": "3",
-            "catches": "3",
-            "run_outs": "0",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
           }
         ]
       },
       "leaderboard": {
         "batting": [
           {
+            "player": "Shubham Rai",
+            "team": "HCC Northstar Rangers",
+            "stat": "245 runs (Avg 245.00, SR 187.02)"
+          },
+          {
             "player": "Nakul Datta",
             "team": "HCC Northstar Rangers",
             "stat": "236 runs (Avg 47.20, SR 191.87)"
           },
           {
-            "player": "Shubham Rai",
-            "team": "HCC Northstar Rangers",
-            "stat": "210 runs (Avg 210.00, SR 192.66)"
-          },
-          {
             "player": "Jaswinder Singh Rattanpal",
             "team": "HCC Northstar Rangers",
-            "stat": "179 runs (Avg 22.38, SR 122.60)"
+            "stat": "236 runs (Avg 26.22, SR 127.57)"
+          },
+          {
+            "player": "Pawan Gill",
+            "team": "HCC Northstar Rangers",
+            "stat": "217 runs (Avg 54.25, SR 182.35)"
           },
           {
             "player": "Sagarkumar Patel",
@@ -4533,11 +4364,6 @@
             "stat": "169 runs (Avg 24.14, SR 145.69)"
           },
           {
-            "player": "Pawan Gill",
-            "team": "HCC Northstar Rangers",
-            "stat": "168 runs (Avg 84.00, SR 200.00)"
-          },
-          {
             "player": "Ashwini Kumar",
             "team": "HCC Northstar Rangers",
             "stat": "161 runs (Avg 26.83, SR 140.00)"
@@ -4545,24 +4371,24 @@
           {
             "player": "Manvir Singh",
             "team": "HCC Northstar Rangers",
-            "stat": "120 runs (Avg 10.91, SR 112.15)"
+            "stat": "142 runs (Avg 11.83, SR 110.08)"
           },
           {
             "player": "Rahul Chugh",
             "team": "HCC Northstar Rangers",
-            "stat": "100 runs (Avg 14.29, SR 108.70)"
+            "stat": "129 runs (Avg 16.13, SR 107.50)"
           },
           {
             "player": "Rubalpreet Singh Gill",
             "team": "HCC Northstar Rangers",
-            "stat": "90 runs (Avg 30.00, SR 118.42)"
+            "stat": "106 runs (Avg 26.50, SR 112.77)"
           }
         ],
         "bowling": [
           {
             "player": "Jitender Kalra",
             "team": "HCC Northstar Rangers",
-            "stat": "16 wkts (Econ 7.53, Avg 16.94)"
+            "stat": "18 wkts (Econ 7.46, Avg 16.17)"
           },
           {
             "player": "Yadwinder Devgan",
@@ -4570,14 +4396,19 @@
             "stat": "15 wkts (Econ 9.52, Avg 19.67)"
           },
           {
+            "player": "Rahul Chugh",
+            "team": "HCC Northstar Rangers",
+            "stat": "10 wkts (Econ 8.38, Avg 24.3)"
+          },
+          {
             "player": "Rohit Maheshwari",
             "team": "HCC Northstar Rangers",
             "stat": "9 wkts (Econ 6.56, Avg 13.11)"
           },
           {
-            "player": "Rahul Chugh",
+            "player": "Surinder Singh",
             "team": "HCC Northstar Rangers",
-            "stat": "9 wkts (Econ 8.37, Avg 25.11)"
+            "stat": "9 wkts (Econ 7.30, Avg 8.11)"
           },
           {
             "player": "Venu Reddy",
@@ -4587,12 +4418,12 @@
           {
             "player": "Pawan Gill",
             "team": "HCC Northstar Rangers",
-            "stat": "6 wkts (Econ 5.80, Avg 19)"
+            "stat": "7 wkts (Econ 5.72, Avg 20.71)"
           },
           {
-            "player": "Surinder Singh",
+            "player": "Pankaj Tripathi",
             "team": "HCC Northstar Rangers",
-            "stat": "6 wkts (Econ 5.83, Avg 5.83)"
+            "stat": "7 wkts (Econ 10.67, Avg 27.43)"
           },
           {
             "player": "Nakul Datta",
@@ -4600,21 +4431,16 @@
             "stat": "5 wkts (Econ 4.87, Avg 22.4)"
           },
           {
-            "player": "Anmol Dang",
+            "player": "Talvir",
             "team": "HCC Northstar Rangers",
-            "stat": "4 wkts (Econ 7.03, Avg 8.5)"
-          },
-          {
-            "player": "Jaswinder Singh Rattanpal",
-            "team": "HCC Northstar Rangers",
-            "stat": "4 wkts (Econ 9.30, Avg 23.25)"
+            "stat": "5 wkts (Econ 6.33, Avg 15.2)"
           }
         ],
         "fielding": [
           {
             "player": "Jaswinder Singh Rattanpal",
             "team": "HCC Northstar Rangers",
-            "stat": "9 catches, 13 dismissals"
+            "stat": "11 catches, 15 dismissals"
           },
           {
             "player": "Sagarkumar Patel",
@@ -4627,9 +4453,19 @@
             "stat": "3 catches, 8 dismissals"
           },
           {
+            "player": "Manvir Singh",
+            "team": "HCC Northstar Rangers",
+            "stat": "5 catches, 8 dismissals"
+          },
+          {
             "player": "Venu Reddy",
             "team": "HCC Northstar Rangers",
             "stat": "4 catches, 7 dismissals"
+          },
+          {
+            "player": "Rahul Chugh",
+            "team": "HCC Northstar Rangers",
+            "stat": "6 catches, 7 dismissals"
           },
           {
             "player": "Surinder Singh",
@@ -4642,12 +4478,7 @@
             "stat": "6 catches, 6 dismissals"
           },
           {
-            "player": "Rahul Chugh",
-            "team": "HCC Northstar Rangers",
-            "stat": "5 catches, 6 dismissals"
-          },
-          {
-            "player": "Manvir Singh",
+            "player": "Pawan Gill",
             "team": "HCC Northstar Rangers",
             "stat": "5 catches, 5 dismissals"
           },
@@ -4655,11 +4486,6 @@
             "player": "Yadwinder Devgan",
             "team": "HCC Northstar Rangers",
             "stat": "3 catches, 4 dismissals"
-          },
-          {
-            "player": "Pawan Gill",
-            "team": "HCC Northstar Rangers",
-            "stat": "3 catches, 3 dismissals"
           }
         ]
       },
@@ -4686,51 +4512,15 @@
       "matches_detailed": [
         {
           "league": "2026 HDCL Ed Burn T20 Premier",
-          "venue_line": "Jennie Florence Parker Sports Complex, Hamilton (Ontario), 20-Sep-26, 20 Ov.,",
+          "venue_line": "Waterworks Park Brantford, Brantford, 03-Oct-26, 20 Ov.,",
           "round": "League Matches",
           "status": "upcoming",
-          "team_a": "CSK Cheras",
+          "team_a": "HCC Icefield Jets",
           "score_a": null,
-          "team_b": "HCC Icefield Jets",
+          "team_b": "Brantford Premier",
           "score_b": null,
-          "scheduled_at": "Sun,20 Sep, 08:30 AM",
+          "scheduled_at": "Sat,03 Oct, 03:30 PM",
           "result": null
-        },
-        {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "Glenashton Park, Oakville (Ontario), 02-Aug-26, 25 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Icefield Jets",
-          "score_a": "(25.0)",
-          "team_b": "Panthera T25",
-          "score_b": "(2.1)",
-          "scheduled_at": null,
-          "result": "Abandoned (Due to rain)"
-        },
-        {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "Jennie Florence Parker Sports Complex, Hamilton (Ontario), 12-Jul-26, 25 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "Punjab Lions T25",
-          "score_a": "(24.4)",
-          "team_b": "HCC Icefield Jets",
-          "score_b": "(22.3)",
-          "scheduled_at": null,
-          "result": "Punjab Lions T25 won by 16 runs"
-        },
-        {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "Glenashton Park, Oakville (Ontario), 20-Jun-26, 25 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Icefield Jets",
-          "score_a": "(24.0)",
-          "team_b": "Panthera T25",
-          "score_b": "(25.0)",
-          "scheduled_at": null,
-          "result": "HCC Icefield Jets won by 11 runs"
         },
         {
           "league": "2026 HDCL Ed Burn T20 Premier",
@@ -4769,16 +4559,16 @@
           "result": "HCC Icefield Jets won by 89 runs"
         },
         {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "NCC Ground A (HDCL), Niagara Falls (Ontario), 14-Jun-26, 25 Ov.,",
+          "league": "2026 HDCL Ed Burn T20 Premier",
+          "venue_line": "Glenashton Park, Oakville (Ontario), 26-Sep-26, 20 Ov.,",
           "round": "League Matches",
           "status": "past",
           "team_a": "HCC Icefield Jets",
-          "score_a": null,
-          "team_b": "Ontario Jaguars",
-          "score_b": null,
+          "score_a": "(20.0)",
+          "team_b": "Thalaivas t20",
+          "score_b": "(18.1)",
           "scheduled_at": null,
-          "result": "Abandoned (abandoned due to rain )"
+          "result": "HCC Icefield Jets won by 60 runs"
         },
         {
           "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
@@ -4817,42 +4607,60 @@
           "result": "HCC Icefield Jets won by 6 wickets"
         },
         {
+          "league": "2026 HDCL Ed Burn T20 Premier",
+          "venue_line": "Jennie Florence Parker Sports Complex, Hamilton (Ontario), 20-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Icefield Jets",
+          "score_a": "(20.0)",
+          "team_b": "CSK Cheras",
+          "score_b": "(20.0)",
+          "scheduled_at": null,
+          "result": "HCC Icefield Jets won by 39 runs"
+        },
+        {
           "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "Jennie Florence Parker Sports Complex, Hamilton (Ontario), 07-Jun-26, 25 Ov.,",
+          "venue_line": "Glenashton Park, Oakville (Ontario), 02-Aug-26, 25 Ov.,",
           "round": "League Matches",
           "status": "past",
           "team_a": "HCC Icefield Jets",
           "score_a": "(25.0)",
-          "team_b": "Knight Riders",
+          "team_b": "Panthera T25",
+          "score_b": "(2.1)",
+          "scheduled_at": null,
+          "result": "Abandoned (Due to rain)"
+        },
+        {
+          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
+          "venue_line": "Jennie Florence Parker Sports Complex, Hamilton (Ontario), 12-Jul-26, 25 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "Punjab Lions T25",
+          "score_a": "(24.4)",
+          "team_b": "HCC Icefield Jets",
+          "score_b": "(22.3)",
+          "scheduled_at": null,
+          "result": "Punjab Lions T25 won by 16 runs"
+        },
+        {
+          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
+          "venue_line": "Glenashton Park, Oakville (Ontario), 20-Jun-26, 25 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Icefield Jets",
+          "score_a": "(24.0)",
+          "team_b": "Panthera T25",
           "score_b": "(25.0)",
           "scheduled_at": null,
-          "result": "HCC Icefield Jets won by 71 runs"
+          "result": "HCC Icefield Jets won by 11 runs"
         }
       ],
       "matches": [
         {
-          "date": "20-Sep-26",
-          "opponent": "CSK Cheras",
-          "result": "Scheduled: Sun,20 Sep, 08:30 AM",
+          "date": "03-Oct-26",
+          "opponent": "Brantford Premier",
+          "result": "Scheduled: Sat,03 Oct, 03:30 PM",
           "status": "upcoming"
-        },
-        {
-          "date": "02-Aug-26",
-          "opponent": "Panthera T25",
-          "result": "Abandoned (Due to rain)",
-          "status": "past"
-        },
-        {
-          "date": "12-Jul-26",
-          "opponent": "Punjab Lions T25",
-          "result": "Punjab Lions T25 won by 16 runs",
-          "status": "past"
-        },
-        {
-          "date": "20-Jun-26",
-          "opponent": "Panthera T25",
-          "result": "HCC Icefield Jets won by 11 runs",
-          "status": "past"
         },
         {
           "date": "13-Sep-26",
@@ -4873,9 +4681,9 @@
           "status": "past"
         },
         {
-          "date": "14-Jun-26",
-          "opponent": "Ontario Jaguars",
-          "result": "Abandoned (abandoned due to rain )",
+          "date": "26-Sep-26",
+          "opponent": "Thalaivas t20",
+          "result": "HCC Icefield Jets won by 60 runs",
           "status": "past"
         },
         {
@@ -4897,36 +4705,54 @@
           "status": "past"
         },
         {
-          "date": "07-Jun-26",
-          "opponent": "Knight Riders",
-          "result": "HCC Icefield Jets won by 71 runs",
+          "date": "20-Sep-26",
+          "opponent": "CSK Cheras",
+          "result": "HCC Icefield Jets won by 39 runs",
+          "status": "past"
+        },
+        {
+          "date": "02-Aug-26",
+          "opponent": "Panthera T25",
+          "result": "Abandoned (Due to rain)",
+          "status": "past"
+        },
+        {
+          "date": "12-Jul-26",
+          "opponent": "Punjab Lions T25",
+          "result": "Punjab Lions T25 won by 16 runs",
+          "status": "past"
+        },
+        {
+          "date": "20-Jun-26",
+          "opponent": "Panthera T25",
+          "result": "HCC Icefield Jets won by 11 runs",
           "status": "past"
         }
       ],
       "leaderboard_detailed": {
         "batting": [
           {
-            "player": "Nakul Datta",
+            "player": "Nitin Talwar",
             "innings": "11",
-            "runs": "272",
-            "average": "24.73",
-            "strike_rate": "137.37",
+            "runs": "279",
+            "average": "39.86",
+            "strike_rate": "115.77",
+            "highest_score": "53",
+            "not_outs": "4",
+            "fours": "10",
+            "sixes": "18",
+            "hundreds": "0"
+          },
+          {
+            "player": "Nakul Datta",
+            "innings": "12",
+            "runs": "275",
+            "average": "22.92",
+            "strike_rate": "133.50",
             "highest_score": "68",
             "not_outs": "0",
             "fours": "21",
             "sixes": "15",
-            "hundreds": "0"
-          },
-          {
-            "player": "Nitin Talwar",
-            "innings": "9",
-            "runs": "210",
-            "average": "35.00",
-            "strike_rate": "102.44",
-            "highest_score": "43",
-            "not_outs": "3",
-            "fours": "8",
-            "sixes": "12",
             "hundreds": "0"
           },
           {
@@ -4942,14 +4768,38 @@
             "hundreds": "0"
           },
           {
+            "player": "Venu Reddy",
+            "innings": "10",
+            "runs": "176",
+            "average": "17.60",
+            "strike_rate": "88.89",
+            "highest_score": "59",
+            "not_outs": "0",
+            "fours": "9",
+            "sixes": "5",
+            "hundreds": "0"
+          },
+          {
             "player": "Deepanshu Kuchroo",
-            "innings": "7",
-            "runs": "145",
-            "average": "29.00",
-            "strike_rate": "88.96",
+            "innings": "8",
+            "runs": "169",
+            "average": "28.17",
+            "strike_rate": "88.02",
             "highest_score": "84",
             "not_outs": "2",
             "fours": "11",
+            "sixes": "5",
+            "hundreds": "0"
+          },
+          {
+            "player": "Sagarkumar Patel",
+            "innings": "11",
+            "runs": "113",
+            "average": "12.56",
+            "strike_rate": "86.92",
+            "highest_score": "29",
+            "not_outs": "2",
+            "fours": "9",
             "sixes": "5",
             "hundreds": "0"
           },
@@ -4978,30 +4828,6 @@
             "hundreds": "0"
           },
           {
-            "player": "Venu Reddy",
-            "innings": "8",
-            "runs": "88",
-            "average": "11.00",
-            "strike_rate": "60.69",
-            "highest_score": "16",
-            "not_outs": "0",
-            "fours": "3",
-            "sixes": "0",
-            "hundreds": "0"
-          },
-          {
-            "player": "Sagarkumar Patel",
-            "innings": "9",
-            "runs": "71",
-            "average": "10.14",
-            "strike_rate": "82.56",
-            "highest_score": "25",
-            "not_outs": "2",
-            "fours": "6",
-            "sixes": "3",
-            "hundreds": "0"
-          },
-          {
             "player": "Sunny Patel",
             "innings": "5",
             "runs": "62",
@@ -5015,10 +4841,10 @@
           },
           {
             "player": "Gaurav Thakur",
-            "innings": "9",
-            "runs": "55",
-            "average": "6.11",
-            "strike_rate": "61.80",
+            "innings": "10",
+            "runs": "59",
+            "average": "5.90",
+            "strike_rate": "63.44",
             "highest_score": "19",
             "not_outs": "0",
             "fours": "4",
@@ -5029,33 +4855,53 @@
         "bowling": [
           {
             "player": "Nakul Datta",
-            "innings": "10",
-            "wickets": "19",
-            "economy": "4.17",
-            "average": "10.32",
+            "innings": "11",
+            "wickets": "21",
+            "economy": "4.08",
+            "average": "9.9",
             "maidens": "2",
             "best": "4",
-            "strike_rate": "14.84"
+            "strike_rate": "14.57"
           },
           {
             "player": "Nitin Talwar",
-            "innings": "11",
-            "wickets": "12",
-            "economy": "5.36",
-            "average": "18.75",
+            "innings": "13",
+            "wickets": "15",
+            "economy": "5.51",
+            "average": "17.27",
             "maidens": "0",
             "best": "3",
-            "strike_rate": "21.00"
+            "strike_rate": "18.80"
+          },
+          {
+            "player": "Puneet",
+            "innings": "9",
+            "wickets": "10",
+            "economy": "4.88",
+            "average": "12.2",
+            "maidens": "0",
+            "best": "2",
+            "strike_rate": "15.00"
           },
           {
             "player": "Gaurav Thakur",
-            "innings": "11",
-            "wickets": "8",
-            "economy": "5.20",
-            "average": "25.88",
+            "innings": "13",
+            "wickets": "9",
+            "economy": "5.46",
+            "average": "27.22",
             "maidens": "1",
             "best": "2",
-            "strike_rate": "29.88"
+            "strike_rate": "29.89"
+          },
+          {
+            "player": "Deepanshu Kuchroo",
+            "innings": "11",
+            "wickets": "8",
+            "economy": "5.86",
+            "average": "21.25",
+            "maidens": "0",
+            "best": "4",
+            "strike_rate": "21.75"
           },
           {
             "player": "Nagendra Agarwal",
@@ -5068,16 +4914,6 @@
             "strike_rate": "14.50"
           },
           {
-            "player": "Puneet",
-            "innings": "7",
-            "wickets": "7",
-            "economy": "4.67",
-            "average": "14",
-            "maidens": "0",
-            "best": "2",
-            "strike_rate": "18.00"
-          },
-          {
             "player": "Sunny Patel",
             "innings": "5",
             "wickets": "7",
@@ -5088,14 +4924,14 @@
             "strike_rate": "16.86"
           },
           {
-            "player": "Deepanshu Kuchroo",
-            "innings": "9",
-            "wickets": "6",
-            "economy": "5.55",
-            "average": "20.33",
+            "player": "Luv Sohi",
+            "innings": "3",
+            "wickets": "5",
+            "economy": "6.98",
+            "average": "12.8",
             "maidens": "0",
-            "best": "4",
-            "strike_rate": "22.00"
+            "best": "3",
+            "strike_rate": "11.00"
           },
           {
             "player": "Venu Reddy",
@@ -5109,34 +4945,35 @@
           },
           {
             "player": "Akhlaq Waris",
-            "innings": "4",
+            "innings": "5",
             "wickets": "2",
-            "economy": "4.91",
-            "average": "13.5",
+            "economy": "5.20",
+            "average": "19.5",
             "maidens": "0",
             "best": "1",
-            "strike_rate": "16.50"
-          },
-          {
-            "player": "Sunny Patel",
-            "innings": "1",
-            "wickets": "1",
-            "economy": "2.60",
-            "average": "13",
-            "maidens": "1",
-            "best": "1",
-            "strike_rate": "30.00"
+            "strike_rate": "22.50"
           }
         ],
         "fielding": [
           {
-            "player": "Sagarkumar Patel",
+            "player": "Yasin Shaikh",
             "matches": "11",
-            "dismissals": "6",
+            "dismissals": "7",
+            "catches": "7",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Sagarkumar Patel",
+            "matches": "13",
+            "dismissals": "7",
             "catches": "4",
             "run_outs": "1",
             "catch_and_bowled": "0",
-            "caught_behind": "0",
+            "caught_behind": "1",
             "stumpings": "1",
             "assisted_run_outs": "1"
           },
@@ -5163,8 +5000,30 @@
             "assisted_run_outs": "1"
           },
           {
-            "player": "Yasin Shaikh",
-            "matches": "9",
+            "player": "Nakul Datta",
+            "matches": "13",
+            "dismissals": "5",
+            "catches": "4",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "1"
+          },
+          {
+            "player": "Gaurav Thakur",
+            "matches": "14",
+            "dismissals": "5",
+            "catches": "4",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Rishav Sharma",
+            "matches": "2",
             "dismissals": "4",
             "catches": "4",
             "run_outs": "0",
@@ -5174,30 +5033,19 @@
             "assisted_run_outs": "0"
           },
           {
-            "player": "Gaurav Thakur",
-            "matches": "12",
+            "player": "Venu Reddy",
+            "matches": "13",
             "dismissals": "4",
             "catches": "3",
-            "run_outs": "1",
-            "catch_and_bowled": "0",
+            "run_outs": "0",
+            "catch_and_bowled": "1",
             "caught_behind": "0",
             "stumpings": "0",
             "assisted_run_outs": "0"
           },
           {
-            "player": "Nakul Datta",
-            "matches": "12",
-            "dismissals": "4",
-            "catches": "3",
-            "run_outs": "1",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "1"
-          },
-          {
             "player": "Nitin Talwar",
-            "matches": "12",
+            "matches": "14",
             "dismissals": "4",
             "catches": "4",
             "run_outs": "0",
@@ -5208,33 +5056,11 @@
           },
           {
             "player": "Deepanshu Kuchroo",
-            "matches": "10",
+            "matches": "12",
             "dismissals": "3",
             "catches": "2",
             "run_outs": "0",
             "catch_and_bowled": "1",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Venu Reddy",
-            "matches": "11",
-            "dismissals": "3",
-            "catches": "2",
-            "run_outs": "0",
-            "catch_and_bowled": "1",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
-          },
-          {
-            "player": "Dhaval Bhatt",
-            "matches": "1",
-            "dismissals": "2",
-            "catches": "2",
-            "run_outs": "0",
-            "catch_and_bowled": "0",
             "caught_behind": "0",
             "stumpings": "0",
             "assisted_run_outs": "0"
@@ -5244,14 +5070,14 @@
       "leaderboard": {
         "batting": [
           {
-            "player": "Nakul Datta",
-            "team": "HCC Icefield Jets",
-            "stat": "272 runs (Avg 24.73, SR 137.37)"
-          },
-          {
             "player": "Nitin Talwar",
             "team": "HCC Icefield Jets",
-            "stat": "210 runs (Avg 35.00, SR 102.44)"
+            "stat": "279 runs (Avg 39.86, SR 115.77)"
+          },
+          {
+            "player": "Nakul Datta",
+            "team": "HCC Icefield Jets",
+            "stat": "275 runs (Avg 22.92, SR 133.50)"
           },
           {
             "player": "Nagendra Agarwal",
@@ -5259,9 +5085,19 @@
             "stat": "188 runs (Avg 26.86, SR 79.66)"
           },
           {
+            "player": "Venu Reddy",
+            "team": "HCC Icefield Jets",
+            "stat": "176 runs (Avg 17.60, SR 88.89)"
+          },
+          {
             "player": "Deepanshu Kuchroo",
             "team": "HCC Icefield Jets",
-            "stat": "145 runs (Avg 29.00, SR 88.96)"
+            "stat": "169 runs (Avg 28.17, SR 88.02)"
+          },
+          {
+            "player": "Sagarkumar Patel",
+            "team": "HCC Icefield Jets",
+            "stat": "113 runs (Avg 12.56, SR 86.92)"
           },
           {
             "player": "Punit Shetty",
@@ -5274,16 +5110,6 @@
             "stat": "93 runs (Avg 11.63, SR 79.49)"
           },
           {
-            "player": "Venu Reddy",
-            "team": "HCC Icefield Jets",
-            "stat": "88 runs (Avg 11.00, SR 60.69)"
-          },
-          {
-            "player": "Sagarkumar Patel",
-            "team": "HCC Icefield Jets",
-            "stat": "71 runs (Avg 10.14, SR 82.56)"
-          },
-          {
             "player": "Sunny Patel",
             "team": "HCC Icefield Jets",
             "stat": "62 runs (Avg 12.40, SR 129.17)"
@@ -5291,24 +5117,34 @@
           {
             "player": "Gaurav Thakur",
             "team": "HCC Icefield Jets",
-            "stat": "55 runs (Avg 6.11, SR 61.80)"
+            "stat": "59 runs (Avg 5.90, SR 63.44)"
           }
         ],
         "bowling": [
           {
             "player": "Nakul Datta",
             "team": "HCC Icefield Jets",
-            "stat": "19 wkts (Econ 4.17, Avg 10.32)"
+            "stat": "21 wkts (Econ 4.08, Avg 9.9)"
           },
           {
             "player": "Nitin Talwar",
             "team": "HCC Icefield Jets",
-            "stat": "12 wkts (Econ 5.36, Avg 18.75)"
+            "stat": "15 wkts (Econ 5.51, Avg 17.27)"
+          },
+          {
+            "player": "Puneet",
+            "team": "HCC Icefield Jets",
+            "stat": "10 wkts (Econ 4.88, Avg 12.2)"
           },
           {
             "player": "Gaurav Thakur",
             "team": "HCC Icefield Jets",
-            "stat": "8 wkts (Econ 5.20, Avg 25.88)"
+            "stat": "9 wkts (Econ 5.46, Avg 27.22)"
+          },
+          {
+            "player": "Deepanshu Kuchroo",
+            "team": "HCC Icefield Jets",
+            "stat": "8 wkts (Econ 5.86, Avg 21.25)"
           },
           {
             "player": "Nagendra Agarwal",
@@ -5316,19 +5152,14 @@
             "stat": "8 wkts (Econ 6.62, Avg 16)"
           },
           {
-            "player": "Puneet",
-            "team": "HCC Icefield Jets",
-            "stat": "7 wkts (Econ 4.67, Avg 14)"
-          },
-          {
             "player": "Sunny Patel",
             "team": "HCC Icefield Jets",
             "stat": "7 wkts (Econ 4.73, Avg 13.29)"
           },
           {
-            "player": "Deepanshu Kuchroo",
+            "player": "Luv Sohi",
             "team": "HCC Icefield Jets",
-            "stat": "6 wkts (Econ 5.55, Avg 20.33)"
+            "stat": "5 wkts (Econ 6.98, Avg 12.8)"
           },
           {
             "player": "Venu Reddy",
@@ -5338,19 +5169,19 @@
           {
             "player": "Akhlaq Waris",
             "team": "HCC Icefield Jets",
-            "stat": "2 wkts (Econ 4.91, Avg 13.5)"
-          },
-          {
-            "player": "Sunny Patel",
-            "team": "HCC Icefield Jets",
-            "stat": "1 wkts (Econ 2.60, Avg 13)"
+            "stat": "2 wkts (Econ 5.20, Avg 19.5)"
           }
         ],
         "fielding": [
           {
+            "player": "Yasin Shaikh",
+            "team": "HCC Icefield Jets",
+            "stat": "7 catches, 7 dismissals"
+          },
+          {
             "player": "Sagarkumar Patel",
             "team": "HCC Icefield Jets",
-            "stat": "4 catches, 6 dismissals"
+            "stat": "4 catches, 7 dismissals"
           },
           {
             "player": "Sunny Patel",
@@ -5363,17 +5194,22 @@
             "stat": "0 catches, 5 dismissals"
           },
           {
-            "player": "Yasin Shaikh",
+            "player": "Nakul Datta",
             "team": "HCC Icefield Jets",
-            "stat": "4 catches, 4 dismissals"
+            "stat": "4 catches, 5 dismissals"
           },
           {
             "player": "Gaurav Thakur",
             "team": "HCC Icefield Jets",
-            "stat": "3 catches, 4 dismissals"
+            "stat": "4 catches, 5 dismissals"
           },
           {
-            "player": "Nakul Datta",
+            "player": "Rishav Sharma",
+            "team": "HCC Icefield Jets",
+            "stat": "4 catches, 4 dismissals"
+          },
+          {
+            "player": "Venu Reddy",
             "team": "HCC Icefield Jets",
             "stat": "3 catches, 4 dismissals"
           },
@@ -5386,16 +5222,6 @@
             "player": "Deepanshu Kuchroo",
             "team": "HCC Icefield Jets",
             "stat": "2 catches, 3 dismissals"
-          },
-          {
-            "player": "Venu Reddy",
-            "team": "HCC Icefield Jets",
-            "stat": "2 catches, 3 dismissals"
-          },
-          {
-            "player": "Dhaval Bhatt",
-            "team": "HCC Icefield Jets",
-            "stat": "2 catches, 2 dismissals"
           }
         ]
       },
@@ -5420,6 +5246,114 @@
       "group": "club",
       "ok": true,
       "matches_detailed": [
+        {
+          "league": "2026 HDCL Ed Burn T20 Premier",
+          "venue_line": "Glenashton Park, Oakville (Ontario), 26-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "upcoming",
+          "team_a": "HCC Northern Falcons",
+          "score_a": null,
+          "team_b": "Halton Hercules",
+          "score_b": null,
+          "scheduled_at": "Sat,26 Sep, 08:30 AM",
+          "result": null
+        },
+        {
+          "league": "2026 HDCL Ed Burn T20 Premier",
+          "venue_line": "Waterworks Park Brantford, Brantford, 26-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Northern Falcons",
+          "score_a": "(17.4)",
+          "team_b": "Halton Hercules",
+          "score_b": "(8.3)",
+          "scheduled_at": null,
+          "result": "Halton Hercules won by 9 wickets"
+        },
+        {
+          "league": "2026 PREMIER DIVISION",
+          "venue_line": "Sixteen Mile Sports Complex, Oakville (Ontario), 30-Aug-26, 40 Ov.,",
+          "round": "Semi Final",
+          "status": "past",
+          "team_a": "HCC Northern Raptors",
+          "score_a": "(31.0)",
+          "team_b": "HCC Northern Falcons",
+          "score_b": "(39.5)",
+          "scheduled_at": null,
+          "result": "HCC Northern Falcons won by 1 wicket"
+        },
+        {
+          "league": "2026 PREMIER DIVISION",
+          "venue_line": "Victoria Park, Cambridge (Ontario), 02-Aug-26, 40 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Northern Falcons",
+          "score_a": null,
+          "team_b": "Cambridge Premier",
+          "score_b": null,
+          "scheduled_at": null,
+          "result": "Abandoned (rained out)"
+        },
+        {
+          "league": "2026 HDCL Ed Burn T20 Premier",
+          "venue_line": "Jennie Florence Parker Sports Complex, Hamilton (Ontario), 03-Oct-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "upcoming",
+          "team_a": "HCC Northern Falcons",
+          "score_a": null,
+          "team_b": "Stoney Creek T20",
+          "score_b": null,
+          "scheduled_at": "Sat,03 Oct, 08:30 AM",
+          "result": null
+        },
+        {
+          "league": "2026 HDCL Ed Burn T20 Premier",
+          "venue_line": "NCC Ground - Stadium(HDCL), Niagara Falls (Ontario), 25-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "CSK Cholas",
+          "score_a": "(20.0)",
+          "team_b": "HCC Northern Falcons",
+          "score_b": "(10.2)",
+          "scheduled_at": null,
+          "result": "HCC Northern Falcons won by 8 wickets"
+        },
+        {
+          "league": "2026 PREMIER DIVISION",
+          "venue_line": "NCC Ground A (HDCL), Niagara Falls (Ontario), 16-Aug-26, 40 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Northern Falcons",
+          "score_a": "(39.0)",
+          "team_b": "Imperial Premier",
+          "score_b": "(38.0)",
+          "scheduled_at": null,
+          "result": "Imperial Premier won by 5 wickets"
+        },
+        {
+          "league": "2026 PREMIER DIVISION",
+          "venue_line": "Sixteen Mile Sports Complex, Oakville (Ontario), 26-Jul-26, 40 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Northern Falcons",
+          "score_a": "(40.0)",
+          "team_b": "Oakville Eagles",
+          "score_b": "(33.2)",
+          "scheduled_at": null,
+          "result": "Oakville Eagles won by 4 wickets"
+        },
+        {
+          "league": "2026 HDCL Ed Burn T20 Premier",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 27-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Northern Falcons",
+          "score_a": "(20.0)",
+          "team_b": "Thalaivas 100",
+          "score_b": "(20.0)",
+          "scheduled_at": null,
+          "result": "HCC Northern Falcons won by 133 runs"
+        },
         {
           "league": "2026 PREMIER DIVISION",
           "venue_line": "Sixteen Mile Sports Complex, Oakville (Ontario), 06-Sep-26, 40 Ov.,",
@@ -5455,117 +5389,63 @@
           "score_b": "(37.4)",
           "scheduled_at": null,
           "result": "HCC Northern Falcons won by 2 wickets"
-        },
-        {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "Sixteen Mile Sports Complex, Oakville (Ontario), 21-Jun-26, 40 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Falcons",
-          "score_a": "(36.5)",
-          "team_b": "Oakville Falcons",
-          "score_b": "(24.5)",
-          "scheduled_at": null,
-          "result": "HCC Northern Falcons won by 82 runs"
-        },
-        {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "Sixteen Mile Sports Complex, Oakville (Ontario), 30-Aug-26, 40 Ov.,",
-          "round": "Semi Final",
-          "status": "past",
-          "team_a": "HCC Northern Raptors",
-          "score_a": "(31.0)",
-          "team_b": "HCC Northern Falcons",
-          "score_b": "(39.5)",
-          "scheduled_at": null,
-          "result": "HCC Northern Falcons won by 1 wicket"
-        },
-        {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "Victoria Park, Cambridge (Ontario), 02-Aug-26, 40 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Falcons",
-          "score_a": null,
-          "team_b": "Cambridge Premier",
-          "score_b": null,
-          "scheduled_at": null,
-          "result": "Abandoned (rained out)"
-        },
-        {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "NCC Ground A (HDCL), Niagara Falls (Ontario), 12-Jul-26, 40 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Raptors",
-          "score_a": "(32.2)",
-          "team_b": "HCC Northern Falcons",
-          "score_b": "(30.3)",
-          "scheduled_at": null,
-          "result": "HCC Northern Raptors won by 36 runs"
-        },
-        {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "NCC Ground A (HDCL), Niagara Falls (Ontario), 14-Jun-26, 40 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Falcons",
-          "score_a": null,
-          "team_b": "Imperial Premier",
-          "score_b": null,
-          "scheduled_at": null,
-          "result": "Abandoned (abandoned due to rain )"
-        },
-        {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "NCC Ground A (HDCL), Niagara Falls (Ontario), 16-Aug-26, 40 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Falcons",
-          "score_a": "(39.0)",
-          "team_b": "Imperial Premier",
-          "score_b": "(38.0)",
-          "scheduled_at": null,
-          "result": "Imperial Premier won by 5 wickets"
-        },
-        {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "Sixteen Mile Sports Complex, Oakville (Ontario), 26-Jul-26, 40 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Falcons",
-          "score_a": "(40.0)",
-          "team_b": "Oakville Eagles",
-          "score_b": "(33.2)",
-          "scheduled_at": null,
-          "result": "Oakville Eagles won by 4 wickets"
-        },
-        {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "NCC Ground - Stadium(HDCL), Niagara Falls (Ontario), 28-Jun-26, 40 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Falcons",
-          "score_a": "(33.3)",
-          "team_b": "MASS Niagara Premier",
-          "score_b": "(18.3)",
-          "scheduled_at": null,
-          "result": "HCC Northern Falcons won by 76 runs"
-        },
-        {
-          "league": "2026 PREMIER DIVISION",
-          "venue_line": "Jennie Florence Parker Sports Complex, Hamilton (Ontario), 07-Jun-26, 40 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "Proteas Premier",
-          "score_a": "(40.0)",
-          "team_b": "HCC Northern Falcons",
-          "score_b": "(31.5)",
-          "scheduled_at": null,
-          "result": "HCC Northern Falcons won by 6 wickets"
         }
       ],
       "matches": [
+        {
+          "date": "26-Sep-26",
+          "opponent": "Halton Hercules",
+          "result": "Scheduled: Sat,26 Sep, 08:30 AM",
+          "status": "upcoming"
+        },
+        {
+          "date": "26-Sep-26",
+          "opponent": "Halton Hercules",
+          "result": "Halton Hercules won by 9 wickets",
+          "status": "past"
+        },
+        {
+          "date": "30-Aug-26",
+          "opponent": "HCC Northern Falcons",
+          "result": "HCC Northern Falcons won by 1 wicket",
+          "status": "past"
+        },
+        {
+          "date": "02-Aug-26",
+          "opponent": "Cambridge Premier",
+          "result": "Abandoned (rained out)",
+          "status": "past"
+        },
+        {
+          "date": "03-Oct-26",
+          "opponent": "Stoney Creek T20",
+          "result": "Scheduled: Sat,03 Oct, 08:30 AM",
+          "status": "upcoming"
+        },
+        {
+          "date": "25-Sep-26",
+          "opponent": "CSK Cholas",
+          "result": "HCC Northern Falcons won by 8 wickets",
+          "status": "past"
+        },
+        {
+          "date": "16-Aug-26",
+          "opponent": "Imperial Premier",
+          "result": "Imperial Premier won by 5 wickets",
+          "status": "past"
+        },
+        {
+          "date": "26-Jul-26",
+          "opponent": "Oakville Eagles",
+          "result": "Oakville Eagles won by 4 wickets",
+          "status": "past"
+        },
+        {
+          "date": "27-Sep-26",
+          "opponent": "Thalaivas 100",
+          "result": "HCC Northern Falcons won by 133 runs",
+          "status": "past"
+        },
         {
           "date": "06-Sep-26",
           "opponent": "Imperial Premier",
@@ -5582,60 +5462,6 @@
           "date": "19-Jul-26",
           "opponent": "Hamilton Cricket club",
           "result": "HCC Northern Falcons won by 2 wickets",
-          "status": "past"
-        },
-        {
-          "date": "21-Jun-26",
-          "opponent": "Oakville Falcons",
-          "result": "HCC Northern Falcons won by 82 runs",
-          "status": "past"
-        },
-        {
-          "date": "30-Aug-26",
-          "opponent": "HCC Northern Falcons",
-          "result": "HCC Northern Falcons won by 1 wicket",
-          "status": "past"
-        },
-        {
-          "date": "02-Aug-26",
-          "opponent": "Cambridge Premier",
-          "result": "Abandoned (rained out)",
-          "status": "past"
-        },
-        {
-          "date": "12-Jul-26",
-          "opponent": "HCC Northern Falcons",
-          "result": "HCC Northern Raptors won by 36 runs",
-          "status": "past"
-        },
-        {
-          "date": "14-Jun-26",
-          "opponent": "Imperial Premier",
-          "result": "Abandoned (abandoned due to rain )",
-          "status": "past"
-        },
-        {
-          "date": "16-Aug-26",
-          "opponent": "Imperial Premier",
-          "result": "Imperial Premier won by 5 wickets",
-          "status": "past"
-        },
-        {
-          "date": "26-Jul-26",
-          "opponent": "Oakville Eagles",
-          "result": "Oakville Eagles won by 4 wickets",
-          "status": "past"
-        },
-        {
-          "date": "28-Jun-26",
-          "opponent": "MASS Niagara Premier",
-          "result": "HCC Northern Falcons won by 76 runs",
-          "status": "past"
-        },
-        {
-          "date": "07-Jun-26",
-          "opponent": "Proteas Premier",
-          "result": "HCC Northern Falcons won by 6 wickets",
           "status": "past"
         }
       ],
@@ -5655,26 +5481,38 @@
           },
           {
             "player": "nitin",
-            "innings": "8",
-            "runs": "176",
-            "average": "22.00",
-            "strike_rate": "83.02",
+            "innings": "10",
+            "runs": "220",
+            "average": "24.44",
+            "strike_rate": "95.24",
             "highest_score": "89",
-            "not_outs": "0",
-            "fours": "10",
-            "sixes": "11",
+            "not_outs": "1",
+            "fours": "11",
+            "sixes": "17",
             "hundreds": "0"
           },
           {
+            "player": "Shubham Rai",
+            "innings": "5",
+            "runs": "187",
+            "average": "37.40",
+            "strike_rate": "194.79",
+            "highest_score": "100",
+            "not_outs": "0",
+            "fours": "15",
+            "sixes": "15",
+            "hundreds": "1"
+          },
+          {
             "player": "Sameer Verma",
-            "innings": "8",
-            "runs": "143",
-            "average": "17.88",
-            "strike_rate": "67.14",
+            "innings": "10",
+            "runs": "171",
+            "average": "17.10",
+            "strike_rate": "72.46",
             "highest_score": "47",
             "not_outs": "0",
-            "fours": "10",
-            "sixes": "8",
+            "fours": "13",
+            "sixes": "10",
             "hundreds": "0"
           },
           {
@@ -5715,14 +5553,26 @@
           },
           {
             "player": "Masroor T",
-            "innings": "6",
+            "innings": "7",
             "runs": "105",
-            "average": "17.50",
-            "strike_rate": "100.00",
+            "average": "15.00",
+            "strike_rate": "97.22",
             "highest_score": "27",
             "not_outs": "0",
             "fours": "6",
             "sixes": "6",
+            "hundreds": "0"
+          },
+          {
+            "player": "Anmol Dang",
+            "innings": "6",
+            "runs": "94",
+            "average": "15.67",
+            "strike_rate": "88.68",
+            "highest_score": "36",
+            "not_outs": "0",
+            "fours": "7",
+            "sixes": "3",
             "hundreds": "0"
           },
           {
@@ -5735,30 +5585,6 @@
             "not_outs": "1",
             "fours": "6",
             "sixes": "0",
-            "hundreds": "0"
-          },
-          {
-            "player": "Harpreet Singh",
-            "innings": "8",
-            "runs": "65",
-            "average": "9.29",
-            "strike_rate": "58.56",
-            "highest_score": "36",
-            "not_outs": "1",
-            "fours": "2",
-            "sixes": "2",
-            "hundreds": "0"
-          },
-          {
-            "player": "Luv Sohi",
-            "innings": "6",
-            "runs": "60",
-            "average": "15.00",
-            "strike_rate": "41.96",
-            "highest_score": "18",
-            "not_outs": "2",
-            "fours": "2",
-            "sixes": "1",
             "hundreds": "0"
           }
         ],
@@ -5775,13 +5601,13 @@
           },
           {
             "player": "Jay Shah",
-            "innings": "9",
-            "wickets": "18",
-            "economy": "3.87",
-            "average": "13.22",
-            "maidens": "8",
+            "innings": "11",
+            "wickets": "19",
+            "economy": "3.97",
+            "average": "14.53",
+            "maidens": "9",
             "best": "4",
-            "strike_rate": "20.50"
+            "strike_rate": "21.95"
           },
           {
             "player": "Nakul Datta",
@@ -5824,6 +5650,16 @@
             "strike_rate": "27.71"
           },
           {
+            "player": "Pawan Gill",
+            "innings": "3",
+            "wickets": "6",
+            "economy": "7.00",
+            "average": "11.67",
+            "maidens": "1",
+            "best": "4",
+            "strike_rate": "10.00"
+          },
+          {
             "player": "Shikhar Batta",
             "innings": "9",
             "wickets": "4",
@@ -5852,16 +5688,6 @@
             "maidens": "0",
             "best": "2",
             "strike_rate": "19.00"
-          },
-          {
-            "player": "Nitin Talwar",
-            "innings": "2",
-            "wickets": "2",
-            "economy": "6.43",
-            "average": "22.5",
-            "maidens": "0",
-            "best": "2",
-            "strike_rate": "21.00"
           }
         ],
         "fielding": [
@@ -5889,14 +5715,14 @@
           },
           {
             "player": "Jay Shah",
-            "matches": "9",
-            "dismissals": "6",
+            "matches": "11",
+            "dismissals": "7",
             "catches": "6",
-            "run_outs": "0",
+            "run_outs": "1",
             "catch_and_bowled": "0",
             "caught_behind": "0",
             "stumpings": "0",
-            "assisted_run_outs": "0"
+            "assisted_run_outs": "1"
           },
           {
             "player": "Luv Sohi",
@@ -5932,6 +5758,17 @@
             "assisted_run_outs": "0"
           },
           {
+            "player": "Manvir Singh",
+            "matches": "3",
+            "dismissals": "3",
+            "catches": "0",
+            "run_outs": "1",
+            "catch_and_bowled": "2",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "1"
+          },
+          {
             "player": "Ishumanbir Singh",
             "matches": "6",
             "dismissals": "3",
@@ -5944,7 +5781,7 @@
           },
           {
             "player": "nitin",
-            "matches": "8",
+            "matches": "10",
             "dismissals": "3",
             "catches": "1",
             "run_outs": "1",
@@ -5963,17 +5800,6 @@
             "caught_behind": "1",
             "stumpings": "0",
             "assisted_run_outs": "0"
-          },
-          {
-            "player": "Masroor T",
-            "matches": "7",
-            "dismissals": "2",
-            "catches": "1",
-            "run_outs": "1",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "0"
           }
         ]
       },
@@ -5987,12 +5813,17 @@
           {
             "player": "nitin",
             "team": "HCC Northern Falcons",
-            "stat": "176 runs (Avg 22.00, SR 83.02)"
+            "stat": "220 runs (Avg 24.44, SR 95.24)"
+          },
+          {
+            "player": "Shubham Rai",
+            "team": "HCC Northern Falcons",
+            "stat": "187 runs (Avg 37.40, SR 194.79)"
           },
           {
             "player": "Sameer Verma",
             "team": "HCC Northern Falcons",
-            "stat": "143 runs (Avg 17.88, SR 67.14)"
+            "stat": "171 runs (Avg 17.10, SR 72.46)"
           },
           {
             "player": "Shikhar Batta",
@@ -6012,22 +5843,17 @@
           {
             "player": "Masroor T",
             "team": "HCC Northern Falcons",
-            "stat": "105 runs (Avg 17.50, SR 100.00)"
+            "stat": "105 runs (Avg 15.00, SR 97.22)"
+          },
+          {
+            "player": "Anmol Dang",
+            "team": "HCC Northern Falcons",
+            "stat": "94 runs (Avg 15.67, SR 88.68)"
           },
           {
             "player": "Shubham Sharma",
             "team": "HCC Northern Falcons",
             "stat": "88 runs (Avg 11.00, SR 55.35)"
-          },
-          {
-            "player": "Harpreet Singh",
-            "team": "HCC Northern Falcons",
-            "stat": "65 runs (Avg 9.29, SR 58.56)"
-          },
-          {
-            "player": "Luv Sohi",
-            "team": "HCC Northern Falcons",
-            "stat": "60 runs (Avg 15.00, SR 41.96)"
           }
         ],
         "bowling": [
@@ -6039,7 +5865,7 @@
           {
             "player": "Jay Shah",
             "team": "HCC Northern Falcons",
-            "stat": "18 wkts (Econ 3.87, Avg 13.22)"
+            "stat": "19 wkts (Econ 3.97, Avg 14.53)"
           },
           {
             "player": "Nakul Datta",
@@ -6062,6 +5888,11 @@
             "stat": "7 wkts (Econ 4.64, Avg 21.43)"
           },
           {
+            "player": "Pawan Gill",
+            "team": "HCC Northern Falcons",
+            "stat": "6 wkts (Econ 7.00, Avg 11.67)"
+          },
+          {
             "player": "Shikhar Batta",
             "team": "HCC Northern Falcons",
             "stat": "4 wkts (Econ 6.12, Avg 50.5)"
@@ -6075,11 +5906,6 @@
             "player": "Rishav sharma",
             "team": "HCC Northern Falcons",
             "stat": "2 wkts (Econ 4.74, Avg 15)"
-          },
-          {
-            "player": "Nitin Talwar",
-            "team": "HCC Northern Falcons",
-            "stat": "2 wkts (Econ 6.43, Avg 22.5)"
           }
         ],
         "fielding": [
@@ -6096,7 +5922,7 @@
           {
             "player": "Jay Shah",
             "team": "HCC Northern Falcons",
-            "stat": "6 catches, 6 dismissals"
+            "stat": "6 catches, 7 dismissals"
           },
           {
             "player": "Luv Sohi",
@@ -6114,6 +5940,11 @@
             "stat": "4 catches, 4 dismissals"
           },
           {
+            "player": "Manvir Singh",
+            "team": "HCC Northern Falcons",
+            "stat": "0 catches, 3 dismissals"
+          },
+          {
             "player": "Ishumanbir Singh",
             "team": "HCC Northern Falcons",
             "stat": "2 catches, 3 dismissals"
@@ -6125,11 +5956,6 @@
           },
           {
             "player": "Harpreet Singh",
-            "team": "HCC Northern Falcons",
-            "stat": "1 catches, 2 dismissals"
-          },
-          {
-            "player": "Masroor T",
             "team": "HCC Northern Falcons",
             "stat": "1 catches, 2 dismissals"
           }
