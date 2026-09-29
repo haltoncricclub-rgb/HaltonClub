@@ -10,6 +10,8 @@
     { "id": "13970315", "slug": "HCC Northstar Rangers", "name": "HCC Northstar Rangers", "group": "club" },
     { "id": "6721101",  "slug": "HCC Icefield Jets", "name": "HCC Icefield Jets", "group": "club" },
     { "id": "13488218", "slug": "HCC Northern Falcons", "name": "HCC Northern Falcons", "group": "club" },
-    { "id": "6740722",  "slug": "HCC All Stars", "name": "HCC All Stars", "group": "club" }
+    { "id": "6740722",  "slug": "HCC All Stars", "name": "HCC All Stars", "group": "club" },
+    { "id": "14486447", "slug": "hcc-renegades", "name": "HCC Renegades", "group": "club" },
+    { "id": "14063304", "slug": "bhcc", "name": "BHCC", "group": "club" }
   ]
 }

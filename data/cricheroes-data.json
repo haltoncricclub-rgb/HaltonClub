@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T18:40:44.298118+00:00",
+  "generated_at": "2026-09-29T20:08:31.962463+00:00",
   "mode": "authenticated-manual",
   "teams": {
     "13709207": {
@@ -650,7 +650,7 @@
           }
         ]
       },
-      "matches_season_filter_applied": false,
+      "matches_season_filter_applied": true,
       "season_filter_applied": true,
       "season_filter_options_seen": [
         "2026",
@@ -1393,7 +1393,128 @@
         }
       ],
       "leaderboard_detailed": {
-        "batting": [],
+        "batting": [
+          {
+            "player": "Shubham Rai",
+            "innings": "1",
+            "runs": "46",
+            "average": "46.00",
+            "strike_rate": "164.29",
+            "highest_score": "46",
+            "not_outs": "0",
+            "fours": "5",
+            "sixes": "2",
+            "hundreds": "0"
+          },
+          {
+            "player": "Manvir Singh",
+            "innings": "1",
+            "runs": "32",
+            "average": "-",
+            "strike_rate": "96.97",
+            "highest_score": "32",
+            "not_outs": "1",
+            "fours": "2",
+            "sixes": "1",
+            "hundreds": "0"
+          },
+          {
+            "player": "Jaswinder Singh Rattanpal",
+            "innings": "1",
+            "runs": "14",
+            "average": "14.00",
+            "strike_rate": "200.00",
+            "highest_score": "14",
+            "not_outs": "0",
+            "fours": "3",
+            "sixes": "0",
+            "hundreds": "0"
+          },
+          {
+            "player": "Rubalpreet Singh Gill",
+            "innings": "1",
+            "runs": "14",
+            "average": "-",
+            "strike_rate": "107.69",
+            "highest_score": "14",
+            "not_outs": "1",
+            "fours": "1",
+            "sixes": "1",
+            "hundreds": "0"
+          },
+          {
+            "player": "Chanpreet Singh",
+            "innings": "1",
+            "runs": "9",
+            "average": "9.00",
+            "strike_rate": "75.00",
+            "highest_score": "9",
+            "not_outs": "0",
+            "fours": "1",
+            "sixes": "0",
+            "hundreds": "0"
+          },
+          {
+            "player": "Surinder Singh",
+            "innings": "1",
+            "runs": "4",
+            "average": "-",
+            "strike_rate": "50.00",
+            "highest_score": "4",
+            "not_outs": "1",
+            "fours": "0",
+            "sixes": "0",
+            "hundreds": "0"
+          },
+          {
+            "player": "Pawan Gill",
+            "innings": "1",
+            "runs": "4",
+            "average": "-",
+            "strike_rate": "50.00",
+            "highest_score": "4",
+            "not_outs": "1",
+            "fours": "0",
+            "sixes": "0",
+            "hundreds": "0"
+          },
+          {
+            "player": "Lavdeep Singh",
+            "innings": "1",
+            "runs": "3",
+            "average": "-",
+            "strike_rate": "100.00",
+            "highest_score": "3",
+            "not_outs": "1",
+            "fours": "0",
+            "sixes": "0",
+            "hundreds": "0"
+          },
+          {
+            "player": "Amrinder Chahal",
+            "innings": "1",
+            "runs": "2",
+            "average": "2.00",
+            "strike_rate": "28.57",
+            "highest_score": "2",
+            "not_outs": "0",
+            "fours": "0",
+            "sixes": "0",
+            "hundreds": "0"
+          },
+          {
+            "player": "Rammi Bhathal",
+            "innings": "1",
+            "runs": "1",
+            "average": "1.00",
+            "strike_rate": "33.33",
+            "highest_score": "1",
+            "not_outs": "0",
+            "fours": "0",
+            "sixes": "0",
+            "hundreds": "0"
+          }
+        ],
         "bowling": [
           {
             "player": "Shammi Bhathal",
@@ -1494,7 +1615,58 @@
         ]
       },
       "leaderboard": {
-        "batting": [],
+        "batting": [
+          {
+            "player": "Shubham Rai",
+            "team": "HCC Northern Eagles",
+            "stat": "46 runs (Avg 46.00, SR 164.29)"
+          },
+          {
+            "player": "Manvir Singh",
+            "team": "HCC Northern Eagles",
+            "stat": "32 runs (Avg -, SR 96.97)"
+          },
+          {
+            "player": "Jaswinder Singh Rattanpal",
+            "team": "HCC Northern Eagles",
+            "stat": "14 runs (Avg 14.00, SR 200.00)"
+          },
+          {
+            "player": "Rubalpreet Singh Gill",
+            "team": "HCC Northern Eagles",
+            "stat": "14 runs (Avg -, SR 107.69)"
+          },
+          {
+            "player": "Chanpreet Singh",
+            "team": "HCC Northern Eagles",
+            "stat": "9 runs (Avg 9.00, SR 75.00)"
+          },
+          {
+            "player": "Surinder Singh",
+            "team": "HCC Northern Eagles",
+            "stat": "4 runs (Avg -, SR 50.00)"
+          },
+          {
+            "player": "Pawan Gill",
+            "team": "HCC Northern Eagles",
+            "stat": "4 runs (Avg -, SR 50.00)"
+          },
+          {
+            "player": "Lavdeep Singh",
+            "team": "HCC Northern Eagles",
+            "stat": "3 runs (Avg -, SR 100.00)"
+          },
+          {
+            "player": "Amrinder Chahal",
+            "team": "HCC Northern Eagles",
+            "stat": "2 runs (Avg 2.00, SR 28.57)"
+          },
+          {
+            "player": "Rammi Bhathal",
+            "team": "HCC Northern Eagles",
+            "stat": "1 runs (Avg 1.00, SR 33.33)"
+          }
+        ],
         "bowling": [
           {
             "player": "Shammi Bhathal",
@@ -6694,6 +6866,1352 @@
             "player": "Anmol Dang",
             "team": "HCC All Stars",
             "stat": "1 catches, 3 dismissals"
+          }
+        ]
+      },
+      "matches_season_filter_applied": true,
+      "season_filter_applied": true,
+      "season_filter_options_seen": [
+        "2026",
+        "2025",
+        "2024",
+        "2023",
+        "2022",
+        "2021",
+        "2020",
+        "2019",
+        "2018",
+        "2017",
+        "2016"
+      ]
+    },
+    "14486447": {
+      "name": "HCC Renegades",
+      "group": "club",
+      "ok": true,
+      "matches_detailed": [
+        {
+          "league": "MPL (TapleyTown)",
+          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 27-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "Gujarat Mavericks",
+          "score_a": "(20.0)",
+          "team_b": "HCC Renegades",
+          "score_b": "(20.0)",
+          "scheduled_at": null,
+          "result": "Gujarat Mavericks won by 63 runs"
+        },
+        {
+          "league": "MPL (TapleyTown)",
+          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 07-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "Burlington Cricket Club (leather)",
+          "score_a": "(20.0)",
+          "team_b": "HCC Renegades",
+          "score_b": "(18.4)",
+          "scheduled_at": null,
+          "result": "Burlington Cricket Club (leather) won by 51 runs"
+        },
+        {
+          "league": "MPL (TapleyTown)",
+          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 30-Aug-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Renegades",
+          "score_a": "(1.0)",
+          "team_b": "Halton Hercules",
+          "score_b": "(0.0)",
+          "scheduled_at": null,
+          "result": "Abandoned (due to rain)"
+        },
+        {
+          "league": "MPL (TapleyTown)",
+          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 13-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "Ingersoll ignites",
+          "score_a": "(18.3)",
+          "team_b": "HCC Renegades",
+          "score_b": "(16.4)",
+          "scheduled_at": null,
+          "result": "Ingersoll ignites won by 18 runs"
+        },
+        {
+          "league": "MPL (TapleyTown)",
+          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 06-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Renegades",
+          "score_a": null,
+          "team_b": "Burlington Premier",
+          "score_b": null,
+          "scheduled_at": null,
+          "result": "HCC Renegades won by (resulted)"
+        },
+        {
+          "league": "MPL (TapleyTown)",
+          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 13-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Northstar Rangers",
+          "score_a": "(20.0)",
+          "team_b": "HCC Renegades",
+          "score_b": "(16.3)",
+          "scheduled_at": null,
+          "result": "HCC Northstar Rangers won by 82 runs"
+        },
+        {
+          "league": "MPL (TapleyTown)",
+          "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 06-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Renegades",
+          "score_a": "(20.0)",
+          "team_b": "SCW Spartans",
+          "score_b": "(18.5)",
+          "scheduled_at": null,
+          "result": "SCW Spartans won by 2 wickets"
+        }
+      ],
+      "matches": [
+        {
+          "date": "27-Sep-26",
+          "opponent": "Gujarat Mavericks",
+          "result": "Gujarat Mavericks won by 63 runs",
+          "status": "past"
+        },
+        {
+          "date": "07-Sep-26",
+          "opponent": "Burlington Cricket Club (leather)",
+          "result": "Burlington Cricket Club (leather) won by 51 runs",
+          "status": "past"
+        },
+        {
+          "date": "30-Aug-26",
+          "opponent": "Halton Hercules",
+          "result": "Abandoned (due to rain)",
+          "status": "past"
+        },
+        {
+          "date": "13-Sep-26",
+          "opponent": "Ingersoll ignites",
+          "result": "Ingersoll ignites won by 18 runs",
+          "status": "past"
+        },
+        {
+          "date": "06-Sep-26",
+          "opponent": "Burlington Premier",
+          "result": "HCC Renegades won by (resulted)",
+          "status": "past"
+        },
+        {
+          "date": "13-Sep-26",
+          "opponent": "HCC Renegades",
+          "result": "HCC Northstar Rangers won by 82 runs",
+          "status": "past"
+        },
+        {
+          "date": "06-Sep-26",
+          "opponent": "SCW Spartans",
+          "result": "SCW Spartans won by 2 wickets",
+          "status": "past"
+        }
+      ],
+      "leaderboard_detailed": {
+        "batting": [
+          {
+            "player": "Hardeep Jaswal",
+            "innings": "4",
+            "runs": "84",
+            "average": "21.00",
+            "strike_rate": "125.37",
+            "highest_score": "66",
+            "not_outs": "0",
+            "fours": "5",
+            "sixes": "5",
+            "hundreds": "0"
+          },
+          {
+            "player": "Akul",
+            "innings": "4",
+            "runs": "41",
+            "average": "10.25",
+            "strike_rate": "102.50",
+            "highest_score": "26",
+            "not_outs": "0",
+            "fours": "2",
+            "sixes": "2",
+            "hundreds": "0"
+          },
+          {
+            "player": "Nakul Datta",
+            "innings": "1",
+            "runs": "39",
+            "average": "39.00",
+            "strike_rate": "169.57",
+            "highest_score": "39",
+            "not_outs": "0",
+            "fours": "3",
+            "sixes": "3",
+            "hundreds": "0"
+          },
+          {
+            "player": "Sagarkumar Patel",
+            "innings": "4",
+            "runs": "38",
+            "average": "12.67",
+            "strike_rate": "108.57",
+            "highest_score": "12",
+            "not_outs": "1",
+            "fours": "2",
+            "sixes": "3",
+            "hundreds": "0"
+          },
+          {
+            "player": "Yatin Malik",
+            "innings": "2",
+            "runs": "36",
+            "average": "18.00",
+            "strike_rate": "92.31",
+            "highest_score": "20",
+            "not_outs": "0",
+            "fours": "1",
+            "sixes": "1",
+            "hundreds": "0"
+          },
+          {
+            "player": "Rohit Maheshwari",
+            "innings": "2",
+            "runs": "29",
+            "average": "14.50",
+            "strike_rate": "72.50",
+            "highest_score": "17",
+            "not_outs": "0",
+            "fours": "1",
+            "sixes": "1",
+            "hundreds": "0"
+          },
+          {
+            "player": "Saurabh Garg",
+            "innings": "2",
+            "runs": "23",
+            "average": "23.00",
+            "strike_rate": "127.78",
+            "highest_score": "14",
+            "not_outs": "1",
+            "fours": "0",
+            "sixes": "2",
+            "hundreds": "0"
+          },
+          {
+            "player": "Varun Kapoor",
+            "innings": "2",
+            "runs": "22",
+            "average": "22.00",
+            "strike_rate": "78.57",
+            "highest_score": "22",
+            "not_outs": "1",
+            "fours": "1",
+            "sixes": "0",
+            "hundreds": "0"
+          },
+          {
+            "player": "Karthik Reddy",
+            "innings": "1",
+            "runs": "21",
+            "average": "21.00",
+            "strike_rate": "123.53",
+            "highest_score": "21",
+            "not_outs": "0",
+            "fours": "2",
+            "sixes": "0",
+            "hundreds": "0"
+          },
+          {
+            "player": "Neil Singh",
+            "innings": "3",
+            "runs": "21",
+            "average": "10.50",
+            "strike_rate": "70.00",
+            "highest_score": "14",
+            "not_outs": "1",
+            "fours": "1",
+            "sixes": "0",
+            "hundreds": "0"
+          }
+        ],
+        "bowling": [
+          {
+            "player": "Akshay Ghatge",
+            "innings": "2",
+            "wickets": "5",
+            "economy": "4.88",
+            "average": "7.8",
+            "maidens": "0",
+            "best": "3",
+            "strike_rate": "9.60"
+          },
+          {
+            "player": "Sagarkumar Patel",
+            "innings": "3",
+            "wickets": "5",
+            "economy": "7.00",
+            "average": "11.2",
+            "maidens": "0",
+            "best": "3",
+            "strike_rate": "9.60"
+          },
+          {
+            "player": "Neil Singh",
+            "innings": "3",
+            "wickets": "4",
+            "economy": "7.00",
+            "average": "10.5",
+            "maidens": "0",
+            "best": "2",
+            "strike_rate": "9.00"
+          },
+          {
+            "player": "Aman Kumar",
+            "innings": "1",
+            "wickets": "4",
+            "economy": "7.04",
+            "average": "6.75",
+            "maidens": "0",
+            "best": "4",
+            "strike_rate": "5.75"
+          },
+          {
+            "player": "Saurabh Garg",
+            "innings": "3",
+            "wickets": "3",
+            "economy": "7.05",
+            "average": "24.67",
+            "maidens": "0",
+            "best": "1",
+            "strike_rate": "21.00"
+          },
+          {
+            "player": "Yatin Malik",
+            "innings": "2",
+            "wickets": "3",
+            "economy": "7.71",
+            "average": "18",
+            "maidens": "1",
+            "best": "2",
+            "strike_rate": "14.00"
+          },
+          {
+            "player": "Arvind Rawat",
+            "innings": "1",
+            "wickets": "3",
+            "economy": "9.50",
+            "average": "12.67",
+            "maidens": "0",
+            "best": "3",
+            "strike_rate": "8.00"
+          },
+          {
+            "player": "Rohit Maheshwari",
+            "innings": "2",
+            "wickets": "3",
+            "economy": "10.20",
+            "average": "17",
+            "maidens": "0",
+            "best": "2",
+            "strike_rate": "10.00"
+          },
+          {
+            "player": "Vaibhav Nigam",
+            "innings": "2",
+            "wickets": "2",
+            "economy": "5.50",
+            "average": "11",
+            "maidens": "0",
+            "best": "1",
+            "strike_rate": "12.00"
+          },
+          {
+            "player": "Kanish Satawalekar",
+            "innings": "3",
+            "wickets": "2",
+            "economy": "9.12",
+            "average": "36.5",
+            "maidens": "0",
+            "best": "1",
+            "strike_rate": "24.00"
+          }
+        ],
+        "fielding": [
+          {
+            "player": "Sarath Vala",
+            "matches": "5",
+            "dismissals": "4",
+            "catches": "0",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "1",
+            "stumpings": "3",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Akshay Ghatge",
+            "matches": "2",
+            "dismissals": "3",
+            "catches": "2",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Neil Singh",
+            "matches": "3",
+            "dismissals": "3",
+            "catches": "2",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Akul",
+            "matches": "4",
+            "dismissals": "3",
+            "catches": "2",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Jayu Tam",
+            "matches": "1",
+            "dismissals": "2",
+            "catches": "2",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Shramit Goyal",
+            "matches": "1",
+            "dismissals": "2",
+            "catches": "0",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "2",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Sagarkumar Patel",
+            "matches": "4",
+            "dismissals": "2",
+            "catches": "1",
+            "run_outs": "0",
+            "catch_and_bowled": "1",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Saurabh Garg",
+            "matches": "4",
+            "dismissals": "2",
+            "catches": "1",
+            "run_outs": "0",
+            "catch_and_bowled": "1",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Karthik Reddy",
+            "matches": "1",
+            "dismissals": "1",
+            "catches": "1",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Nilesh Satawalekar",
+            "matches": "1",
+            "dismissals": "1",
+            "catches": "1",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          }
+        ]
+      },
+      "leaderboard": {
+        "batting": [
+          {
+            "player": "Hardeep Jaswal",
+            "team": "HCC Renegades",
+            "stat": "84 runs (Avg 21.00, SR 125.37)"
+          },
+          {
+            "player": "Akul",
+            "team": "HCC Renegades",
+            "stat": "41 runs (Avg 10.25, SR 102.50)"
+          },
+          {
+            "player": "Nakul Datta",
+            "team": "HCC Renegades",
+            "stat": "39 runs (Avg 39.00, SR 169.57)"
+          },
+          {
+            "player": "Sagarkumar Patel",
+            "team": "HCC Renegades",
+            "stat": "38 runs (Avg 12.67, SR 108.57)"
+          },
+          {
+            "player": "Yatin Malik",
+            "team": "HCC Renegades",
+            "stat": "36 runs (Avg 18.00, SR 92.31)"
+          },
+          {
+            "player": "Rohit Maheshwari",
+            "team": "HCC Renegades",
+            "stat": "29 runs (Avg 14.50, SR 72.50)"
+          },
+          {
+            "player": "Saurabh Garg",
+            "team": "HCC Renegades",
+            "stat": "23 runs (Avg 23.00, SR 127.78)"
+          },
+          {
+            "player": "Varun Kapoor",
+            "team": "HCC Renegades",
+            "stat": "22 runs (Avg 22.00, SR 78.57)"
+          },
+          {
+            "player": "Karthik Reddy",
+            "team": "HCC Renegades",
+            "stat": "21 runs (Avg 21.00, SR 123.53)"
+          },
+          {
+            "player": "Neil Singh",
+            "team": "HCC Renegades",
+            "stat": "21 runs (Avg 10.50, SR 70.00)"
+          }
+        ],
+        "bowling": [
+          {
+            "player": "Akshay Ghatge",
+            "team": "HCC Renegades",
+            "stat": "5 wkts (Econ 4.88, Avg 7.8)"
+          },
+          {
+            "player": "Sagarkumar Patel",
+            "team": "HCC Renegades",
+            "stat": "5 wkts (Econ 7.00, Avg 11.2)"
+          },
+          {
+            "player": "Neil Singh",
+            "team": "HCC Renegades",
+            "stat": "4 wkts (Econ 7.00, Avg 10.5)"
+          },
+          {
+            "player": "Aman Kumar",
+            "team": "HCC Renegades",
+            "stat": "4 wkts (Econ 7.04, Avg 6.75)"
+          },
+          {
+            "player": "Saurabh Garg",
+            "team": "HCC Renegades",
+            "stat": "3 wkts (Econ 7.05, Avg 24.67)"
+          },
+          {
+            "player": "Yatin Malik",
+            "team": "HCC Renegades",
+            "stat": "3 wkts (Econ 7.71, Avg 18)"
+          },
+          {
+            "player": "Arvind Rawat",
+            "team": "HCC Renegades",
+            "stat": "3 wkts (Econ 9.50, Avg 12.67)"
+          },
+          {
+            "player": "Rohit Maheshwari",
+            "team": "HCC Renegades",
+            "stat": "3 wkts (Econ 10.20, Avg 17)"
+          },
+          {
+            "player": "Vaibhav Nigam",
+            "team": "HCC Renegades",
+            "stat": "2 wkts (Econ 5.50, Avg 11)"
+          },
+          {
+            "player": "Kanish Satawalekar",
+            "team": "HCC Renegades",
+            "stat": "2 wkts (Econ 9.12, Avg 36.5)"
+          }
+        ],
+        "fielding": [
+          {
+            "player": "Sarath Vala",
+            "team": "HCC Renegades",
+            "stat": "0 catches, 4 dismissals"
+          },
+          {
+            "player": "Akshay Ghatge",
+            "team": "HCC Renegades",
+            "stat": "2 catches, 3 dismissals"
+          },
+          {
+            "player": "Neil Singh",
+            "team": "HCC Renegades",
+            "stat": "2 catches, 3 dismissals"
+          },
+          {
+            "player": "Akul",
+            "team": "HCC Renegades",
+            "stat": "2 catches, 3 dismissals"
+          },
+          {
+            "player": "Jayu Tam",
+            "team": "HCC Renegades",
+            "stat": "2 catches, 2 dismissals"
+          },
+          {
+            "player": "Shramit Goyal",
+            "team": "HCC Renegades",
+            "stat": "0 catches, 2 dismissals"
+          },
+          {
+            "player": "Sagarkumar Patel",
+            "team": "HCC Renegades",
+            "stat": "1 catches, 2 dismissals"
+          },
+          {
+            "player": "Saurabh Garg",
+            "team": "HCC Renegades",
+            "stat": "1 catches, 2 dismissals"
+          },
+          {
+            "player": "Karthik Reddy",
+            "team": "HCC Renegades",
+            "stat": "1 catches, 1 dismissals"
+          },
+          {
+            "player": "Nilesh Satawalekar",
+            "team": "HCC Renegades",
+            "stat": "1 catches, 1 dismissals"
+          }
+        ]
+      },
+      "matches_season_filter_applied": true,
+      "season_filter_applied": true,
+      "season_filter_options_seen": [
+        "2026",
+        "2025",
+        "2024",
+        "2023",
+        "2022",
+        "2021",
+        "2020",
+        "2019",
+        "2018",
+        "2017",
+        "2016"
+      ]
+    },
+    "14063304": {
+      "name": "BHCC",
+      "group": "club",
+      "ok": true,
+      "matches_detailed": [
+        {
+          "league": "Mountain Premier League (Weekdays)",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 11-Sep-26, 15 Ov.,",
+          "round": "Final",
+          "status": "past",
+          "team_a": "BHCC",
+          "score_a": "(14.2)",
+          "team_b": "Stoney Creek Warriors",
+          "score_b": "(14.4)",
+          "scheduled_at": null,
+          "result": "Stoney Creek Warriors won by 2 wickets"
+        },
+        {
+          "league": "Mountain Premier League (Weekdays)",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 26-Aug-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "BHCC",
+          "score_a": "(17.0)",
+          "team_b": "Chennaiyin Super Kings MPL",
+          "score_b": "(19.4)",
+          "scheduled_at": null,
+          "result": "BHCC won by 26 runs"
+        },
+        {
+          "league": "Mountain Premier League (Weekdays)",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 28-Jul-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Northstar Rangers",
+          "score_a": "(20.0)",
+          "team_b": "BHCC",
+          "score_b": "(19.4)",
+          "scheduled_at": null,
+          "result": "HCC Northstar Rangers won by 77 runs"
+        },
+        {
+          "league": "Mountain Premier League (Weekdays)",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 07-Jul-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "Stoney Creek Warriors",
+          "score_a": "(20.0)",
+          "team_b": "BHCC",
+          "score_b": "(19.4)",
+          "scheduled_at": null,
+          "result": "BHCC won by 5 wickets"
+        },
+        {
+          "league": "Mountain Premier League (Weekdays)",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 08-Sep-26, 15 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "BHCC",
+          "score_a": "(15.0)",
+          "team_b": "HCC Northstar Rangers",
+          "score_b": "(15.0)",
+          "scheduled_at": null,
+          "result": "BHCC won by 8 runs"
+        },
+        {
+          "league": "Mountain Premier League (Weekdays)",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 13-Aug-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "BHCC",
+          "score_a": "(20.0)",
+          "team_b": "Rusty Wickets",
+          "score_b": "(20.0)",
+          "scheduled_at": null,
+          "result": "BHCC won by 150 runs"
+        },
+        {
+          "league": "Mountain Premier League (Weekdays)",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 21-Jul-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "BHCC",
+          "score_a": null,
+          "team_b": "Stoney Creek Warriors",
+          "score_b": null,
+          "scheduled_at": null,
+          "result": "Abandoned (abandoned rain)"
+        },
+        {
+          "league": "Mountain Premier League (Weekdays)",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 03-Sep-26, 15 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "Rusty Wickets",
+          "score_a": "(15.0)",
+          "team_b": "BHCC",
+          "score_b": "(3.3)",
+          "scheduled_at": null,
+          "result": "Abandoned (due to persistent rain )"
+        },
+        {
+          "league": "Mountain Premier League (Weekdays)",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 06-Aug-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "Rusty Wickets",
+          "score_a": "(16.2)",
+          "team_b": "BHCC",
+          "score_b": "(5.0)",
+          "scheduled_at": null,
+          "result": "BHCC won by 10 wickets"
+        },
+        {
+          "league": "Mountain Premier League (Weekdays)",
+          "venue_line": "Mohawk  Park, Hamilton (Ontario), 14-Jul-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "SCCA Rising Star",
+          "score_a": "(20.0)",
+          "team_b": "BHCC",
+          "score_b": "(19.3)",
+          "scheduled_at": null,
+          "result": "BHCC won by 4 wickets"
+        }
+      ],
+      "matches": [
+        {
+          "date": "11-Sep-26",
+          "opponent": "Stoney Creek Warriors",
+          "result": "Stoney Creek Warriors won by 2 wickets",
+          "status": "past"
+        },
+        {
+          "date": "26-Aug-26",
+          "opponent": "Chennaiyin Super Kings MPL",
+          "result": "BHCC won by 26 runs",
+          "status": "past"
+        },
+        {
+          "date": "28-Jul-26",
+          "opponent": "BHCC",
+          "result": "HCC Northstar Rangers won by 77 runs",
+          "status": "past"
+        },
+        {
+          "date": "07-Jul-26",
+          "opponent": "Stoney Creek Warriors",
+          "result": "BHCC won by 5 wickets",
+          "status": "past"
+        },
+        {
+          "date": "08-Sep-26",
+          "opponent": "HCC Northstar Rangers",
+          "result": "BHCC won by 8 runs",
+          "status": "past"
+        },
+        {
+          "date": "13-Aug-26",
+          "opponent": "Rusty Wickets",
+          "result": "BHCC won by 150 runs",
+          "status": "past"
+        },
+        {
+          "date": "21-Jul-26",
+          "opponent": "Stoney Creek Warriors",
+          "result": "Abandoned (abandoned rain)",
+          "status": "past"
+        },
+        {
+          "date": "03-Sep-26",
+          "opponent": "Rusty Wickets",
+          "result": "Abandoned (due to persistent rain )",
+          "status": "past"
+        },
+        {
+          "date": "06-Aug-26",
+          "opponent": "Rusty Wickets",
+          "result": "BHCC won by 10 wickets",
+          "status": "past"
+        },
+        {
+          "date": "14-Jul-26",
+          "opponent": "SCCA Rising Star",
+          "result": "BHCC won by 4 wickets",
+          "status": "past"
+        }
+      ],
+      "leaderboard_detailed": {
+        "batting": [
+          {
+            "player": "Jaspreet Singh",
+            "innings": "5",
+            "runs": "253",
+            "average": "63.25",
+            "strike_rate": "234.26",
+            "highest_score": "120",
+            "not_outs": "1",
+            "fours": "14",
+            "sixes": "24",
+            "hundreds": "1"
+          },
+          {
+            "player": "Sameer Verma",
+            "innings": "9",
+            "runs": "249",
+            "average": "41.50",
+            "strike_rate": "171.72",
+            "highest_score": "52",
+            "not_outs": "3",
+            "fours": "15",
+            "sixes": "26",
+            "hundreds": "0"
+          },
+          {
+            "player": "Naveen Panghal",
+            "innings": "6",
+            "runs": "232",
+            "average": "46.40",
+            "strike_rate": "190.16",
+            "highest_score": "103",
+            "not_outs": "1",
+            "fours": "10",
+            "sixes": "25",
+            "hundreds": "1"
+          },
+          {
+            "player": "Abhilash Kumar",
+            "innings": "5",
+            "runs": "140",
+            "average": "28.00",
+            "strike_rate": "194.44",
+            "highest_score": "59",
+            "not_outs": "0",
+            "fours": "15",
+            "sixes": "10",
+            "hundreds": "0"
+          },
+          {
+            "player": "Gurbhej Singh",
+            "innings": "6",
+            "runs": "108",
+            "average": "21.60",
+            "strike_rate": "177.05",
+            "highest_score": "44",
+            "not_outs": "1",
+            "fours": "8",
+            "sixes": "8",
+            "hundreds": "0"
+          },
+          {
+            "player": "Shubham Sharma",
+            "innings": "5",
+            "runs": "98",
+            "average": "49.00",
+            "strike_rate": "158.06",
+            "highest_score": "56",
+            "not_outs": "3",
+            "fours": "5",
+            "sixes": "7",
+            "hundreds": "0"
+          },
+          {
+            "player": "Sahil Kakkar",
+            "innings": "4",
+            "runs": "66",
+            "average": "16.50",
+            "strike_rate": "113.79",
+            "highest_score": "36",
+            "not_outs": "0",
+            "fours": "3",
+            "sixes": "4",
+            "hundreds": "0"
+          },
+          {
+            "player": "Anmol Dang",
+            "innings": "5",
+            "runs": "63",
+            "average": "21.00",
+            "strike_rate": "131.25",
+            "highest_score": "27",
+            "not_outs": "2",
+            "fours": "5",
+            "sixes": "4",
+            "hundreds": "0"
+          },
+          {
+            "player": "Dharmveer Gill",
+            "innings": "1",
+            "runs": "52",
+            "average": "-",
+            "strike_rate": "200.00",
+            "highest_score": "52",
+            "not_outs": "1",
+            "fours": "1",
+            "sixes": "6",
+            "hundreds": "0"
+          },
+          {
+            "player": "Muhammad Zaid Saleem",
+            "innings": "1",
+            "runs": "31",
+            "average": "-",
+            "strike_rate": "163.16",
+            "highest_score": "31",
+            "not_outs": "1",
+            "fours": "0",
+            "sixes": "4",
+            "hundreds": "0"
+          }
+        ],
+        "bowling": [
+          {
+            "player": "Gurbhej Singh",
+            "innings": "7",
+            "wickets": "9",
+            "economy": "10.14",
+            "average": "24.78",
+            "maidens": "0",
+            "best": "3",
+            "strike_rate": "14.67"
+          },
+          {
+            "player": "Rahul Dhakan",
+            "innings": "6",
+            "wickets": "8",
+            "economy": "8.87",
+            "average": "16.63",
+            "maidens": "0",
+            "best": "3",
+            "strike_rate": "11.25"
+          },
+          {
+            "player": "Jaspreet Singh",
+            "innings": "5",
+            "wickets": "6",
+            "economy": "7.20",
+            "average": "18",
+            "maidens": "0",
+            "best": "4",
+            "strike_rate": "15.00"
+          },
+          {
+            "player": "Abhishek Singh",
+            "innings": "6",
+            "wickets": "6",
+            "economy": "7.50",
+            "average": "25",
+            "maidens": "0",
+            "best": "2",
+            "strike_rate": "20.00"
+          },
+          {
+            "player": "Sameer Verma",
+            "innings": "5",
+            "wickets": "6",
+            "economy": "8.93",
+            "average": "20.83",
+            "maidens": "0",
+            "best": "3",
+            "strike_rate": "14.00"
+          },
+          {
+            "player": "Jagpal Singh",
+            "innings": "5",
+            "wickets": "6",
+            "economy": "9.15",
+            "average": "19.83",
+            "maidens": "1",
+            "best": "2",
+            "strike_rate": "13.00"
+          },
+          {
+            "player": "Ajay GuPTA",
+            "innings": "7",
+            "wickets": "6",
+            "economy": "9.83",
+            "average": "35.5",
+            "maidens": "0",
+            "best": "2",
+            "strike_rate": "21.67"
+          },
+          {
+            "player": "Sahil Kakkar",
+            "innings": "5",
+            "wickets": "5",
+            "economy": "10.83",
+            "average": "26",
+            "maidens": "0",
+            "best": "2",
+            "strike_rate": "14.40"
+          },
+          {
+            "player": "Gautam Kanda",
+            "innings": "2",
+            "wickets": "3",
+            "economy": "6.71",
+            "average": "15.67",
+            "maidens": "0",
+            "best": "2",
+            "strike_rate": "14.00"
+          },
+          {
+            "player": "Rahil Thakkar",
+            "innings": "1",
+            "wickets": "2",
+            "economy": "6.33",
+            "average": "9.5",
+            "maidens": "0",
+            "best": "2",
+            "strike_rate": "9.00"
+          }
+        ],
+        "fielding": [
+          {
+            "player": "Naveen Panghal",
+            "matches": "6",
+            "dismissals": "6",
+            "catches": "4",
+            "run_outs": "2",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Gurbhej Singh",
+            "matches": "7",
+            "dismissals": "5",
+            "catches": "5",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Vipin Tak",
+            "matches": "1",
+            "dismissals": "3",
+            "catches": "2",
+            "run_outs": "0",
+            "catch_and_bowled": "1",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Gautam Kanda",
+            "matches": "2",
+            "dismissals": "3",
+            "catches": "3",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "1"
+          },
+          {
+            "player": "Abhilash Kumar",
+            "matches": "5",
+            "dismissals": "3",
+            "catches": "3",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Abhishek Singh",
+            "matches": "6",
+            "dismissals": "3",
+            "catches": "2",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Ajay GuPTA",
+            "matches": "7",
+            "dismissals": "3",
+            "catches": "2",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Sameer Verma",
+            "matches": "9",
+            "dismissals": "3",
+            "catches": "2",
+            "run_outs": "1",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          },
+          {
+            "player": "Shubham Sharma",
+            "matches": "5",
+            "dismissals": "2",
+            "catches": "2",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "1"
+          },
+          {
+            "player": "Jaspreet Singh",
+            "matches": "6",
+            "dismissals": "2",
+            "catches": "2",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "0"
+          }
+        ]
+      },
+      "leaderboard": {
+        "batting": [
+          {
+            "player": "Jaspreet Singh",
+            "team": "BHCC",
+            "stat": "253 runs (Avg 63.25, SR 234.26)"
+          },
+          {
+            "player": "Sameer Verma",
+            "team": "BHCC",
+            "stat": "249 runs (Avg 41.50, SR 171.72)"
+          },
+          {
+            "player": "Naveen Panghal",
+            "team": "BHCC",
+            "stat": "232 runs (Avg 46.40, SR 190.16)"
+          },
+          {
+            "player": "Abhilash Kumar",
+            "team": "BHCC",
+            "stat": "140 runs (Avg 28.00, SR 194.44)"
+          },
+          {
+            "player": "Gurbhej Singh",
+            "team": "BHCC",
+            "stat": "108 runs (Avg 21.60, SR 177.05)"
+          },
+          {
+            "player": "Shubham Sharma",
+            "team": "BHCC",
+            "stat": "98 runs (Avg 49.00, SR 158.06)"
+          },
+          {
+            "player": "Sahil Kakkar",
+            "team": "BHCC",
+            "stat": "66 runs (Avg 16.50, SR 113.79)"
+          },
+          {
+            "player": "Anmol Dang",
+            "team": "BHCC",
+            "stat": "63 runs (Avg 21.00, SR 131.25)"
+          },
+          {
+            "player": "Dharmveer Gill",
+            "team": "BHCC",
+            "stat": "52 runs (Avg -, SR 200.00)"
+          },
+          {
+            "player": "Muhammad Zaid Saleem",
+            "team": "BHCC",
+            "stat": "31 runs (Avg -, SR 163.16)"
+          }
+        ],
+        "bowling": [
+          {
+            "player": "Gurbhej Singh",
+            "team": "BHCC",
+            "stat": "9 wkts (Econ 10.14, Avg 24.78)"
+          },
+          {
+            "player": "Rahul Dhakan",
+            "team": "BHCC",
+            "stat": "8 wkts (Econ 8.87, Avg 16.63)"
+          },
+          {
+            "player": "Jaspreet Singh",
+            "team": "BHCC",
+            "stat": "6 wkts (Econ 7.20, Avg 18)"
+          },
+          {
+            "player": "Abhishek Singh",
+            "team": "BHCC",
+            "stat": "6 wkts (Econ 7.50, Avg 25)"
+          },
+          {
+            "player": "Sameer Verma",
+            "team": "BHCC",
+            "stat": "6 wkts (Econ 8.93, Avg 20.83)"
+          },
+          {
+            "player": "Jagpal Singh",
+            "team": "BHCC",
+            "stat": "6 wkts (Econ 9.15, Avg 19.83)"
+          },
+          {
+            "player": "Ajay GuPTA",
+            "team": "BHCC",
+            "stat": "6 wkts (Econ 9.83, Avg 35.5)"
+          },
+          {
+            "player": "Sahil Kakkar",
+            "team": "BHCC",
+            "stat": "5 wkts (Econ 10.83, Avg 26)"
+          },
+          {
+            "player": "Gautam Kanda",
+            "team": "BHCC",
+            "stat": "3 wkts (Econ 6.71, Avg 15.67)"
+          },
+          {
+            "player": "Rahil Thakkar",
+            "team": "BHCC",
+            "stat": "2 wkts (Econ 6.33, Avg 9.5)"
+          }
+        ],
+        "fielding": [
+          {
+            "player": "Naveen Panghal",
+            "team": "BHCC",
+            "stat": "4 catches, 6 dismissals"
+          },
+          {
+            "player": "Gurbhej Singh",
+            "team": "BHCC",
+            "stat": "5 catches, 5 dismissals"
+          },
+          {
+            "player": "Vipin Tak",
+            "team": "BHCC",
+            "stat": "2 catches, 3 dismissals"
+          },
+          {
+            "player": "Gautam Kanda",
+            "team": "BHCC",
+            "stat": "3 catches, 3 dismissals"
+          },
+          {
+            "player": "Abhilash Kumar",
+            "team": "BHCC",
+            "stat": "3 catches, 3 dismissals"
+          },
+          {
+            "player": "Abhishek Singh",
+            "team": "BHCC",
+            "stat": "2 catches, 3 dismissals"
+          },
+          {
+            "player": "Ajay GuPTA",
+            "team": "BHCC",
+            "stat": "2 catches, 3 dismissals"
+          },
+          {
+            "player": "Sameer Verma",
+            "team": "BHCC",
+            "stat": "2 catches, 3 dismissals"
+          },
+          {
+            "player": "Shubham Sharma",
+            "team": "BHCC",
+            "stat": "2 catches, 2 dismissals"
+          },
+          {
+            "player": "Jaspreet Singh",
+            "team": "BHCC",
+            "stat": "2 catches, 2 dismissals"
           }
         ]
       },
