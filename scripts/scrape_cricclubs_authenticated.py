@@ -22,6 +22,7 @@ Run manually:
 """
 
 import json
+import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -328,6 +329,194 @@ def parse_cricclubs_results(lines):
     return clean
 
 
+# ---------------------------------------------------------------------
+# A NEWER CricClubs template (confirmed on the Canada Unity Cup site as
+# of Sep 2026) uses completely different tables from the older
+# viewTeam.do-style pages the parsers above were built for:
+#   - Batting/Bowling/Fielding tables have a different column set/order
+#     (e.g. a "Points" column, no 25s/75s buckets) and the header row is
+#     rendered twice before the real data.
+#   - Bowling/Fielding rows sometimes carry an extra short (2-6 letter,
+#     ALL CAPS) initials/abbreviation chip immediately before the player
+#     name — inconsistently, only on some rows — which breaks any parser
+#     that assumes a fixed column count. Confirmed real example: row
+#     "1,AB,Atharav Bansal,Halton Cricket Academy,..." (chip present) vs
+#     "2,Yuvraj Sharma,Halton Cricket Academy,..." (no chip) on the same
+#     table. These parsers detect and skip that chip explicitly rather
+#     than assuming a fixed offset.
+#   - Match/results cards are also rendered twice per match (a compact
+#     summary card, then a fuller "detailed" card containing a literal
+#     "vs" between the two team names) — anchoring on that literal "vs"
+#     avoids needing to tell the two copies apart.
+# These are tried as a FALLBACK only when the older parser above finds
+# nothing, so the older/working team pages are unaffected.
+# ---------------------------------------------------------------------
+
+_NEW_ABBR_RE = re.compile(r"^[A-Z]{2,6}$")
+
+
+def _find_last_header_end(lines, header):
+    """Returns the index right after the LAST occurrence of `header` (a
+    list of consecutive expected tokens) in `lines`, or None if not found.
+    The new template renders the header row twice before the real data,
+    so we want the end of the second copy."""
+    n, h = len(lines), len(header)
+    last_end = None
+    for i in range(n - h + 1):
+        if lines[i:i + h] == header:
+            last_end = i + h
+    return last_end
+
+
+def _parse_new_style_stat_table(lines, header, stat_field_names):
+    """Generic parser for the new template's Batting/Bowling/Fielding
+    tables: <rank> [ABBR]? <player> <team> <stat1> <stat2> ... repeated.
+    `stat_field_names` gives the names for exactly the stat columns that
+    follow rank/player/team, in the same left-to-right order as `header`
+    (i.e. header[3:])."""
+    import re as _re
+
+    start = _find_last_header_end(lines, header)
+    if start is None:
+        return []
+    n_stats = len(stat_field_names)
+    entries = []
+    i, n = start, len(lines)
+    while i < n and lines[i].isdigit():
+        rank = lines[i]
+        i += 1
+        if i < n and _NEW_ABBR_RE.match(lines[i]):
+            i += 1  # skip the optional initials/abbreviation chip
+        if i >= n:
+            break
+        player = lines[i]
+        i += 1
+        if i >= n:
+            break
+        team = lines[i]
+        i += 1
+        if i + n_stats > n:
+            break
+        stats = lines[i:i + n_stats]
+        i += n_stats
+        entry = {"rank": rank, "player": player, "team": team}
+        entry.update(zip(stat_field_names, stats))
+        entries.append(entry)
+    return entries
+
+
+def parse_new_style_batting(lines):
+    header = ["#", "Player", "Team", "Mat", "Inns", "NO", "Runs", "Balls",
+              "4s", "6s", "50s", "100s", "HS", "SR", "Avg", "Points"]
+    fields = ["matches", "innings", "not_outs", "runs", "balls",
+              "fours", "sixes", "fifties", "hundreds",
+              "highest_score", "strike_rate", "average", "points"]
+    return _parse_new_style_stat_table(lines, header, fields)
+
+
+def parse_new_style_bowling(lines):
+    header = ["#", "Player", "Team", "Mat", "Inns", "Overs", "Mdns", "Runs",
+              "Wkts", "BBF", "Hat", "Econ", "Avg", "SR", "5W", "4W",
+              "Dot Balls", "Wides", "No Balls", "Points"]
+    fields = ["matches", "innings", "overs", "maidens", "runs", "wickets",
+              "best", "hat_tricks", "economy", "average", "strike_rate",
+              "five_wkts", "four_wkts", "dots", "wides", "no_balls", "points"]
+    return _parse_new_style_stat_table(lines, header, fields)
+
+
+def parse_new_style_fielding(lines):
+    header = ["#", "Player", "Team", "Mat", "Catches", "WK Catches",
+              "Direct RO", "Indirect RO", "Stumpings", "Total", "Points"]
+    fields = ["matches", "catches", "wk_catches", "direct_run_outs",
+              "indirect_run_outs", "stumpings", "total", "points"]
+    return _parse_new_style_stat_table(lines, header, fields)
+
+
+_NEW_DATE_RE = re.compile(
+    r"^[A-Za-z]+, [A-Za-z]+ \d{1,2}, \d{4} \d{1,2}:\d{2} (AM|PM)$"
+)
+_NEW_SCORE_RE = re.compile(r"^\d+/\d+$")
+_NEW_OVERS_RE = re.compile(r"^\(\d+(\.\d+)?/\d+\)$")
+_NEW_RESULT_RE = re.compile(
+    r"won by|abandoned|no result|tied|drawn", re.IGNORECASE
+)
+
+
+def parse_new_style_results(lines):
+    """
+    Anchored on the literal "vs" that appears exactly once per match, in
+    the fuller "detailed" card (the earlier compact summary card for the
+    same match has no "vs"). Confirmed real layout around it:
+        <competition> <venue> [ABBR]? <team_a> <score_a> <overs_a>
+        [ABBR]? "vs" [ABBR]? <team_b> <score_b> <overs_b>
+        <venue (repeated)> <result text> "Scorecard" ...
+    The optional ABBR chip can appear on either side of "vs" and isn't
+    always present (confirmed: present for one team in one match, absent
+    in another) — walking outward from "vs" and skipping it when seen
+    avoids needing a fixed offset.
+    """
+    n = len(lines)
+    matches = []
+    for i, ln in enumerate(lines):
+        if ln != "vs":
+            continue
+
+        # walk backward: [ABBR]? overs_a score_a team_a
+        j = i - 1
+        if j >= 0 and _NEW_ABBR_RE.match(lines[j]):
+            j -= 1
+        overs_a = lines[j] if j >= 0 and _NEW_OVERS_RE.match(lines[j]) else None
+        if overs_a is not None:
+            j -= 1
+        score_a = lines[j] if j >= 0 and _NEW_SCORE_RE.match(lines[j]) else None
+        if score_a is not None:
+            j -= 1
+        team_a = lines[j] if j >= 0 else None
+        venue = lines[j - 1] if j - 1 >= 0 else None
+
+        # walk forward: [ABBR]? team_b score_b overs_b
+        k = i + 1
+        if k < n and _NEW_ABBR_RE.match(lines[k]):
+            k += 1
+        team_b = lines[k] if k < n else None
+        k += 1
+        score_b = lines[k] if k < n and _NEW_SCORE_RE.match(lines[k]) else None
+        if score_b is not None:
+            k += 1
+        overs_b = lines[k] if k < n and _NEW_OVERS_RE.match(lines[k]) else None
+        if overs_b is not None:
+            k += 1
+
+        result = None
+        for r in range(k, min(k + 6, n)):
+            if _NEW_RESULT_RE.search(lines[r]):
+                result = lines[r]
+                break
+
+        date = None
+        for d in range(i, max(i - 25, -1), -1):
+            if _NEW_DATE_RE.match(lines[d]):
+                date = lines[d]
+                break
+
+        if team_a and team_b and date:
+            matches.append({
+                "date": date, "venue": venue,
+                "team_a": team_a, "score_a": score_a, "overs_a": overs_a,
+                "team_b": team_b, "score_b": score_b, "overs_b": overs_b,
+                "result": result,
+            })
+
+    seen, deduped = set(), []
+    for m in matches:
+        key = (m["date"], m["team_a"], m["team_b"])
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(m)
+    return deduped
+
+
 def is_tournament_summary_page(lines) -> bool:
     return "Points Table" in lines and "Batting" in lines
 
@@ -381,27 +570,65 @@ def scrape_team(driver, team: dict):
 
     if click_tab(driver, "Results"):
         time.sleep(2)
-        result["matches"] = parse_cricclubs_results(extract_text_blocks(driver.page_source))
+        rlines = extract_text_blocks(driver.page_source)
+        result["matches"] = parse_cricclubs_results(rlines)
+        if not result["matches"]:
+            result["matches"] = parse_new_style_results(rlines)
+            result["matches_parser"] = "new_style" if result["matches"] else None
+        if not result["matches"]:
+            # Neither parser found anything — a layout neither one knows
+            # about. Save what's actually there instead of guessing blind.
+            result["matches_raw_preview"] = rlines[:220]
     else:
         result["results_click_failed"] = True
 
     if click_tab(driver, "Batting"):
         time.sleep(2)
-        result["batting"] = parse_cricclubs_batting(extract_text_blocks(driver.page_source))
+        blines = extract_text_blocks(driver.page_source)
+        result["batting"] = parse_cricclubs_batting(blines)
+        if not result["batting"]:
+            result["batting"] = parse_new_style_batting(blines)
+        if not result["batting"]:
+            result["batting_raw_preview"] = blines[:220]
     else:
         result["batting_click_failed"] = True
 
     if click_tab(driver, "Bowling"):
         time.sleep(2)
-        result["bowling"] = parse_cricclubs_bowling(extract_text_blocks(driver.page_source))
+        bowl_lines = extract_text_blocks(driver.page_source)
+        result["bowling"] = parse_cricclubs_bowling(bowl_lines)
+        if not result["bowling"]:
+            result["bowling"] = parse_new_style_bowling(bowl_lines)
+        if not result["bowling"]:
+            result["bowling_raw_preview"] = bowl_lines[:220]
     else:
         result["bowling_click_failed"] = True
 
     if click_tab(driver, "Fielding"):
         time.sleep(2)
-        result["fielding"] = parse_cricclubs_fielding(extract_text_blocks(driver.page_source))
+        field_lines = extract_text_blocks(driver.page_source)
+        result["fielding"] = parse_cricclubs_fielding(field_lines)
+        if not result["fielding"]:
+            result["fielding"] = parse_new_style_fielding(field_lines)
+        if not result["fielding"]:
+            result["fielding_raw_preview"] = field_lines[:220]
     else:
         result["fielding_click_failed"] = True
+
+    # If every single tab click failed, this page's layout doesn't match
+    # what we're looking for at all (different CricClubs skin for this
+    # tournament host, a "no matches yet" state that hides the tabs
+    # entirely, a popup blocking clicks, etc). Rather than guessing, save
+    # what the page actually contains so it can be inspected without
+    # needing to be at the keyboard when it happens again.
+    if (
+        result.get("results_click_failed")
+        and result.get("batting_click_failed")
+        and result.get("bowling_click_failed")
+        and result.get("fielding_click_failed")
+    ):
+        result["all_tabs_click_failed"] = True
+        result["raw_lines_preview"] = extract_text_blocks(driver.page_source)[:220]
 
     return result
 
