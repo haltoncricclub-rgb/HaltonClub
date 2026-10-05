@@ -708,6 +708,90 @@
     });
   }
 
+  // ---------- Player search ----------
+  // Lets visitors look up anyone with recorded stats, not just the top 10 on
+  // the leaderboards. Reads the same index the profile modal uses, so every
+  // match here opens a full profile.
+  function setupPlayerSearch(){
+    const input = document.getElementById('player-search-input');
+    const list = document.getElementById('player-search-results');
+    const hint = document.getElementById('player-search-hint');
+    if (!input || !list) return;
+
+    const realm = document.getElementById('siteAcademy') ? 'academy' : 'club';
+    const pool = playerSearchIndex[realm];
+
+    // One entry per person (same grouping rules as the leaderboards).
+    const people = new Map();
+    ['batting', 'bowling', 'fielding'].forEach(kind => {
+      pool[kind].forEach(e => {
+        if (!normTeamName(e.player)) return;
+        const key = getPlayerGroupKey(e.player, e.team);
+        if (!people.has(key)) people.set(key, { name: e.player, key, teams: new Set() });
+        people.get(key).teams.add(e.team);
+      });
+    });
+    const all = Array.from(people.values()).map(p => {
+      const team = Array.from(p.teams).join(', ');
+      return { name: getPlayerDisplayName(p.name, team, p.key), key: p.key, team, search: normTeamName(p.name) };
+    }).sort((a, b) => a.name.localeCompare(b.name));
+
+    if (!all.length){
+      hint.textContent = 'Player stats are not available yet.';
+      return;
+    }
+    input.disabled = false;
+    hint.textContent = `${all.length} players with recorded stats. Type a name to view their profile.`;
+
+    let shown = [], activeIdx = -1;
+    const close = () => { list.hidden = true; list.innerHTML = ''; shown = []; activeIdx = -1; };
+    const setActive = (i) => {
+      const items = list.querySelectorAll('li');
+      items.forEach(li => li.classList.remove('active'));
+      activeIdx = i;
+      if (items[i]) { items[i].classList.add('active'); items[i].scrollIntoView({ block: 'nearest' }); }
+    };
+    const choose = (p) => {
+      close();
+      input.value = '';
+      openPlayerModal(p.name, realm, p.key);
+    };
+    const render = () => {
+      const q = normTeamName(input.value);
+      if (!q) { close(); return; }
+      // Name-prefix matches first, then anywhere-in-name matches.
+      const starts = all.filter(p => p.search.startsWith(q));
+      const contains = all.filter(p => !p.search.startsWith(q) && p.search.includes(q));
+      shown = starts.concat(contains).slice(0, 12);
+      list.hidden = false;
+      if (!shown.length){
+        list.innerHTML = '<li class="ps-empty">No player found with that name.</li>';
+        activeIdx = -1;
+        return;
+      }
+      list.innerHTML = shown.map((p, i) =>
+        `<li><button type="button" data-idx="${i}"><span>${escapeHtml(p.name)}</span><span class="ps-team">${escapeHtml(p.team)}</span></button></li>`
+      ).join('');
+      activeIdx = -1;
+    };
+
+    input.addEventListener('input', render);
+    input.addEventListener('focus', render);
+    input.addEventListener('keydown', (evt) => {
+      if (evt.key === 'ArrowDown' && shown.length){ evt.preventDefault(); setActive((activeIdx + 1) % shown.length); }
+      else if (evt.key === 'ArrowUp' && shown.length){ evt.preventDefault(); setActive((activeIdx - 1 + shown.length) % shown.length); }
+      else if (evt.key === 'Enter' && shown.length){ evt.preventDefault(); choose(shown[activeIdx >= 0 ? activeIdx : 0]); }
+      else if (evt.key === 'Escape'){ close(); }
+    });
+    list.addEventListener('click', (evt) => {
+      const btn = evt.target.closest('button[data-idx]');
+      if (btn) choose(shown[Number(btn.dataset.idx)]);
+    });
+    document.addEventListener('click', (evt) => {
+      if (!evt.target.closest('#player-search')) close();
+    });
+  }
+
   function statBox(val, lbl){
     return `<div class="player-stat-box"><div class="val">${escapeHtml(String(val))}</div><div class="lbl">${escapeHtml(lbl)}</div></div>`;
   }
@@ -827,6 +911,7 @@
       renderAcademyLeaderboardForLeague(academyTeams, 'all');
 
       buildPlayerSearchIndex(clubTeams, academyTeams);
+      setupPlayerSearch();
 
     } catch (err) {
       console.warn('CricHeroes data unavailable, showing sample fixtures.', err);
