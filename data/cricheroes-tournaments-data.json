@@ -1,133 +1,50 @@
 {
-  "generated_at": "2026-09-29T20:16:24.191900+00:00",
+  "generated_at": "2026-10-14T16:23:39.914246+00:00",
   "mode": "authenticated-manual-tournament",
   "tournaments": {
     "2151617": {
       "name": "2026 HAMMER T15 BLAST",
       "ok": true,
-      "batting": [
-        {
-          "player": "Amit Thakur",
-          "team": "HCC Northern Knights",
-          "innings": "5",
-          "runs": "283",
-          "average": "141.50",
-          "strike_rate": "175.78",
-          "highest_score": "85",
-          "not_outs": "3",
-          "fours": "17",
-          "sixes": "17",
-          "hundreds": "0"
-        },
-        {
-          "player": "Naveen Panghal",
-          "team": "HCC Northern Knights",
-          "innings": "6",
-          "runs": "203",
-          "average": "40.60",
-          "strike_rate": "205.05",
-          "highest_score": "87",
-          "not_outs": "1",
-          "fours": "11",
-          "sixes": "14",
-          "hundreds": "0"
-        }
+      "batting": [],
+      "bowling": [],
+      "fielding": [],
+      "batting_raw_preview": [
+        "Just a moment...",
+        "cricheroes.com",
+        "Performing security verification",
+        "This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.",
+        "Verification successful. Waiting for cricheroes.com to respond",
+        "Enable JavaScript and cookies to continue",
+        "Ray ID:",
+        "a4a7ee07ac88fcd9",
+        "Performance and Security by",
+        "Cloudflare",
+        "Privacy"
       ],
-      "bowling": [
-        {
-          "player": "Milan Paneliya",
-          "team": "HCC Northern Knights",
-          "innings": "5",
-          "wickets": "8",
-          "economy": "8.57",
-          "average": "15",
-          "maidens": "0",
-          "best": "3",
-          "strike_rate": "10.50"
-        },
-        {
-          "player": "Hardeep Mander",
-          "team": "HCC Northern Knights",
-          "innings": "5",
-          "wickets": "8",
-          "economy": "9.29",
-          "average": "16.25",
-          "maidens": "0",
-          "best": "2",
-          "strike_rate": "10.50"
-        },
-        {
-          "player": "Amit Thakur",
-          "team": "HCC Northern Knights",
-          "innings": "4",
-          "wickets": "7",
-          "economy": "8.30",
-          "average": "11.86",
-          "maidens": "0",
-          "best": "3",
-          "strike_rate": "8.57"
-        }
-      ],
-      "fielding": [
-        {
-          "player": "Naveen Panghal",
-          "team": "HCC Northern Knights",
-          "matches": "6",
-          "dismissals": "6",
-          "catches": "5",
-          "run_outs": "0",
-          "catch_and_bowled": "0",
-          "caught_behind": "1",
-          "stumpings": "0",
-          "assisted_run_outs": "0"
-        },
-        {
-          "player": "Jaspreet Singh",
-          "team": "HCC Northern Knights",
-          "matches": "5",
-          "dismissals": "4",
-          "catches": "4",
-          "run_outs": "0",
-          "catch_and_bowled": "0",
-          "caught_behind": "0",
-          "stumpings": "0",
-          "assisted_run_outs": "0"
-        }
-      ]
+      "bowling_click_failed": true,
+      "fielding_click_failed": true
     },
     "2037363": {
       "name": "Mountain Premier League",
       "ok": true,
-      "batting": [
-        {
-          "player": "Venu Reddy",
-          "team": "HCC Maple Mavericks",
-          "innings": "7",
-          "runs": "251",
-          "average": "62.75",
-          "strike_rate": "166.23",
-          "highest_score": "104",
-          "not_outs": "3",
-          "fours": "12",
-          "sixes": "20",
-          "hundreds": "1"
-        },
-        {
-          "player": "Nagendra Agarwal",
-          "team": "HCC Maple Mavericks",
-          "innings": "8",
-          "runs": "222",
-          "average": "31.71",
-          "strike_rate": "147.02",
-          "highest_score": "110",
-          "not_outs": "1",
-          "fours": "14",
-          "sixes": "17",
-          "hundreds": "1"
-        }
-      ],
+      "batting": [],
       "bowling": [],
-      "fielding": []
+      "fielding": [],
+      "batting_raw_preview": [
+        "Just a moment...",
+        "cricheroes.com",
+        "Performing security verification",
+        "This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.",
+        "Verification successful. Waiting for cricheroes.com to respond",
+        "Enable JavaScript and cookies to continue",
+        "Ray ID:",
+        "a4a7ee3008c6fcd9",
+        "Performance and Security by",
+        "Cloudflare",
+        "Privacy"
+      ],
+      "bowling_click_failed": true,
+      "fielding_click_failed": true
     },
     "2021140": {
       "name": "2026 PREMIER DIVISION",
@@ -573,50 +490,38 @@
         {
           "player": "Abhilash Kumar",
           "team": "HCC Northern Raptors",
-          "innings": "2",
-          "runs": "139",
-          "average": "139.00",
-          "strike_rate": "165.48",
+          "innings": "3",
+          "runs": "175",
+          "average": "87.50",
+          "strike_rate": "171.57",
           "highest_score": "80",
           "not_outs": "1",
           "fours": "7",
-          "sixes": "11",
+          "sixes": "16",
           "hundreds": "0"
         }
       ],
-      "bowling": [
-        {
-          "player": "Hardeep Mander",
-          "team": "HCC Northern Raptors",
-          "innings": "2",
-          "wickets": "4",
-          "economy": "6.62",
-          "average": "13.25",
-          "maidens": "0",
-          "best": "3",
-          "strike_rate": "12.00"
-        }
-      ],
+      "bowling": [],
       "fielding": [
         {
           "player": "Jaspreet Singh",
           "team": "HCC Northern Raptors",
-          "matches": "2",
-          "dismissals": "4",
+          "matches": "4",
+          "dismissals": "5",
           "catches": "0",
           "run_outs": "0",
           "catch_and_bowled": "0",
-          "caught_behind": "4",
+          "caught_behind": "5",
           "stumpings": "0",
           "assisted_run_outs": "0"
         },
         {
-          "player": "Sanam Singh",
+          "player": "Nirav Laheri",
           "team": "HCC Northern Raptors",
-          "matches": "2",
-          "dismissals": "3",
-          "catches": "3",
-          "run_outs": "0",
+          "matches": "3",
+          "dismissals": "4",
+          "catches": "2",
+          "run_outs": "2",
           "catch_and_bowled": "0",
           "caught_behind": "0",
           "stumpings": "0",
@@ -629,29 +534,16 @@
       "ok": true,
       "batting": [
         {
-          "player": "Shubham Rai",
-          "team": "HCC Northern Falcons",
-          "innings": "2",
-          "runs": "119",
-          "average": "59.50",
-          "strike_rate": "253.19",
-          "highest_score": "100",
-          "not_outs": "0",
-          "fours": "9",
-          "sixes": "10",
-          "hundreds": "1"
-        },
-        {
           "player": "Venu Reddy",
           "team": "HCC Icefield Jets",
-          "innings": "3",
-          "runs": "102",
-          "average": "34.00",
-          "strike_rate": "130.77",
+          "innings": "5",
+          "runs": "166",
+          "average": "33.20",
+          "strike_rate": "140.68",
           "highest_score": "59",
           "not_outs": "0",
-          "fours": "6",
-          "sixes": "5",
+          "fours": "13",
+          "sixes": "8",
           "hundreds": "0"
         }
       ],
@@ -659,60 +551,37 @@
         {
           "player": "Nakul Datta",
           "team": "HCC Icefield Jets",
-          "innings": "2",
-          "wickets": "5",
-          "economy": "3.38",
-          "average": "5.4",
+          "innings": "3",
+          "wickets": "7",
+          "economy": "5.33",
+          "average": "9.14",
           "maidens": "0",
           "best": "3",
-          "strike_rate": "9.60"
+          "strike_rate": "10.29"
         },
         {
           "player": "Nitin Talwar",
           "team": "HCC Icefield Jets",
-          "innings": "3",
-          "wickets": "5",
-          "economy": "5.89",
-          "average": "10.6",
+          "innings": "5",
+          "wickets": "7",
+          "economy": "7.56",
+          "average": "13.14",
           "maidens": "0",
           "best": "2",
-          "strike_rate": "10.80"
-        },
-        {
-          "player": "Luv Sohi",
-          "team": "HCC Icefield Jets",
-          "innings": "3",
-          "wickets": "5",
-          "economy": "6.98",
-          "average": "12.8",
-          "maidens": "0",
-          "best": "3",
-          "strike_rate": "11.00"
+          "strike_rate": "10.43"
         }
       ],
       "fielding": [
         {
-          "player": "Rishav Sharma",
-          "team": "HCC Icefield Jets",
-          "matches": "2",
-          "dismissals": "4",
-          "catches": "4",
-          "run_outs": "0",
-          "catch_and_bowled": "0",
-          "caught_behind": "0",
-          "stumpings": "0",
-          "assisted_run_outs": "0"
-        },
-        {
-          "player": "Yasin Shaikh",
+          "player": "Harpreet Singh",
           "team": "HCC Icefield Jets",
           "matches": "3",
-          "dismissals": "3",
-          "catches": "3",
+          "dismissals": "6",
+          "catches": "1",
           "run_outs": "0",
           "catch_and_bowled": "0",
-          "caught_behind": "0",
-          "stumpings": "0",
+          "caught_behind": "2",
+          "stumpings": "3",
           "assisted_run_outs": "0"
         }
       ]
@@ -733,72 +602,80 @@
           "fours": "10",
           "sixes": "26",
           "hundreds": "1"
-        },
-        {
-          "player": "Rubalpreet Singh Gill",
-          "team": "HCC Northstar Rangers",
-          "innings": "4",
-          "runs": "106",
-          "average": "26.50",
-          "strike_rate": "112.77",
-          "highest_score": "40",
-          "not_outs": "0",
-          "fours": "7",
-          "sixes": "5",
-          "hundreds": "0"
-        },
-        {
-          "player": "Shubham Gorsi",
-          "team": "HCC Northstar Rangers",
-          "innings": "4",
-          "runs": "99",
-          "average": "49.50",
-          "strike_rate": "176.79",
-          "highest_score": "37",
-          "not_outs": "2",
-          "fours": "1",
-          "sixes": "11",
-          "hundreds": "0"
         }
       ],
-      "bowling": [
-        {
-          "player": "Surinder Singh",
-          "team": "HCC Northstar Rangers",
-          "innings": "4",
-          "wickets": "9",
-          "economy": "7.30",
-          "average": "8.11",
-          "maidens": "0",
-          "best": "3",
-          "strike_rate": "6.67"
-        }
+      "bowling": [],
+      "fielding": [],
+      "bowling_raw_preview": [
+        "MPL (TapleyTown)",
+        "Hamilton (Ontario)",
+        "16305 Views",
+        "22-08-2026 to 16-10-2026",
+        "Contact us",
+        "30",
+        "Total Matches",
+        "8",
+        "Total Teams",
+        "Mpl tapleytown Leaderboard",
+        "matches",
+        "leaderboard",
+        "points table",
+        "stats",
+        "Heroes",
+        "sponsors",
+        "teams",
+        "gallery",
+        "about us",
+        "BAT",
+        "BOWL",
+        "FIELD",
+        "MVP",
+        "Select an option",
+        "All Style",
+        "Download XLS",
+        "Connect with your cricket community.",
+        "Get the CricHeroes app.",
+        "Get app",
+        "Later",
+        "From fixtures to finals, host it all here.",
+        "Host tournament",
+        "mpl tapleytown - leaderboard | CricHeroes"
       ],
-      "fielding": [
-        {
-          "player": "Anmol Dang",
-          "team": "HCC Northstar Rangers",
-          "matches": "5",
-          "dismissals": "6",
-          "catches": "2",
-          "run_outs": "1",
-          "catch_and_bowled": "0",
-          "caught_behind": "2",
-          "stumpings": "1",
-          "assisted_run_outs": "0"
-        },
-        {
-          "player": "Surinder Singh",
-          "team": "HCC Northstar Rangers",
-          "matches": "5",
-          "dismissals": "6",
-          "catches": "5",
-          "run_outs": "0",
-          "catch_and_bowled": "1",
-          "caught_behind": "0",
-          "stumpings": "0",
-          "assisted_run_outs": "0"
-        }
+      "fielding_raw_preview": [
+        "MPL (TapleyTown)",
+        "Hamilton (Ontario)",
+        "16305 Views",
+        "22-08-2026 to 16-10-2026",
+        "Contact us",
+        "30",
+        "Total Matches",
+        "8",
+        "Total Teams",
+        "Mpl tapleytown Leaderboard",
+        "matches",
+        "leaderboard",
+        "points table",
+        "stats",
+        "Heroes",
+        "sponsors",
+        "teams",
+        "gallery",
+        "about us",
+        "BAT",
+        "BOWL",
+        "FIELD",
+        "MVP",
+        "Select an option",
+        "All Style",
+        "Download XLS",
+        "Sorry data not found",
+        "Connect with your cricket community.",
+        "Get the CricHeroes app.",
+        "Get app",
+        "Later",
+        "From fixtures to finals, host it all here.",
+        "Host tournament",
+        "mpl tapleytown - leaderboard | CricHeroes"
       ]
     }
   }

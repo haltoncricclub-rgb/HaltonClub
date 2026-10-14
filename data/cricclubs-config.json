@@ -18,6 +18,12 @@
       "name": "Halton Cricket Club (Mississauga Cricket Premier League)",
       "group": "club",
       "url": "https://cricclubs.com/MississaugaCricketPremierLeague/viewTeam.do?teamId=627&league=103&clubId=10622"
-    }
+    },
+{
+  "key": "mcpl_academy",
+  "name": "Halton Cricket Academy (Mississauga Cricket Premier League)",
+  "group": "academy",
+  "url": "https://cricclubs.com/MississaugaCricketPremierLeague/viewTeam.do?teamId=703&league=109&clubId=10622"
+}
   ]
 }
