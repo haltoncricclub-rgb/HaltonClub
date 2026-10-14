@@ -303,7 +303,7 @@
     const token = getSavedToken();
     const res = await fetch(
       `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${path}?ref=${GH_BRANCH}`,
-      { headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' } }
+      { cache: 'no-store', headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' } }
     );
     if (res.status === 404) return null; // file doesn't exist yet — that's fine
     if (!res.ok) throw new Error(`GitHub error reading ${path}: ${res.status}`);
@@ -345,19 +345,32 @@
     );
 
     // 2. Merge into data/player-photos.json (create it if it doesn't exist yet).
+    // GitHub rejects the save with 409 if the file changed since we read it
+    // (e.g. a previous upload only just landed), so re-read and retry.
     const jsonPath = 'data/player-photos.json';
-    const existingJson = await ghGetFile(jsonPath);
-    let mapping = {};
-    let sha = null;
-    if (existingJson){
-      sha = existingJson.sha;
+    let lastErr;
+    for (let attempt = 0; attempt < 4; attempt++){
+      if (attempt) await new Promise(r => setTimeout(r, 1500 * attempt));
+      const existingJson = await ghGetFile(jsonPath);
+      let mapping = {};
+      let sha = null;
+      if (existingJson){
+        sha = existingJson.sha;
+        try {
+          mapping = JSON.parse(atob(existingJson.content.replace(/\n/g, '')));
+        } catch { mapping = {}; }
+      }
+      mapping[normName(item.playerName)] = item.filename;
+      const newContentB64 = btoa(JSON.stringify(mapping, null, 2));
       try {
-        mapping = JSON.parse(atob(existingJson.content.replace(/\n/g, '')));
-      } catch { mapping = {}; }
+        await ghPutFile(jsonPath, newContentB64, `Add photo mapping for ${item.playerName}`, sha);
+        return;
+      } catch (err) {
+        lastErr = err;
+        if (!String(err.message).includes(': 409')) throw err;
+      }
     }
-    mapping[normName(item.playerName)] = item.filename;
-    const newContentB64 = btoa(JSON.stringify(mapping, null, 2));
-    await ghPutFile(jsonPath, newContentB64, `Add photo mapping for ${item.playerName}`, sha);
+    throw lastErr;
   }
 
   let currentFile = null; // { name, blob, dataUrl }
