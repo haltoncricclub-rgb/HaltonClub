@@ -308,7 +308,12 @@
     let rawBatting = [], rawBowling = [], rawFielding = [];
     let usedRealLeagueData = false;
 
-    const tournament = leagueFilter !== 'all' ? tournamentsByName?.get(leagueFilter) : null;
+    let tournament = leagueFilter !== 'all' ? tournamentsByName?.get(leagueFilter) : null;
+    // A tournament entry with no player rows at all (e.g. the scraper was blocked)
+    // shouldn't hide everything — fall back to team-level stats instead.
+    if (tournament && !((tournament.batting || []).length || (tournament.bowling || []).length || (tournament.fielding || []).length)) {
+      tournament = null;
+    }
 
     if (tournament) {
       // Real per-league data: already filtered to HCC players only by the scraper.

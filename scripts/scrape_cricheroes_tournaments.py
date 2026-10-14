@@ -242,11 +242,29 @@ def click_leaderboard_tab(driver, tab_label: str) -> bool:
     return False
 
 
+def looks_like_challenge_page(html: str) -> bool:
+    lowered = html.lower()
+    return "performing security verification" in lowered or "just a moment" in lowered
+
+
 def scrape_tournament(driver, tournament: dict):
     url = f"https://cricheroes.com/tournament/{tournament['id']}/{tournament['slug']}/leaderboard"
     print(f"  visiting {url}")
     driver.get(url)
     time.sleep(PAGE_LOAD_PAUSE_SECONDS)
+
+    # Cloudflare sometimes shows a "Just a moment..." check instead of the
+    # leaderboard. Wait for it to clear; if it doesn't, ask for a manual hand
+    # rather than silently saving the challenge page as if it were data.
+    for _ in range(10):
+        if not looks_like_challenge_page(driver.page_source):
+            break
+        time.sleep(3)
+    if looks_like_challenge_page(driver.page_source):
+        print("  SECURITY CHECK showing on this page. Clear it in the Chrome window")
+        print("  (solve 'verify you are human' if shown), wait for the leaderboard,")
+        input("  then press Enter... ")
+        time.sleep(2)
 
     result = {"batting": [], "bowling": [], "fielding": []}
 
@@ -289,6 +307,14 @@ def main():
     try:
         ensure_logged_in(driver)
 
+        previous = {}
+        if OUTPUT_PATH.exists():
+            try:
+                with open(OUTPUT_PATH) as pf:
+                    previous = json.load(pf).get("tournaments", {})
+            except Exception:
+                previous = {}
+
         result = {
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "mode": "authenticated-manual-tournament",
@@ -299,7 +325,15 @@ def main():
             print(f"\nScraping tournament: {t['name']} ({t['id']})...")
             try:
                 data = scrape_tournament(driver, t)
-                result["tournaments"][t["id"]] = {"name": t["name"], "ok": True, **data}
+                entry = {"name": t["name"], "ok": True, **data}
+                got_rows = any(data.get(k) for k in ("batting", "bowling", "fielding"))
+                prev = previous.get(t["id"])
+                prev_rows = prev and any(prev.get(k) for k in ("batting", "bowling", "fielding"))
+                if not got_rows and prev_rows:
+                    # Don't let a blocked/empty scrape wipe out good older stats.
+                    print("  got no player rows this time — keeping the previous run's stats")
+                    entry = {**prev, "stale": True}
+                result["tournaments"][t["id"]] = entry
             except Exception as e:
                 print(f"  failed: {e}")
                 result["tournaments"][t["id"]] = {"name": t["name"], "ok": False, "error": str(e)}
