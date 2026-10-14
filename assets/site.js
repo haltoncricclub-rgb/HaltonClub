@@ -920,6 +920,8 @@
       const academyLbNote = document.getElementById('academy-leaderboard-note');
       if (academyLbNote) academyLbNote.textContent = 'Live stats unavailable right now.';
       // Sample rows already in the HTML stay as-is — no action needed.
+      const searchHint = document.getElementById('player-search-hint');
+      if (searchHint) searchHint.textContent = 'Player search is unavailable right now \u2014 please refresh in a moment.';
     }
   }
 
