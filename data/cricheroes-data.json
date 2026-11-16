@@ -1,13 +1,159 @@
 {
-  "generated_at": "2026-10-14T16:15:22.254542+00:00",
+  "generated_at": "2026-11-16T17:36:59.064044+00:00",
   "mode": "authenticated-manual",
   "teams": {
     "13709207": {
       "name": "HCC Arctic Titans",
       "group": "club",
       "ok": true,
-      "matches_detailed": [],
-      "matches": [],
+      "matches_detailed": [
+        {
+          "league": "Mountain Premier League",
+          "venue_line": "ice mohawk Park, Hamilton (Ontario), 12-Sep-26, 20 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Maple Mavericks",
+          "score_a": "(20.0)",
+          "team_b": "HCC- Arctic titans",
+          "score_b": "(20.0)",
+          "scheduled_at": null,
+          "result": "HCC Maple Mavericks won by 76 runs"
+        },
+        {
+          "league": "Mountain Premier League",
+          "venue_line": "ice mohawk Park, Hamilton (Ontario), 08-Aug-26, 25 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "NovaStars (NCC)",
+          "score_a": "(24.5)",
+          "team_b": "HCC- Arctic titans",
+          "score_b": "(16.1)",
+          "scheduled_at": null,
+          "result": "NovaStars (NCC) won by 125 runs"
+        },
+        {
+          "league": "Mountain Premier League",
+          "venue_line": "ice mohawk Park, Hamilton (Ontario), 28-Jun-26, 25 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC- Arctic titans",
+          "score_a": "(25.0)",
+          "team_b": "Burlington Cricket Club",
+          "score_b": "(23.4)",
+          "scheduled_at": null,
+          "result": "Burlington Cricket Club won by 4 wickets"
+        },
+        {
+          "league": "Mountain Premier League",
+          "venue_line": "ice mohawk Park, Hamilton (Ontario), 06-Sep-26, 25 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "Sher-E-Punjab XI",
+          "score_a": "(25.0)",
+          "team_b": "HCC- Arctic titans",
+          "score_b": "(25.0)",
+          "scheduled_at": null,
+          "result": "Sher-E-Punjab XI won by 176 runs"
+        },
+        {
+          "league": "Mountain Premier League",
+          "venue_line": "ice mohawk Park, Hamilton (Ontario), 01-Aug-26, 25 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC- Arctic titans",
+          "score_a": "(25.0)",
+          "team_b": "Gujarat Mavericks",
+          "score_b": "(12.2)",
+          "scheduled_at": null,
+          "result": "Gujarat Mavericks won by 3 wickets"
+        },
+        {
+          "league": "Mountain Premier League",
+          "venue_line": "ice mohawk Park, Hamilton (Ontario), 21-Jun-26, 25 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "GTA SCORPIONS",
+          "score_a": "(25.0)",
+          "team_b": "HCC- Arctic titans",
+          "score_b": "(25.0)",
+          "scheduled_at": null,
+          "result": "GTA SCORPIONS won by 34 runs"
+        },
+        {
+          "league": "Mountain Premier League",
+          "venue_line": "ice mohawk Park, Hamilton (Ontario), 30-Aug-26, 25 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC- Arctic titans",
+          "score_a": "(25.0)",
+          "team_b": "Stoney Creek Warriors",
+          "score_b": "(10.1)",
+          "scheduled_at": null,
+          "result": "Stoney Creek Warriors won by 6 wickets"
+        },
+        {
+          "league": "Mountain Premier League",
+          "venue_line": "ice mohawk Park, Hamilton (Ontario), 05-Jul-26, 22 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC- Arctic titans",
+          "score_a": "(6.1)",
+          "team_b": "Burlington Premier",
+          "score_b": "(0.0)",
+          "scheduled_at": null,
+          "result": "Abandoned (Bad light)"
+        }
+      ],
+      "matches": [
+        {
+          "date": "12-Sep-26",
+          "opponent": "HCC- Arctic titans",
+          "result": "HCC Maple Mavericks won by 76 runs",
+          "status": "past"
+        },
+        {
+          "date": "08-Aug-26",
+          "opponent": "NovaStars (NCC)",
+          "result": "NovaStars (NCC) won by 125 runs",
+          "status": "past"
+        },
+        {
+          "date": "28-Jun-26",
+          "opponent": "Burlington Cricket Club",
+          "result": "Burlington Cricket Club won by 4 wickets",
+          "status": "past"
+        },
+        {
+          "date": "06-Sep-26",
+          "opponent": "Sher-E-Punjab XI",
+          "result": "Sher-E-Punjab XI won by 176 runs",
+          "status": "past"
+        },
+        {
+          "date": "01-Aug-26",
+          "opponent": "Gujarat Mavericks",
+          "result": "Gujarat Mavericks won by 3 wickets",
+          "status": "past"
+        },
+        {
+          "date": "21-Jun-26",
+          "opponent": "GTA SCORPIONS",
+          "result": "GTA SCORPIONS won by 34 runs",
+          "status": "past"
+        },
+        {
+          "date": "30-Aug-26",
+          "opponent": "Stoney Creek Warriors",
+          "result": "Stoney Creek Warriors won by 6 wickets",
+          "status": "past"
+        },
+        {
+          "date": "05-Jul-26",
+          "opponent": "Burlington Premier",
+          "result": "Abandoned (Bad light)",
+          "status": "past"
+        }
+      ],
       "leaderboard_detailed": {
         "batting": [
           {
@@ -504,7 +650,7 @@
           }
         ]
       },
-      "matches_season_filter_applied": false,
+      "matches_season_filter_applied": true,
       "season_filter_applied": true,
       "season_filter_options_seen": [
         "2026",
@@ -2329,6 +2475,78 @@
       "ok": true,
       "matches_detailed": [
         {
+          "league": "BCC Indoor premier league season 3",
+          "venue_line": "St. Nicolas Catholic Elementary School, Oakville (Ontario), 04-Dec-26, 10 Ov.,",
+          "round": "League Matches",
+          "status": "upcoming",
+          "team_a": "BCC Red",
+          "score_a": null,
+          "team_b": "HCC Northern Strikers",
+          "score_b": null,
+          "scheduled_at": "Fri,04 Dec, 05:45 PM",
+          "result": null
+        },
+        {
+          "league": "BCC Indoor premier league season 3",
+          "venue_line": "Brant Hill Community Center, Burlington (Ontario), 19-Dec-26, 10 Ov.,",
+          "round": "League Matches",
+          "status": "upcoming",
+          "team_a": "Milton Cricket Champs (MCC) Official",
+          "score_a": null,
+          "team_b": "HCC Northern Strikers",
+          "score_b": null,
+          "scheduled_at": "Sat,19 Dec, 08:40 AM",
+          "result": null
+        },
+        {
+          "league": "Individual Match",
+          "venue_line": "Central Park, Burlington (Ontario), 31-Oct-26, 30 Ov.,",
+          "round": null,
+          "status": "past",
+          "team_a": "HCC Northern Strikers",
+          "score_a": "(30.0)",
+          "team_b": "HCC All Stars",
+          "score_b": "(26.2)",
+          "scheduled_at": null,
+          "result": "HCC Northern Strikers won by 58 runs"
+        },
+        {
+          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
+          "venue_line": "Glenashton Park, Oakville (Ontario), 22-Aug-26, 25 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC Northern Strikers",
+          "score_a": "(25.0)",
+          "team_b": "HCA Champions",
+          "score_b": "(19.0)",
+          "scheduled_at": null,
+          "result": "HCC Northern Strikers won by 8 runs ("
+        },
+        {
+          "league": "BCC Indoor premier league season 3",
+          "venue_line": "St. Nicolas Catholic Elementary School, Oakville (Ontario), 04-Dec-26, 10 Ov.,",
+          "round": "League Matches",
+          "status": "upcoming",
+          "team_a": "BCC Red",
+          "score_a": null,
+          "team_b": "HCC Northern Strikers",
+          "score_b": null,
+          "scheduled_at": "Fri,04 Dec, 06:45 PM",
+          "result": null
+        },
+        {
+          "league": "BCC Indoor premier league season 3",
+          "venue_line": "St. Anne Catholic School, Burlington (Ontario), 13-Nov-26, 10 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "BCC Green",
+          "score_a": "(9.3)",
+          "team_b": "HCC Northern Strikers",
+          "score_b": "(5.0)",
+          "scheduled_at": null,
+          "result": "HCC Northern Strikers won by 7 wickets"
+        },
+        {
           "league": "Individual Match",
           "venue_line": "Tapley town cricket ground, Hamilton (Ontario), 23-Aug-26, 10 Ov.,",
           "round": null,
@@ -2353,28 +2571,28 @@
           "result": "Niagara Smashers won by 27 runs"
         },
         {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "NCC Ground - Stadium(HDCL), Niagara Falls (Ontario), 18-Jul-26, 25 Ov.,",
+          "league": "BCC Indoor premier league season 3",
+          "venue_line": "Brant Hill Community Center, Burlington (Ontario), 19-Dec-26, 10 Ov.,",
           "round": "League Matches",
-          "status": "past",
-          "team_a": "Niagara Smashers",
-          "score_a": "(22.4)",
+          "status": "upcoming",
+          "team_a": "Milton Cricket Champs (MCC) Official",
+          "score_a": null,
           "team_b": "HCC Northern Strikers",
-          "score_b": "(19.3)",
-          "scheduled_at": null,
-          "result": "Niagara Smashers won by 110 runs"
+          "score_b": null,
+          "scheduled_at": "Sat,19 Dec, 07:40 AM",
+          "result": null
         },
         {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "Abdasa Railway Ground, Abdasa, 27-Jun-26, 25 Ov.,",
+          "league": "BCC Indoor premier league season 3",
+          "venue_line": "St. Anne Catholic School, Burlington (Ontario), 13-Nov-26, 10 Ov.,",
           "round": "League Matches",
           "status": "past",
-          "team_a": "Knight Warriors",
-          "score_a": "(23.4)",
-          "team_b": "HCC Northern Strikers",
-          "score_b": "(25.0)",
+          "team_a": "HCC Northern Strikers",
+          "score_a": "(8.2)",
+          "team_b": "BCC Green",
+          "score_b": "(4.3)",
           "scheduled_at": null,
-          "result": "Knight Warriors won by 30 runs"
+          "result": "BCC Green won by 4 wickets"
         },
         {
           "league": "Individual Match",
@@ -2399,81 +2617,45 @@
           "score_b": "(18.4)",
           "scheduled_at": null,
           "result": "Knight Warriors won by 72 runs"
-        },
-        {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "NCC Ground B (HDCL), Niagara Falls (Ontario), 11-Jul-26, 25 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "Kingsmen T25",
-          "score_a": "(25.0)",
-          "team_b": "HCC Northern Strikers",
-          "score_b": "(25.0)",
-          "scheduled_at": null,
-          "result": "Kingsmen T25 won by 79 runs"
-        },
-        {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "Glenashton Park, Oakville (Ontario), 20-Jun-26, 25 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Strikers",
-          "score_a": "(20.3)",
-          "team_b": "Stoney Creek T25 Premier",
-          "score_b": "(14.1)",
-          "scheduled_at": null,
-          "result": "Stoney Creek T25 Premier won by 4 wickets"
-        },
-        {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "Glenashton Park, Oakville (Ontario), 22-Aug-26, 25 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Strikers",
-          "score_a": "(25.0)",
-          "team_b": "HCA Champions",
-          "score_b": "(19.0)",
-          "scheduled_at": null,
-          "result": "HCC Northern Strikers won by 8 runs ("
-        },
-        {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "Glenashton Park, Oakville (Ontario), 25-Jul-26, 25 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Strikers",
-          "score_a": "(25.0)",
-          "team_b": "HCA Champions",
-          "score_b": "(25.0)",
-          "scheduled_at": null,
-          "result": "HCA Champions won by 1 wicket"
-        },
-        {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "waterworks park, Hamilton, 04-Jul-26, 25 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Strikers",
-          "score_a": "(11.4)",
-          "team_b": "Stellar XI",
-          "score_b": "(5.5)",
-          "scheduled_at": null,
-          "result": "Stellar XI won by 9 wickets"
-        },
-        {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "NCC Ground A (HDCL), Niagara Falls (Ontario), 13-Jun-26, 25 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC Northern Strikers",
-          "score_a": "(18.3)",
-          "team_b": "Kingsmen T25",
-          "score_b": "(15.0)",
-          "scheduled_at": null,
-          "result": "HCC Northern Strikers won by 4 runs"
         }
       ],
       "matches": [
+        {
+          "date": "04-Dec-26",
+          "opponent": "BCC Red",
+          "result": "Scheduled: Fri,04 Dec, 05:45 PM",
+          "status": "upcoming"
+        },
+        {
+          "date": "19-Dec-26",
+          "opponent": "Milton Cricket Champs (MCC) Official",
+          "result": "Scheduled: Sat,19 Dec, 08:40 AM",
+          "status": "upcoming"
+        },
+        {
+          "date": "31-Oct-26",
+          "opponent": "HCC All Stars",
+          "result": "HCC Northern Strikers won by 58 runs",
+          "status": "past"
+        },
+        {
+          "date": "22-Aug-26",
+          "opponent": "HCA Champions",
+          "result": "HCC Northern Strikers won by 8 runs (",
+          "status": "past"
+        },
+        {
+          "date": "04-Dec-26",
+          "opponent": "BCC Red",
+          "result": "Scheduled: Fri,04 Dec, 06:45 PM",
+          "status": "upcoming"
+        },
+        {
+          "date": "13-Nov-26",
+          "opponent": "BCC Green",
+          "result": "HCC Northern Strikers won by 7 wickets",
+          "status": "past"
+        },
         {
           "date": "23-Aug-26",
           "opponent": "HCC Northstar Rangers",
@@ -2487,15 +2669,15 @@
           "status": "past"
         },
         {
-          "date": "18-Jul-26",
-          "opponent": "Niagara Smashers",
-          "result": "Niagara Smashers won by 110 runs",
-          "status": "past"
+          "date": "19-Dec-26",
+          "opponent": "Milton Cricket Champs (MCC) Official",
+          "result": "Scheduled: Sat,19 Dec, 07:40 AM",
+          "status": "upcoming"
         },
         {
-          "date": "27-Jun-26",
-          "opponent": "Knight Warriors",
-          "result": "Knight Warriors won by 30 runs",
+          "date": "13-Nov-26",
+          "opponent": "BCC Green",
+          "result": "BCC Green won by 4 wickets",
           "status": "past"
         },
         {
@@ -2508,42 +2690,6 @@
           "date": "01-Aug-26",
           "opponent": "Knight Warriors",
           "result": "Knight Warriors won by 72 runs",
-          "status": "past"
-        },
-        {
-          "date": "11-Jul-26",
-          "opponent": "Kingsmen T25",
-          "result": "Kingsmen T25 won by 79 runs",
-          "status": "past"
-        },
-        {
-          "date": "20-Jun-26",
-          "opponent": "Stoney Creek T25 Premier",
-          "result": "Stoney Creek T25 Premier won by 4 wickets",
-          "status": "past"
-        },
-        {
-          "date": "22-Aug-26",
-          "opponent": "HCA Champions",
-          "result": "HCC Northern Strikers won by 8 runs (",
-          "status": "past"
-        },
-        {
-          "date": "25-Jul-26",
-          "opponent": "HCA Champions",
-          "result": "HCA Champions won by 1 wicket",
-          "status": "past"
-        },
-        {
-          "date": "04-Jul-26",
-          "opponent": "Stellar XI",
-          "result": "Stellar XI won by 9 wickets",
-          "status": "past"
-        },
-        {
-          "date": "13-Jun-26",
-          "opponent": "Kingsmen T25",
-          "result": "HCC Northern Strikers won by 4 runs",
           "status": "past"
         }
       ],
@@ -2622,6 +2768,18 @@
             "hundreds": "0"
           },
           {
+            "player": "Jaspreet Singh",
+            "innings": "3",
+            "runs": "104",
+            "average": "104.00",
+            "strike_rate": "131.65",
+            "highest_score": "53",
+            "not_outs": "2",
+            "fours": "1",
+            "sixes": "3",
+            "hundreds": "0"
+          },
+          {
             "player": "Ashwini Kumar",
             "innings": "9",
             "runs": "83",
@@ -2655,18 +2813,6 @@
             "not_outs": "1",
             "fours": "5",
             "sixes": "2",
-            "hundreds": "0"
-          },
-          {
-            "player": "Anmol Dang",
-            "innings": "4",
-            "runs": "71",
-            "average": "23.67",
-            "strike_rate": "124.56",
-            "highest_score": "56",
-            "not_outs": "1",
-            "fours": "1",
-            "sixes": "0",
             "hundreds": "0"
           }
         ],
@@ -2722,6 +2868,26 @@
             "strike_rate": "13.60"
           },
           {
+            "player": "Karan Wasal",
+            "innings": "5",
+            "wickets": "6",
+            "economy": "5.23",
+            "average": "12.5",
+            "maidens": "1",
+            "best": "4",
+            "strike_rate": "14.33"
+          },
+          {
+            "player": "Smeet Purohit",
+            "innings": "5",
+            "wickets": "6",
+            "economy": "6.80",
+            "average": "8.5",
+            "maidens": "0",
+            "best": "2",
+            "strike_rate": "7.50"
+          },
+          {
             "player": "Saurabh Goyal",
             "innings": "8",
             "wickets": "6",
@@ -2750,35 +2916,15 @@
             "maidens": "0",
             "best": "2",
             "strike_rate": "11.60"
-          },
-          {
-            "player": "Karan Wasal",
-            "innings": "3",
-            "wickets": "5",
-            "economy": "5.82",
-            "average": "13.2",
-            "maidens": "1",
-            "best": "4",
-            "strike_rate": "13.60"
-          },
-          {
-            "player": "Pradip Maheshvari",
-            "innings": "4",
-            "wickets": "4",
-            "economy": "5.55",
-            "average": "15.25",
-            "maidens": "0",
-            "best": "1",
-            "strike_rate": "16.50"
           }
         ],
         "fielding": [
           {
             "player": "Smeet Purohit",
-            "matches": "9",
-            "dismissals": "13",
+            "matches": "11",
+            "dismissals": "14",
             "catches": "3",
-            "run_outs": "2",
+            "run_outs": "3",
             "catch_and_bowled": "0",
             "caught_behind": "8",
             "stumpings": "0",
@@ -2829,6 +2975,17 @@
             "assisted_run_outs": "0"
           },
           {
+            "player": "Karan Wasal",
+            "matches": "5",
+            "dismissals": "4",
+            "catches": "4",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "0",
+            "stumpings": "0",
+            "assisted_run_outs": "1"
+          },
+          {
             "player": "Shubham Gorsi",
             "matches": "12",
             "dismissals": "4",
@@ -2851,36 +3008,25 @@
             "assisted_run_outs": "0"
           },
           {
-            "player": "Karan Wasal",
-            "matches": "3",
-            "dismissals": "3",
-            "catches": "3",
-            "run_outs": "0",
-            "catch_and_bowled": "0",
-            "caught_behind": "0",
-            "stumpings": "0",
-            "assisted_run_outs": "1"
-          },
-          {
-            "player": "Puneet",
-            "matches": "9",
+            "player": "nitin",
+            "matches": "2",
             "dismissals": "3",
             "catches": "0",
-            "run_outs": "1",
-            "catch_and_bowled": "2",
-            "caught_behind": "0",
-            "stumpings": "0",
+            "run_outs": "0",
+            "catch_and_bowled": "0",
+            "caught_behind": "2",
+            "stumpings": "1",
             "assisted_run_outs": "0"
           },
           {
-            "player": "Kaushal Thakkar",
-            "matches": "1",
-            "dismissals": "2",
-            "catches": "0",
+            "player": "Karthik S",
+            "matches": "3",
+            "dismissals": "3",
+            "catches": "1",
             "run_outs": "0",
-            "catch_and_bowled": "0",
-            "caught_behind": "1",
-            "stumpings": "1",
+            "catch_and_bowled": "2",
+            "caught_behind": "0",
+            "stumpings": "0",
             "assisted_run_outs": "0"
           }
         ]
@@ -2918,6 +3064,11 @@
             "stat": "106 runs (Avg 21.20, SR 86.89)"
           },
           {
+            "player": "Jaspreet Singh",
+            "team": "HCC Northern Strikers",
+            "stat": "104 runs (Avg 104.00, SR 131.65)"
+          },
+          {
             "player": "Ashwini Kumar",
             "team": "HCC Northern Strikers",
             "stat": "83 runs (Avg 10.38, SR 77.57)"
@@ -2931,11 +3082,6 @@
             "player": "Siddharth Sodhani",
             "team": "HCC Northern Strikers",
             "stat": "74 runs (Avg 12.33, SR 77.08)"
-          },
-          {
-            "player": "Anmol Dang",
-            "team": "HCC Northern Strikers",
-            "stat": "71 runs (Avg 23.67, SR 124.56)"
           }
         ],
         "bowling": [
@@ -2965,6 +3111,16 @@
             "stat": "10 wkts (Econ 7.41, Avg 16.8)"
           },
           {
+            "player": "Karan Wasal",
+            "team": "HCC Northern Strikers",
+            "stat": "6 wkts (Econ 5.23, Avg 12.5)"
+          },
+          {
+            "player": "Smeet Purohit",
+            "team": "HCC Northern Strikers",
+            "stat": "6 wkts (Econ 6.80, Avg 8.5)"
+          },
+          {
             "player": "Saurabh Goyal",
             "team": "HCC Northern Strikers",
             "stat": "6 wkts (Econ 7.43, Avg 39)"
@@ -2978,23 +3134,13 @@
             "player": "Sameer Verma",
             "team": "HCC Northern Strikers",
             "stat": "5 wkts (Econ 5.59, Avg 10.8)"
-          },
-          {
-            "player": "Karan Wasal",
-            "team": "HCC Northern Strikers",
-            "stat": "5 wkts (Econ 5.82, Avg 13.2)"
-          },
-          {
-            "player": "Pradip Maheshvari",
-            "team": "HCC Northern Strikers",
-            "stat": "4 wkts (Econ 5.55, Avg 15.25)"
           }
         ],
         "fielding": [
           {
             "player": "Smeet Purohit",
             "team": "HCC Northern Strikers",
-            "stat": "3 catches, 13 dismissals"
+            "stat": "3 catches, 14 dismissals"
           },
           {
             "player": "Saurabh Goyal",
@@ -3017,6 +3163,11 @@
             "stat": "4 catches, 4 dismissals"
           },
           {
+            "player": "Karan Wasal",
+            "team": "HCC Northern Strikers",
+            "stat": "4 catches, 4 dismissals"
+          },
+          {
             "player": "Shubham Gorsi",
             "team": "HCC Northern Strikers",
             "stat": "4 catches, 4 dismissals"
@@ -3027,19 +3178,14 @@
             "stat": "3 catches, 4 dismissals"
           },
           {
-            "player": "Karan Wasal",
-            "team": "HCC Northern Strikers",
-            "stat": "3 catches, 3 dismissals"
-          },
-          {
-            "player": "Puneet",
+            "player": "nitin",
             "team": "HCC Northern Strikers",
             "stat": "0 catches, 3 dismissals"
           },
           {
-            "player": "Kaushal Thakkar",
+            "player": "Karthik S",
             "team": "HCC Northern Strikers",
-            "stat": "0 catches, 2 dismissals"
+            "stat": "1 catches, 3 dismissals"
           }
         ]
       },
@@ -5578,7 +5724,7 @@
             "hundreds": "0"
           },
           {
-            "player": "Masroor T",
+            "player": "Masroor",
             "innings": "7",
             "runs": "105",
             "average": "15.00",
@@ -5867,7 +6013,7 @@
             "stat": "108 runs (Avg 18.00, SR 108.00)"
           },
           {
-            "player": "Masroor T",
+            "player": "Masroor",
             "team": "HCC Northern Falcons",
             "stat": "105 runs (Avg 15.00, SR 97.22)"
           },
@@ -6009,6 +6155,54 @@
       "ok": true,
       "matches_detailed": [
         {
+          "league": "Individual Match",
+          "venue_line": "Central Park, Burlington (Ontario), 31-Oct-26, 30 Ov.,",
+          "round": null,
+          "status": "past",
+          "team_a": "HCC Northern Strikers",
+          "score_a": "(30.0)",
+          "team_b": "HCC All Stars",
+          "score_b": "(26.2)",
+          "scheduled_at": null,
+          "result": "HCC Northern Strikers won by 58 runs"
+        },
+        {
+          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
+          "venue_line": "Sixteen Miles Sports Complex, Hamilton, 06-Sep-26, 25 Ov.,",
+          "round": "Quarter Final",
+          "status": "past",
+          "team_a": "HCC All Stars",
+          "score_a": "(25.0)",
+          "team_b": "Oakville Bravehearts",
+          "score_b": "(8.2)",
+          "scheduled_at": null,
+          "result": "HCC All Stars won by 170 runs"
+        },
+        {
+          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
+          "venue_line": "Glenashton Park, Oakville (Ontario), 11-Jul-26, 25 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "Apex Predators",
+          "score_a": "(16.2)",
+          "team_b": "HCC All Stars",
+          "score_b": "(11.0)",
+          "scheduled_at": null,
+          "result": "HCC All Stars won by 8 wickets"
+        },
+        {
+          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
+          "venue_line": "NCC Ground A (HDCL), Niagara Falls (Ontario), 20-Jun-26, 25 Ov.,",
+          "round": "League Matches",
+          "status": "past",
+          "team_a": "HCC All Stars",
+          "score_a": "(25.0)",
+          "team_b": "Thalaivas CC 100",
+          "score_b": "(19.0)",
+          "scheduled_at": null,
+          "result": "HCC All Stars won by 206 runs"
+        },
+        {
           "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
           "venue_line": "NCC Ground - Stadium(HDCL), Niagara Falls (Ontario), 13-Sep-26, 25 Ov.,",
           "round": "Final",
@@ -6103,57 +6297,33 @@
           "score_b": "(23.3)",
           "scheduled_at": null,
           "result": "Mustangz Cricket Club won by 6 runs"
-        },
-        {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "Sixteen Miles Sports Complex, Hamilton, 06-Sep-26, 25 Ov.,",
-          "round": "Quarter Final",
-          "status": "past",
-          "team_a": "HCC All Stars",
-          "score_a": "(25.0)",
-          "team_b": "Oakville Bravehearts",
-          "score_b": "(8.2)",
-          "scheduled_at": null,
-          "result": "HCC All Stars won by 170 runs"
-        },
-        {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "Glenashton Park, Oakville (Ontario), 11-Jul-26, 25 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "Apex Predators",
-          "score_a": "(16.2)",
-          "team_b": "HCC All Stars",
-          "score_b": "(11.0)",
-          "scheduled_at": null,
-          "result": "HCC All Stars won by 8 wickets"
-        },
-        {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "NCC Ground A (HDCL), Niagara Falls (Ontario), 20-Jun-26, 25 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC All Stars",
-          "score_a": "(25.0)",
-          "team_b": "Thalaivas CC 100",
-          "score_b": "(19.0)",
-          "scheduled_at": null,
-          "result": "HCC All Stars won by 206 runs"
-        },
-        {
-          "league": "2026 HDCL T25 PREMIER (WIN SPORTS) DIVISION",
-          "venue_line": "Jennie Florence Parker Sports Complex, Hamilton (Ontario), 30-May-26, 25 Ov.,",
-          "round": "League Matches",
-          "status": "past",
-          "team_a": "HCC All Stars",
-          "score_a": "(25.0)",
-          "team_b": "CSK Cheras",
-          "score_b": "(17.2)",
-          "scheduled_at": null,
-          "result": "HCC All Stars won by 206 runs"
         }
       ],
       "matches": [
+        {
+          "date": "31-Oct-26",
+          "opponent": "HCC All Stars",
+          "result": "HCC Northern Strikers won by 58 runs",
+          "status": "past"
+        },
+        {
+          "date": "06-Sep-26",
+          "opponent": "Oakville Bravehearts",
+          "result": "HCC All Stars won by 170 runs",
+          "status": "past"
+        },
+        {
+          "date": "11-Jul-26",
+          "opponent": "Apex Predators",
+          "result": "HCC All Stars won by 8 wickets",
+          "status": "past"
+        },
+        {
+          "date": "20-Jun-26",
+          "opponent": "Thalaivas CC 100",
+          "result": "HCC All Stars won by 206 runs",
+          "status": "past"
+        },
         {
           "date": "13-Sep-26",
           "opponent": "Burloak Strikers",
@@ -6200,30 +6370,6 @@
           "date": "06-Jun-26",
           "opponent": "Mustangz Cricket Club",
           "result": "Mustangz Cricket Club won by 6 runs",
-          "status": "past"
-        },
-        {
-          "date": "06-Sep-26",
-          "opponent": "Oakville Bravehearts",
-          "result": "HCC All Stars won by 170 runs",
-          "status": "past"
-        },
-        {
-          "date": "11-Jul-26",
-          "opponent": "Apex Predators",
-          "result": "HCC All Stars won by 8 wickets",
-          "status": "past"
-        },
-        {
-          "date": "20-Jun-26",
-          "opponent": "Thalaivas CC 100",
-          "result": "HCC All Stars won by 206 runs",
-          "status": "past"
-        },
-        {
-          "date": "30-May-26",
-          "opponent": "CSK Cheras",
-          "result": "HCC All Stars won by 206 runs",
           "status": "past"
         }
       ],
@@ -6554,7 +6700,7 @@
           },
           {
             "player": "Anmol Dang",
-            "matches": "3",
+            "matches": "4",
             "dismissals": "3",
             "catches": "1",
             "run_outs": "0",
@@ -6750,11 +6896,11 @@
           "round": "League Matches",
           "status": "past",
           "team_a": "Gujarat Mavericks",
-          "score_a": "(20.0)",
-          "team_b": "HCC Renegades",
-          "score_b": "(20.0)",
+          "score_a": null,
+          "team_b": "(",
+          "score_b": null,
           "scheduled_at": null,
-          "result": "Gujarat Mavericks won by 63 runs"
+          "result": null
         },
         {
           "league": "MPL (TapleyTown)",
@@ -6762,11 +6908,11 @@
           "round": "League Matches",
           "status": "past",
           "team_a": "Burlington Cricket Club (leather)",
-          "score_a": "(20.0)",
-          "team_b": "HCC Renegades",
-          "score_b": "(18.4)",
+          "score_a": null,
+          "team_b": "(",
+          "score_b": null,
           "scheduled_at": null,
-          "result": "Burlington Cricket Club (leather) won by 51 runs"
+          "result": null
         },
         {
           "league": "MPL (TapleyTown)",
@@ -6774,11 +6920,11 @@
           "round": "League Matches",
           "status": "past",
           "team_a": "HCC Renegades",
-          "score_a": "(1.0)",
-          "team_b": "Halton Hercules",
-          "score_b": "(0.0)",
+          "score_a": null,
+          "team_b": "(",
+          "score_b": null,
           "scheduled_at": null,
-          "result": "Abandoned (due to rain)"
+          "result": null
         },
         {
           "league": "MPL (TapleyTown)",
@@ -6832,20 +6978,20 @@
       "matches": [
         {
           "date": "27-Sep-26",
-          "opponent": "Gujarat Mavericks",
-          "result": "Gujarat Mavericks won by 63 runs",
+          "opponent": "(",
+          "result": "Result unavailable",
           "status": "past"
         },
         {
           "date": "07-Sep-26",
-          "opponent": "Burlington Cricket Club (leather)",
-          "result": "Burlington Cricket Club (leather) won by 51 runs",
+          "opponent": "(",
+          "result": "Result unavailable",
           "status": "past"
         },
         {
           "date": "30-Aug-26",
-          "opponent": "Halton Hercules",
-          "result": "Abandoned (due to rain)",
+          "opponent": "(",
+          "result": "Result unavailable",
           "status": "past"
         },
         {
@@ -7396,11 +7542,11 @@
           "round": "Final",
           "status": "past",
           "team_a": "BHCC",
-          "score_a": "(14.2)",
-          "team_b": "Stoney Creek Warriors",
-          "score_b": "(14.4)",
+          "score_a": null,
+          "team_b": "(",
+          "score_b": null,
           "scheduled_at": null,
-          "result": "Stoney Creek Warriors won by 2 wickets"
+          "result": null
         },
         {
           "league": "Mountain Premier League (Weekdays)",
@@ -7408,11 +7554,11 @@
           "round": "League Matches",
           "status": "past",
           "team_a": "BHCC",
-          "score_a": "(17.0)",
-          "team_b": "Chennaiyin Super Kings MPL",
-          "score_b": "(19.4)",
+          "score_a": null,
+          "team_b": "(",
+          "score_b": null,
           "scheduled_at": null,
-          "result": "BHCC won by 26 runs"
+          "result": null
         },
         {
           "league": "Mountain Premier League (Weekdays)",
@@ -7420,11 +7566,11 @@
           "round": "League Matches",
           "status": "past",
           "team_a": "HCC Northstar Rangers",
-          "score_a": "(20.0)",
-          "team_b": "BHCC",
-          "score_b": "(19.4)",
+          "score_a": null,
+          "team_b": "(",
+          "score_b": null,
           "scheduled_at": null,
-          "result": "HCC Northstar Rangers won by 77 runs"
+          "result": null
         },
         {
           "league": "Mountain Premier League (Weekdays)",
@@ -7432,11 +7578,11 @@
           "round": "League Matches",
           "status": "past",
           "team_a": "Stoney Creek Warriors",
-          "score_a": "(20.0)",
-          "team_b": "BHCC",
-          "score_b": "(19.4)",
+          "score_a": null,
+          "team_b": "(",
+          "score_b": null,
           "scheduled_at": null,
-          "result": "BHCC won by 5 wickets"
+          "result": null
         },
         {
           "league": "Mountain Premier League (Weekdays)",
@@ -7514,26 +7660,26 @@
       "matches": [
         {
           "date": "11-Sep-26",
-          "opponent": "Stoney Creek Warriors",
-          "result": "Stoney Creek Warriors won by 2 wickets",
+          "opponent": "(",
+          "result": "Result unavailable",
           "status": "past"
         },
         {
           "date": "26-Aug-26",
-          "opponent": "Chennaiyin Super Kings MPL",
-          "result": "BHCC won by 26 runs",
+          "opponent": "(",
+          "result": "Result unavailable",
           "status": "past"
         },
         {
           "date": "28-Jul-26",
-          "opponent": "BHCC",
-          "result": "HCC Northstar Rangers won by 77 runs",
+          "opponent": "(",
+          "result": "Result unavailable",
           "status": "past"
         },
         {
           "date": "07-Jul-26",
-          "opponent": "Stoney Creek Warriors",
-          "result": "BHCC won by 5 wickets",
+          "opponent": "(",
+          "result": "Result unavailable",
           "status": "past"
         },
         {
