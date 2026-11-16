@@ -130,9 +130,22 @@ def check_logged_in(driver) -> bool:
     appears when logged in (vs. a 'Sign in' button for anonymous visitors).
     This is a best-effort check — if it's wrong, the manual login prompt
     just shows up again, which is harmless.
+
+    Also catches CricHeroes' "Your session has expired or is invalid"
+    interstitial (confirmed real-world case: it doesn't contain "sign in"
+    at all, so the plain sign-in check alone was false-positiving as
+    "still logged in" and silently skipping the manual login prompt,
+    reusing a dead session on every subsequent run).
     """
     try:
         page = driver.page_source.lower()
+        expired_markers = (
+            "session has expired",
+            "session is invalid",
+            "log in again",
+        )
+        if any(marker in page for marker in expired_markers):
+            return False
         if "sign in" in page and "sign out" not in page and "log out" not in page:
             return False
         return True
